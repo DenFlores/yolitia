@@ -11,3 +11,4 @@ Este es el repositorio del proyecto "Yolitia"
 
 * **Jonathan Yair Vazquez Uriostegui**
 * **Deny Guadalupe Flores Patiño**
+* **Erandy Daniel Tapia Gonzalez**
