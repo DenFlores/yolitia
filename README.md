@@ -7,6 +7,7 @@ Este es el repositorio del proyecto "Yolitia"
 * Proximamente
 
 
-## Autor ✒️
+## Autores ✒️
 
 * **Jonathan Yair Vazquez Uriostegui**
+* **Deny Guadalupe Flores Patiño**
