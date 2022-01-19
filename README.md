@@ -13,3 +13,4 @@ Este es el repositorio del proyecto "Yolitia"
 * **Deny Guadalupe Flores Patiño**
 * **Erandy Daniel Tapia Gonzalez**
 * **Naily Vargas Trejo**
+* **Octavio Olea Pérez**
