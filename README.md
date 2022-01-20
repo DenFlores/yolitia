@@ -15,3 +15,4 @@ Este es el repositorio del proyecto "Yolitia"
 * **Naily Vargas Trejo**
 * **Octavio Olea Pérez**
 * **Abraham David Ramírez Tapia**
+* **Sarahi Alfaro Delgado**
