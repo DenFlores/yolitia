@@ -16,3 +16,4 @@ Este es el repositorio del proyecto "Yolitia"
 - **Abraham David Ramírez Tapia**
 - **Sarahi Alfaro Delgado**
 - **Julio Cesar Garcia Segundo**
+- **Angel Alfonso Illescas Cruz**
