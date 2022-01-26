@@ -65,19 +65,37 @@ margin-top: 30px;
 
 .card-direccion{
     background-color: #DFEDFE;
+    margin-bottom: 20%;
+    border-radius: 16px;
+    text-align: center;
 }
 
 .card-correo{
     background-color: #FCC9C6;
     margin-bottom: 20%;
+    border-radius: 16px;
+    text-align: center;
 }
 
 .card-whats{
     background-color: #B0F2C2;
     margin-bottom: 20%;
+    border-radius: 16px;
+    text-align: center;
 }
 
 .card-img-top{
-    width: 150px;
+    width: 100%;
+    height: 50%;
+   
+    
     align-items: center;
 }
+
+.oso-formulario{
+    width: 500px;
+    margin-right: 50%;
+    margin-top: 30px;
+
+}
+
