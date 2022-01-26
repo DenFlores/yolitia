@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --fuenteTitulos: 'Lobster', cursive;
+    --fuenteSubtitulos: 'Lobster', cursive;
+    --fuenteTexto: 'Comfortaa', cursive;
+    --fuenteAnimada: 'Butterfly Kids', cursive;
+    --fuenteNavbar: 'Pacifico', cursive;
+
+    --tamTitulo: 64px;
+    --tamSubtitulo: 54px;
+    --tamTexto: 30px;
+    --tamAnimada: 34px;
+
+    --colorRojo: #ff6961;
+    --colorVerde: #77dd77;
+    --colorAmarillo: #fdfd96;
+    --colorAzul: #84b6f4;
+    --colorRosa: #fdcae1;
+    --colorBlanco: #ffffff;
+    --colorMorado: #DC14B0;
+
+}
+.container-fluid{
+    padding: 0;
+  }
+
+.bg-figma-2 {
+  background: #fdcae1;
+}
+
+.bg-figma-3 {
+  background: rgba(183, 203, 255, 0.55);
+}
+.row{
+    margin: 0;
+}
+.card {
+  border: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.bg-figma-1 {
+  position: relative;
+  width: 32px;
+  height: 68px;
+  background: #c4c4c4;
+  border: 2px solid #010101;
+  box-sizing: border-box;
+}
+.nav-bg-figma {
+  background-color: #dc14b0;
+}
+
+
+.logo {
+  position: relative;
+  width: 28.57px;
+  height: 25px;
+  padding: 0;
+  bottom: 95%;
+}
+.nav-text {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  color: #ffffff;
+}
+.btn-regresar {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  width: 70px;
+  height: 24px;
+  text-align: center;
+  background: #fdfd96;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  filter: blur(0.5px);
+  border-radius: 20px;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  -webkit-filter: blur(0.5px);
+}
+
+.btn-siguiente {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  width: 70px;
+  height: 24px;
+  text-align: center;
+  background: #77dd77;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  filter: blur(0.5px);
+  border-radius: 20px;
+  -webkit-filter: blur(0.5px);
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+.brazo {
+  position: absolute;
+  width: 38px;
+  height: 49px;
+  left: 5%;
+  bottom: 0%;
+}
+
+.peluche {
+  position: absolute;
+  width: 67px;
+  height: 69px;
+  left: 20%;
+  bottom: 10%;
+}
+
+.colores {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 70%;
+  top: 15%;
+}
+
+.text-logo{
+    font-family: var(--fuenteNavbar);
+    font-size: 18px;
+    -webkit-text-stroke: 1px white;
+    letter-spacing: 4.5px;
+    color:#DC14B0;
+    text-align: center;
+}
