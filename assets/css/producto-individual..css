@@ -1,0 +1,83 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --fuenteTitulos: 'Lobster', cursive;
+    --fuenteSubtitulos: 'Lobster', cursive;
+    --fuenteTexto: 'Comfortaa', cursive;
+    --fuenteAnimada: 'Butterfly Kids', cursive;
+    --fuenteNavbar: 'Pacifico', cursive;
+
+    --tamTitulo: 64px;
+    --tamSubtitulo: 54px;
+    --tamTexto: 30px;
+    --tamAnimada: 34px;
+
+    --colorRojo: #ff6961;
+    --colorVerde: #77dd77;
+    --colorAmarillo: #fdfd96;
+    --colorAzul: #84b6f4;
+    --colorRosa: #fdcae1;
+    --colorBlanco: #ffffff;
+    --colorMorado: #DC14B0;
+
+}
+
+
+.contenido-principal{
+    margin: 0 auto;
+    width: 1400px;
+    height: 650px;
+    background: #FDCAE1;
+border: 1px dashed #FF6961;
+border-radius: 10px;
+}
+
+.contenido-imagen1{
+    position: relative;
+    width: 700px;
+    height:500px ;
+    float: left;
+    top: 75px;
+
+}
+.contenido-imagen, img{
+    position: relative;
+    background-color: #b8145e;
+    width: 420px;
+    height: 350px;
+    margin-left: 50px;
+    
+    
+}
+
+.contenido-texto{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-left: 100px;
+    float: left;
+    width: 700px;
+    height: 500px;
+    top: 75px;
+    border-radius: 10px;
+    
+}
+
+.nombre-producto{
+    font-family: 'Butterfly Kids', cursive;
+    text-align: center;
+    font-size: 80px
+}
+.texto{
+    position: relative;
+    width: 650px;
+    height: 200px;
+    font-family: 'Comfortaa', cursive;
+    margin: auto;
+    text-align: justify;
+    font-size: 25px;
+}
