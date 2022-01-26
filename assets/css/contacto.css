@@ -1,0 +1,83 @@
+body{
+    background-color: #fdcae1;
+} 
+
+
+
+ .seccion-contactanos{
+    font-family: 'Mukta', sans-serif;
+    margin-right: 10%;
+    margin-left: 10%;
+    color:#84B6F4; 
+    margin-bottom: 4%;
+    border-radius: 16px;
+    background-color:white;
+    text-align: center;
+}
+.containrer{
+    background-color: #ff696f; 
+}
+
+.escribenos{
+    font-family: 'Mukta', sans-serif;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: white; 
+    border-radius: 16px;
+    background-color:#77DD77;
+    text-align: center;
+}
+
+.contactanos{
+   
+    
+}
+
+.form-container{
+
+color: white; 
+background-color: tomato;
+border-radius: 16px;
+margin-right: 10%;
+margin-left: 50%;
+margin-top: 30px;
+}
+
+#inputAsunto{
+    background-color: #84B6F4;
+
+}
+
+#inputNombre{
+    background-color: #84B6F4;
+
+}
+
+#inputEmail{
+    background-color: #84B6F4;
+
+}
+
+.form-control {
+    background-color: #84B6F4;
+   
+}
+
+.card-direccion{
+    background-color: #DFEDFE;
+}
+
+.card-correo{
+    background-color: #FCC9C6;
+    margin-bottom: 20%;
+}
+
+.card-whats{
+    background-color: #B0F2C2;
+    margin-bottom: 20%;
+}
+
+.card-img-top{
+    width: 150px;
+    align-items: center;
+}
