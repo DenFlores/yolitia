@@ -1,40 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-:root{
-    --fuenteTitulos: 'Lobster', cursive;
-    --fuenteSubtitulos: 'Lobster', cursive;
-    --fuenteTexto: 'Comfortaa', cursive;
-    --fuenteAnimada: 'Butterfly Kids', cursive;
-    --fuenteNavbar: 'Pacifico', cursive;
+:root {
+  --fuenteTitulos: "Lobster", cursive;
+  --fuenteSubtitulos: "Lobster", cursive;
+  --fuenteTexto: "Comfortaa", cursive;
+  --fuenteAnimada: "Butterfly Kids", cursive;
+  --fuenteNavbar: "Pacifico", cursive;
 
-    --tamTitulo: 64px;
-    --tamSubtitulo: 54px;
-    --tamTexto: 30px;
-    --tamAnimada: 34px;
+  --tamTitulo: 64px;
+  --tamSubtitulo: 54px;
+  --tamTexto: 30px;
+  --tamAnimada: 34px;
 
-    --colorRojo: #ff6961;
-    --colorVerde: #77dd77;
-    --colorAmarillo: #fdfd96;
-    --colorAzul: #84b6f4;
-    --colorRosa: #fdcae1;
-    --colorBlanco: #ffffff;
-    --colorMorado: #DC14B0;
-
+  --colorRojo: #ff6961;
+  --colorVerde: #77dd77;
+  --colorAmarillo: #fdfd96;
+  --colorAzul: #84b6f4;
+  --colorRosa: #fdcae1;
+  --colorBlanco: #ffffff;
+  --colorMorado: #dc14b0;
 }
-.container-fluid{
-    padding: 0;
-  }
+.container-fluid {
+  padding: 0;
+}
 
 .bg-figma-2 {
   background: #fdcae1;
+  width: 100%;
+  height: 500px;
 }
 
 .bg-figma-3 {
   background: rgba(183, 203, 255, 0.55);
 }
-.row{
-    margin: 0;
+.row {
+  margin: 0;
 }
 .card {
   border: 0;
@@ -57,7 +58,6 @@
   background-color: #dc14b0;
 }
 
-
 .logo {
   position: relative;
   width: 28.57px;
@@ -66,7 +66,7 @@
   bottom: 95%;
 }
 .nav-text {
-  font-family: 'Comfortaa';
+  font-family: "Comfortaa";
   font-style: normal;
   font-weight: bold;
   font-size: 10px;
@@ -74,50 +74,61 @@
 }
 .btn-regresar {
   position: absolute;
-  left: 25%;
-  top: 35%;
-  width: 70px;
-  height: 24px;
-  text-align: center;
+  left: 12%;
+  top: 25%;
+  width: 337px;
+  height: 112px;
   background: #fdfd96;
   border: 1px solid #000000;
   box-sizing: border-box;
-  filter: blur(0.5px);
   border-radius: 20px;
-  font-family: Pacifico;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 12px;
+  z-index: 100;
+}
+
+.regresar{
+  position: absolute;
   display: flex;
   align-items: center;
   text-align: center;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  top:5%;
+  left: 15%;
   color: #000000;
-  -webkit-filter: blur(0.5px);
 }
 
 .btn-siguiente {
   position: absolute;
-  left: 25%;
-  top: 35%;
-  width: 70px;
-  height: 24px;
+  right: -35%;
+  top: 25%;
+  width: 335px;
+  height: 112px;
   text-align: center;
   background: #77dd77;
   border: 1px solid #000000;
   box-sizing: border-box;
-  filter: blur(0.5px);
   border-radius: 20px;
-  -webkit-filter: blur(0.5px);
+  z-index: 100;
+}
+
+.siguiente{
+  position: absolute;
+  width: 244px;
+  height: 112px;
+  left:15%;
+  top: -5%;
+  
   font-family: Pacifico;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 64px;
+  line-height: 112px;
   display: flex;
   align-items: center;
   text-align: center;
-
+  
   color: #000000;
 }
 .brazo {
@@ -129,10 +140,11 @@
 
 .peluche {
   position: absolute;
-  width: 67px;
-  height: 69px;
-  left: 20%;
-  bottom: 10%;
+  width: 300px;
+  height: 410px;
+  left: 10%;
+  bottom: 15%;
+  z-index: 100;
 }
 
 .colores {
@@ -140,17 +152,53 @@
   width: 48px;
   height: 48px;
   left: 70%;
-
 }
 
-.text-logo{
-    font-family: var(--fuenteNavbar);
-    font-size: 18px;
-    -webkit-text-stroke: 1px white;
-    letter-spacing: 4.5px;
-    color:#DC14B0;
-    text-align: center;
+.text-logo {
+  font-family: var(--fuenteNavbar);
+  font-size: 18px;
+  -webkit-text-stroke: 1px white;
+  letter-spacing: 4.5px;
+  color: #dc14b0;
+  text-align: center;
 }
-.card-body{
-    padding-top: 0;
+.card-body {
+  padding-top: 0;
 }
+.text-instruction {
+  position: absolute;
+  top:25%;
+  width: 100%;
+  height: 237px;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+
+  text-align: center;
+  color: #000000;
+  z-index: 100;
+}
+.navbar-total{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 60px;
+  background-color: var(--colorMorado);
+}
+
+.nav-link{
+  margin-top: 30px;
+  font-size: var(--tamTexto);
+  color: white;
+}
+
+.nav-inicio{
+  font-family: var(--fuenteNavbar);
+  font-size: var(--tamSubtitulo);
+  -webkit-text-stroke: 2px var(--colorMorado);
+  letter-spacing: 4.5px;
+}
+.bg-gris{
+  height: 200px;
+  }
