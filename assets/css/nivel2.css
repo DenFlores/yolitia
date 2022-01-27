@@ -32,6 +32,7 @@
 
 .bg-figma-3 {
   background: rgba(183, 203, 255, 0.55);
+
 }
 .row{
     margin: 0;
@@ -74,15 +75,14 @@
 }
 .btn-regresar {
   position: absolute;
-  left: 25%;
-  top: 35%;
+  left: 20%;
+  top: 100%;
   width: 70px;
   height: 24px;
   text-align: center;
   background: #fdfd96;
   border: 1px solid #000000;
   box-sizing: border-box;
-  filter: blur(0.5px);
   border-radius: 20px;
   font-family: Pacifico;
   font-style: normal;
@@ -92,23 +92,21 @@
   display: flex;
   align-items: center;
   text-align: center;
+  z-index: 100;
   color: #000000;
-  -webkit-filter: blur(0.5px);
 }
 
 .btn-siguiente {
   position: absolute;
-  left: 25%;
-  top: 35%;
+  left: 85%;
+  top: 100%;
   width: 70px;
   height: 24px;
   text-align: center;
   background: #77dd77;
   border: 1px solid #000000;
   box-sizing: border-box;
-  filter: blur(0.5px);
   border-radius: 20px;
-  -webkit-filter: blur(0.5px);
   font-family: Pacifico;
   font-style: normal;
   font-weight: normal;
@@ -117,7 +115,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-
+  z-index: 100;
   color: #000000;
 }
 .brazo {
@@ -129,18 +127,19 @@
 }
 
 .peluche {
-  position: absolute;
-  width: 85px;
-  height: 149px;
-  left: 20%;
-  bottom: 10%;
+  position:absolute;
+  width: 180px;
+  height: 210px;
+  left: 35%;
+  top: 45%;
+  z-index: 100;
 }
 
 .colores {
   position: relative;
-  width: 80px;
-  height: 68px;
-  left: 65%;
+  width: 180px;
+  height: 170px;
+  left: 5%;
   top:15%
 }
 
@@ -155,4 +154,15 @@
 .card-body{
     padding-top: 0;
     padding-bottom: 10%;
+}
+.text-instruction {
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
 }
