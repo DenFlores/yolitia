@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="/assets/css/producto-individual..css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,43 +17,51 @@
     <title>Productos</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-total" >
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      style="z-index: 5;"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-total text-white">
+      <button
+        class="navbar-toggler mr-5"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto">
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5" href="#">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5" href="#">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5 nav-inicio" href="#">Unique</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5" href="#">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5" href="#">Registrarse</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-    <div class="contenido-principal">
-      <div class="contenido-imagen1">
-        <img src="/assets/img/Rectangle 17.png" alt="gorro">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <a class="nav-link" href="#">Nosotros</a>
+          <a class="nav-link" href="#historia">Contacto</a>
+          <a class="nav-link nav-inicio" href="#personajes">Unique</a>
+          <a class="nav-link" href="#frutas">Productos</a>
+          <a class="nav-link" href="#">Registrarse</a>
+          
+        </ul>
+      </div>
+    </nav>
+    <div class="contenido-principal mt-5">
+      <div class="contenido-imagenes">
+        <div class="imagen1">
+         <!-- <img src="assets/img/rectangle17.png" alt="...">-->
+        
+        </div>
+        <div class="imagenes2">
+          <div class="img1">
+           
+          </div>
+
+          <div class="img2">
+            
+
+          </div>
+          <div class="img3">
+            
+          </div>
+         
+
+        </div>
 
        
 
@@ -56,10 +69,22 @@
 
       <div class="contenido-texto">
       
-        <h4 class="nombre-producto">Gorro de oso</h4>
-      <div class="texto">
+        <h4>Gorro de oso</h4>
+      
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos hic, perferendis commodi maiores, quisquam illum blanditiis cum velit consequatur ipsum veritatis porro explicabo ducimus! Suscipit debitis itaque laborum explicabo.</p>
-      </div>
+    
+      
+        <form class="formulario">
+          <label for="text">Cantidad</label>
+          <input class="cantidad" id="texto" type="text" name="text"/>
+
+          <input class="cant" type="radio"/>
+          <input class="cant" type="radio"/>
+
+         <p>$499.00 MXM</p>
+        </form>
+        <input class="boton-confirmar" type="button" value="Agregar al carrito"/>
+
 
       </div>
 

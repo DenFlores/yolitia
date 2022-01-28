@@ -4,7 +4,6 @@ body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 :root{
     --fuenteTitulos: 'Lobster', cursive;
     --fuenteSubtitulos: 'Lobster', cursive;
@@ -12,10 +11,10 @@ body{
     --fuenteAnimada: 'Butterfly Kids', cursive;
     --fuenteNavbar: 'Pacifico', cursive;
 
-    --tamTitulo: 64px;
-    --tamSubtitulo: 54px;
-    --tamTexto: 30px;
-    --tamAnimada: 34px;
+    --tamTitulo: 4rem;
+    --tamSubtitulo: 3rem;
+    --tamTexto: 1.5rem;
+    --tamAnimada: 2rem;
 
     --colorRojo: #ff6961;
     --colorVerde: #77dd77;
@@ -27,57 +26,172 @@ body{
 
 }
 
+.navbar-total{
+    background-color: var(--colorMorado);
+}
+
+.nav-link{
+    font-size: var(--tamTexto);
+    color: white;
+    margin: 0 30px;
+}
+
+.nav-inicio{
+    font-family: var(--fuenteNavbar);
+    font-size: var(--tamSubtitulo);
+    /* -webkit-text-stroke: 2px var(--colorMorado); */
+    letter-spacing: 4.5px;
+}
+
 
 .contenido-principal{
+    display: flex;
     margin: 0 auto;
-    width: 1400px;
-    height: 650px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 70vh;
     background: #FDCAE1;
-border: 1px dashed #FF6961;
-border-radius: 10px;
+    border: 1px dashed #FF6961;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.contenido-imagen1{
-    position: relative;
-    width: 700px;
-    height:500px ;
-    float: left;
-    top: 75px;
+.contenido-imagenes{
+    background-color:#FDCAE1;
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+
+    align-items:center;
+    
+    
 
 }
-.contenido-imagen1, img{
-    position: relative;
-    background-color: #b8145e;
-    width: 420px;
-    height: 350px;
-    margin-left: 50px;
+.imagen1{
+
+    background-image: url(../img/rectangle17.png);
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    background-color: #FDCAE1;
+    background-size: contain;
+    width: 80%;
+    height: 100%;
+   
     
     
 }
+
+.imagenes2{
+    background-color: #FDCAE1;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 50%;
+
+}
+.img1{
+    background-repeat: no-repeat;
+    background-color: rgb(253, 202, 225);
+    background-image: url(../img/rectangle17.png);
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+
+}
+.img2{
+    background-repeat: no-repeat;
+    background-color: rgb(253, 202, 225);
+    background-image: url(../img/rectangle17.png);
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+}
+.img3{
+    background-repeat: no-repeat;
+    background-color: rgb(253, 202, 225);
+    background-image: url(../img/rectangle17.png);
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+}
+
 
 .contenido-texto{
-    position: relative;
     background-color: rgb(255, 255, 255);
-    margin-left: 100px;
-    float: left;
-    width: 700px;
-    height: 500px;
-    top: 75px;
-    border-radius: 10px;
+    width: 50%;
+    height: 95%;
+    border-radius: 20px;
+    padding: 20px;
+    
+
+}
+.contenido-texto p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+
+}
+
+
+h4{
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 70px;
+    align-self: flex-start;
+    
+    
+
+}
+
+.formulario{
+    display: flex;
+    
+    justify-content: flex-start;
+    margin-top: 50px;
+    align-items: center;
+}
+.formulario label{
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.formulario p{
+    margin-left: 250px;
+    margin-top: 5px;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.cantidad{
+    
+    font-size: 'Comfortaa', cursive;
+    margin-right: 25px;
+    
+    width: 45px;
+    height: 25px;
+    background: #C4C4C4;
+    border: none;
+    border-radius: 5px;  
+    align-items: center;    
+}
+.cant{
+    margin-right: 5px;
     
 }
 
-.nombre-producto{
-    font-family: 'Butterfly Kids', cursive;
-    text-align: center;
-    font-size: 80px
+.boton-confirmar{
+    
+    margin-left: 300px;
+    margin-top: 15px;
+    width: 250px;
+    height: 60px;
+    background: #77DD77;
+    border: none;
+    border-radius: 10px;
 }
-.texto{
-    position: relative;
-    width: 650px;
-    height: 200px;
-    font-family: 'Comfortaa', cursive;
-    margin: auto;
-    text-align: justify;
-    font-size: 25px;
+.boton-confirmar, label{
+    font-family: 'Comfortaa',cursive;
+    font-weight: bold;
 }
