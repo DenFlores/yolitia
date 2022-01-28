@@ -64,6 +64,7 @@ body{
     background-repeat: no-repeat;
     width: 50%;
     height: 100%;
+    margin: 50px;
 
     align-items:center;
     
@@ -72,12 +73,12 @@ body{
 }
 .imagen1{
 
-    background-image: url(../img/rectangle17.png);
+    background-image: url(../img/Rectangle\ 17.png);
     background-repeat: no-repeat;
     margin-left: 25%;
     background-color: #FDCAE1;
     background-size: contain;
-    width: 80%;
+    width: 70%;
     height: 200%;
    
     
@@ -89,16 +90,16 @@ body{
     display: flex;
     margin-top: 20px;
     margin-bottom: 50px;
-    width: 80%;
+    width: 100%;
     height: 80%;
 
 }
 .img1{
     background-repeat: no-repeat;
     background-color: rgb(253, 253, 253);
-    background-image: url(../img/rectangle17.png);
+    background-image: url(../img/gorrito2.jpg.webp);
     background-size: contain;
-    width: 20%;
+    width: 70%;
     height: 100%;
     margin: 20px;
 
@@ -106,18 +107,18 @@ body{
 .img2{
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
-    background-image: url(../img/rectangle17.png);
+    background-image: url(../img/Rectangle\ 17.png);
     background-size: contain;
-    width: 20%;
+    width: 70%;
     height: 100%;
     margin: 20px;
 }
 .img3{
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
-    background-image: url(../img/rectangle17.png);
+    background-image: url(../img/gorritos.jpg);
     background-size: contain;
-    width: 20%;
+    width: 70%;
     height: 100%;
     margin: 20px;
 }
@@ -129,6 +130,7 @@ body{
     height: 95%;
     border-radius: 20px;
     padding: 20px;
+    margin: 50px;
     
 
 }
@@ -180,6 +182,9 @@ h4{
 }
 .cant{
     margin-right: 5px;
+    background-color: #b3120a;
+    width: 15px;
+    height: 30px;
     
 }
 
