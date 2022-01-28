@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --fuenteTitulos: 'Lobster', cursive;
+    --fuenteSubtitulos: 'Lobster', cursive;
+    --fuenteTexto: 'Comfortaa', cursive;
+    --fuenteAnimada: 'Butterfly Kids', cursive;
+    --fuenteNavbar: 'Pacifico', cursive;
+
+    --tamTitulo: 4rem;
+    --tamSubtitulo: 3rem;
+    --tamTexto: 1.5rem;
+    --tamAnimada: 2rem;
+
+    --colorRojo: #ff6961;
+    --colorVerde: #77dd77;
+    --colorAmarillo: #fdfd96;
+    --colorAzul: #84b6f4;
+    --colorRosa: #fdcae1;
+    --colorBlanco: #ffffff;
+    --colorMorado: #DC14B0;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+  }
+/*Navbar*/
+.navbar-total{
+    background-color: var(--colorMorado);
+}
+
+.nav-link{
+    font-size: var(--tamTexto);
+    color: white;
+    margin: 0 30px;
+}
+
+.nav-inicio{
+    font-family: var(--fuenteNavbar);
+    font-size: var(--tamSubtitulo);
+    /* -webkit-text-stroke: 2px var(--colorMorado); */
+    letter-spacing: 4.5px;
+}
+/*Banner sobre nosotros*/
+  .nosotros {
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .nosotros img {
+    width: 80%;
+  }
+  .texto-encima {
+    position: absolute;
+    top: 28px;
+    left: 550px;
+    font-family:var(--fuenteTitulos);
+    font-size: 50px;
+    color: var(--colorRojo);
+    
+  }
+
+  .centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.nosotros .texto-encima h2{
+   text-align: center;
+   font-family: var(--fuenteTitulos);
+}
+.nosotros .centrado p{
+    font-family: var(--tamTexto);
+    font-size: 20px;
+}
+
+
+ 
+ 
+ /*Cards Mision y Vision*/ 
+
+.mv {
+    display: flex;
+    width: 90%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+
+
+  }
+.card-body{
+    background-color: white;
+    margin: 0 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    font-size: 20px;
+    padding: 8px;
+    height: 200px;
+    width: 583px;
+    font-family:var(--tamTexto) ;
+  }
+  .card-title{
+      font-family: var(--fuenteTitulos);
+      font-size: 26px;
+  }
+
+  /*titulo equipo de trabajo*/
+.tituloequipo{
+    background-color: var(--colorVerde);
+    border-radius: 10px;
+    text-align: center;
+    margin: 70px; 
+}
+.tituloequipo h3{
+    padding: 5px 15px; ;
+    font-family: var(--fuenteTitulos);
+    font-size: 80px;  
+}
+
+/*Cards que giran*/
+.equipo{
+    margin-top:60px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.front,
+    .back,
+    .cards {
+      width:300px;
+      height: 400px;
+    
+}
+.cards{
+    margin: 60px;
+}
+
+    .front,
+    .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .front {
+      z-index: 2;
+      transition: all 0.3s linear;
+      border-radius: 10px;
+    }
+
+    .back {
+      transition: all 0.3s linear;
+      transform: rotateY(180deg);
+      border-radius: 10px;
+      font-family: var(--tamTexto); 
+      text-align: center;     
+    }
+
+    .cards {
+      position: relative;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+    }
+
+ .cards:hover .front {
+      transform: rotateY(180deg);
+    }
+
+ .cards:hover .back {
+      transform: rotateY(360deg);
+      background: rgb(253, 251, 253);
+      
+    } */
+
+.cards img{
+    background: rgb(239, 246, 232);
+    position: static;
+   
+}
+.icon{
+    background: white;
+    width: 50px;
+    position: absolute;
+    top:340px;
+    left: 20px;
+}
+.footer img{
+    position: absolute;
+    width: 1348px;
+    height: 180px;
+ 
+}
