@@ -80,9 +80,6 @@
 
 .regresar{
   position: absolute;
-  display: flex;
-  align-items: center;
-  text-align: center;
   font-family: Pacifico;
   font-style: normal;
   font-weight: normal;
@@ -112,16 +109,11 @@
   height: 112px;
   left:15%;
   top: -5%;
-  
   font-family: Pacifico;
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
   line-height: 112px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  
   color: #000000;
 }
 
@@ -200,4 +192,28 @@
 }
 .bg-gris{
 height: 200px;
+}
+.color{
+  height: 100px;
+}
+.c1{
+  background: #84B6F4;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c3{
+  height: 130px;
+  background: #FF6961;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
