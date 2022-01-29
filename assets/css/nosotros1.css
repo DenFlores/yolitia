@@ -56,8 +56,8 @@ body {
   }
   .texto-encima {
     position: absolute;
-    top: 28px;
-    left: 550px;
+    top: 31px;
+    left: 530px;
     font-family:var(--fuenteTitulos);
     font-size: 50px;
     color: var(--colorRojo);
@@ -70,18 +70,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-.nosotros .texto-encima h2{
-   text-align: center;
-   font-family: var(--fuenteTitulos);
-}
+
 .nosotros .centrado p{
     font-family: var(--tamTexto);
-    font-size: 20px;
+    font-size: 22px;
+    text-align: center;
 }
 
-
- 
- 
  /*Cards Mision y Vision*/ 
 
 .mv {
@@ -101,15 +96,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    font-size: 20px;
+    font-size: 23px;
     padding: 8px;
-    height: 200px;
+    height: 250px;
     width: 583px;
     font-family:var(--tamTexto) ;
   }
   .card-title{
       font-family: var(--fuenteTitulos);
-      font-size: 26px;
+      font-size: 40px;
   }
 
   /*titulo equipo de trabajo*/
@@ -117,20 +112,19 @@ body {
     background-color: var(--colorVerde);
     border-radius: 10px;
     text-align: center;
-    margin: 70px; 
+    margin: 120px; 
 }
 .tituloequipo h3{
-    padding: 5px 15px; ;
     font-family: var(--fuenteTitulos);
-    font-size: 80px;  
+    font-size: 80px; 
 }
 
 /*Cards que giran*/
 .equipo{
-    margin-top:60px;
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 .front,
     .back,
@@ -147,8 +141,9 @@ body {
     .back {
       backface-visibility: hidden;
       position: absolute;
-      top: 0;
+      top:0;
       left: 0;
+
     }
 
     .front {
@@ -160,9 +155,7 @@ body {
     .back {
       transition: all 0.3s linear;
       transform: rotateY(180deg);
-      border-radius: 10px;
-      font-family: var(--tamTexto); 
-      text-align: center;     
+      border-radius: 10px;   
     }
 
     .cards {
@@ -177,25 +170,46 @@ body {
 
  .cards:hover .back {
       transform: rotateY(360deg);
-      background: rgb(253, 251, 253);
-      
+      text-align: center;   
     } */
 
 .cards img{
-    background: rgb(239, 246, 232);
+    background: rgb(255, 255, 255);
     position: static;
-   
 }
+
 .icon{
-    background: white;
-    width: 50px;
-    position: absolute;
-    top:340px;
+    width:50px;
     left: 20px;
-}
+    z-index: 10;
+    display: flex;
+    float: left;
+    position: relative;
+    top: 300px;
+  }
+
 .footer img{
-    position: absolute;
     width: 1348px;
     height: 180px;
  
+}
+.cards .front h2{
+  top: 28px;
+  left: 550px;
+  font-family:var(--fuenteTexto);
+  font-size: 20px;
+  color: white;
+  z-index: 10px;
+}
+.cards .back-text h2{
+   font-family:var(--fuenteTexto);
+  font-size: 25px;
+  color: white;
+  text-align: justify;
+}
+.cards .back-text p{
+  font-family:var(--fuenteTexto);
+ font-size: 18px;
+ color: white;
+ text-align: center;
 }
