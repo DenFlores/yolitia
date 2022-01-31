@@ -8,10 +8,10 @@
     --fuenteAnimada: 'Butterfly Kids', cursive;
     --fuenteNavbar: 'Pacifico', cursive;
 
-    --tamTitulo: 64px;
-    --tamSubtitulo: 54px;
-    --tamTexto: 30px;
-    --tamAnimada: 34px;
+    --tamTitulo: 4rem;
+    --tamSubtitulo: 3rem;
+    --tamTexto: 1.5rem;
+    --tamAnimada: 2rem;
 
     --colorRojo: #ff6961;
     --colorVerde: #77dd77;
@@ -22,33 +22,86 @@
     --colorMorado: #DC14B0;
 
 }
-/----------------------------------- Navbar --------------------------------/
+
+body {
+    background-color: var(--colorRosa);
+    
+}
+
+/*Navbar*/
 
 .navbar-total{
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    height: 60px;
     background-color: var(--colorMorado);
 }
 
 .nav-link{
-    margin-top: 30px;
     font-size: var(--tamTexto);
     color: white;
+    margin: 0 30px;
 }
 
 .nav-inicio{
     font-family: var(--fuenteNavbar);
     font-size: var(--tamSubtitulo);
-    -webkit-text-stroke: 2px var(--colorMorado);
+    /* -webkit-text-stroke: 2px var(--colorMorado); */
     letter-spacing: 4.5px;
 }
 
-body {
-    background-color: #FDCAE1;
-    
-}
+/**/
+
 .precio {
     background-color: #77dd77;
+    padding: 8px 40px;
+    font-size: 20px;
+    
+}
+.seccion {
+    height: 230px;
+    background-color: white;
+    margin-bottom: 20px;
+    font-family: var(--fuenteTexto);
+    padding: 1rem;
+}
+
+.fondoimg {
+    background-color: var(--colorRosa);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: var(--fuenteTexto);
+    font-size: 36px;
+}
+.incantidad {
+    margin-left: 1rem; 
+    width: 40px; 
+    background-color: #d3d3d3;
+}
+.bagregar {
+    background-color: var(--colorRojo);
+    border-color: var(--colorRojo);
+    
+    margin-left: 1rem;
+}
+.beliminar {
+    background-color: var(--colorVerde);
+    border-color: var(--colorVerde);
+    margin-left: 0.5rem;
+}
+.total {
+    height: 450px;
+    padding: 1rem;
+    font-family: var(--fuenteTexto);
+    width: 30%;
+}
+.linea {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+}
+.bpagar {
+    background-color: var(--colorAzul);
 }

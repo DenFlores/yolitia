@@ -14,90 +14,96 @@
     <title>Carrito</title>
   </head>
   <body>
-      <!--------------- Navbar  ---------->
-<!--<nav class="navbar navbar-expand-lg navbar-total">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      style="z-index: 5;">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!--------------- Navbar  ----------->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-total text-white">
+      <button
+        class="navbar-toggler mr-5"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto">
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5" href="#">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5" href="#">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5 nav-inicio" href="#">Unique</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5" href="#">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ml-5 mr-5" href="#">Registrarse</a>
-        </li>
-      </ul>
-    </div>
-</nav>-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <a class="nav-link" href="#">Nosotros</a>
+          <a class="nav-link" href="#historia">Contacto</a>
+          <a class="nav-link nav-inicio" href="#personajes">Unique</a>
+          <a class="nav-link" href="#frutas">Productos</a>
+          <a class="nav-link" href="#">Registrarse</a>
+          
+        </ul>
+      </div>
+    </nav>
   <!----------Carrito---------->
-  <div class="" > 
-    <div class="d-flex m">
+<div class="mt-5 mx-5" > 
+    <div class="d-flex ">
         <!--Productos-->
-        
         <div class="container mr-5">
-            <div class="row bg-white mb-5 rounded ">
-                <div class="col align-self-center "> <!--imagen del producto-->
-                    <div class="m-3  rounded" style="background-color: #FDCAE1;">
+            <div class="row rounded seccion ">
+                <div class="col" > <!--imagen del producto-->
+                    <div class=" fondoimg   rounded" >
                         <img src="assets/img/carrito/gorro_oso.png" alt="">
                     </div>
                 </div>
-                <div class="col-6 "> <!--descripción y cantidad-->
-                    <h5>Producto 1</h5>
-                    <p>Descripción:</p>
-                    <p>Cantidad: <span>1</span></p>
+                <div class="col-6 d-flex align-items-start flex-column mb-3"> <!--descripción y cantidad-->
+                    <p class="titulo  ">Producto 1</p>
+                    <p class="">Descripción:</p>
+                    <div class="d-flex mt-auto" >
+                        <p>Cantidad:</p>
+                        <input type="number " class="incantidad">
+                        <input class="bagregar rounded-circle" type="button" value="+"> 
+                        <input class="beliminar rounded-circle" type="button" value="-"> 
+                    </div>
+                    
                 </div>
                 <div class="col d-flex align-items-end justify-content-end "><!--Precio-->
-                    <p class="precio px-5 py-1 rounded">$499.99</p>
+                    <p class="precio rounded">$499.99</p>
                 </div>
             </div>   
-            <div class="row bg-white mb-5 rounded">
-                <div class="col align-self-center">          <!--imagen del producto-->
-                    <div class="m-3  rounded" style="background-color: #FDCAE1;">
+            <div class="row rounded seccion ">
+                <div class="col">          <!--imagen del producto-->
+                    <div class="fondoimg  rounded" >
                         <img src="assets/img/carrito/llavero_ping.png" alt="">
                     </div>
                 </div>
-                <div class="col-6"> <!--descripción y cantidad-->
-                    <h5>Producto 1</h5>
+                <div class="col-6 d-flex align-items-start flex-column mb-3" > <!--descripción y cantidad-->
+                    <p class="titulo">Producto 1</p>
                     <p>Descripción:</p>
-                    <p>Cantidad: <span>1</span></p>
+                    <div class="d-flex mt-auto" >
+                        <p>Cantidad: </p>
+                        <input type="number" class="incantidad">
+                        <input class="bagregar rounded-circle" type="button" value="+"> 
+                        <input class="beliminar rounded-circle" type="button" value="-"> 
+                    </div>
                 </div>
                 <div class="col d-flex align-items-end justify-content-end"><!--Precio-->
-                    <p class="precio px-5 py-1 rounded">$499.99</p>
+                    <p class="precio rounded">$499.99</p>
                 </div>
             </div>   
 
-            <div class="row bg-white mb-5 rounded">
-                <div class="col align-self-center">          <!--imagen del producto-->
-                    <div class="m-3  rounded" style="background-color: #FDCAE1;">
-                        <img src="assets/img/carrito/pantunflas.png" alt="">
+            <div class="row rounded seccion ">
+                <div class="col" >          <!--imagen del producto-->
+                    <div class="fondoimg  rounded"  >
+                        <img src="assets/img/carrito/pantunflas.png" alt="" >
                     </div>
                 </div>
-                <div class="col-6"> <!--descripción y cantidad-->
-                    <h5>Producto 1</h5>
+                <div class="col-6 d-flex align-items-start flex-column mb-3"> <!--descripción y cantidad-->
+                    <p class="titulo">Producto 1</p>
                     <p>Descripción:</p>
-                    <p>Cantidad: <span>1</span></p>
+                    <div class="d-flex mt-auto" >
+                        <p>Cantidad: </p>
+                        <input type="number" class="incantidad">
+                        <input class="bagregar rounded-circle" type="button" value="+"> 
+                        <input class="beliminar rounded-circle" type="button" value="-"> 
+                    </div>
                 </div>
                 <div class="col d-flex align-items-end justify-content-end"><!--Precio-->
-                    <p class="precio px-5 py-1 rounded">$499.99</p>
+                    <p class="precio rounded">$499.99</p>
                 </div>
             </div>   
                  
@@ -106,17 +112,24 @@
         
         
         <!--Total-->
-        <div class="bg-white"> 
-            <h5>Total</h5>
+        <div class="bg-white total rounded d-flex align-items-start flex-column mb-3"> 
+            <p class="titulo">Total</p>
+            <div class="linea"></div>
             <p>Producto 1</p>
             <p>Producto 2</p>
             <p>Producto 3</p>
 
             <p>Envío</p>
             <p>Total</p>
-            <div class="d-flex">
-                <img src="assets/img/carrito/carrito.png" alt="">
-                <button class="bg-#77dd77">Pagar</button>
+
+            <div class="d-flex mt-auto">
+                <div class="w-50">
+                    <img class="w-100" src="assets/img/carrito/carrito.png" alt="">
+                </div>
+                <div class="w-50">
+                    <input class="w-100 h-100 bpagar rounded" type="button" onclick="alert('Gracias por tu compra!')" value="Pagar"> 
+                </div>
+                                              
             </div>
         </div>
     </div>
