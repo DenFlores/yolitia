@@ -24,6 +24,7 @@
 .nav-bg-figma {
   background-color: #dc14b0;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -77,6 +78,16 @@
   border-radius: 26px;
 }
 
+.move-palanca{
+  position: relative;
+  top:-120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: center bottom; 
+  transform: rotate(0deg);
+}
+
 .btn-left {
   position: absolute;
   width: 94px;
@@ -102,9 +113,8 @@
 }
 
 .ball {
-  position: absolute;
-  width: 141px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   left: 35%;
   bottom: 0%;
   border-radius: 50%;
@@ -117,9 +127,9 @@
 }
 
 .tank {
-  position: relative;
-  left: 45%;
-  bottom: 10%;
+  width: 50px;
+  height: 120px;
+  background-color: cadetblue;
 }
 
 .tank .middle {
@@ -150,9 +160,9 @@
 .ovalo {
   position: relative;
   width: 130px;
-  height: 44px;
+  height: 80px;
   left: 35%;
-  top: 140%;
+  top: -220%;
   border-radius: 50%;
   background: #c4c4c4;
   -webkit-border-radius: 50%;
