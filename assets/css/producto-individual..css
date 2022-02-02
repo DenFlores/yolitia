@@ -72,13 +72,12 @@ body{
 
 }
 .imagen1{
-
-    background-image: url(../img/Rectangle\ 17.png);
+    background-position: center;
+    background-image: url(../img/gorrito1.jpg.png);
     background-repeat: no-repeat;
-    margin-left: 25%;
     background-color: #FDCAE1;
     background-size: contain;
-    width: 70%;
+    width: 100%;
     height: 200%;
    
     
@@ -97,7 +96,7 @@ body{
 .img1{
     background-repeat: no-repeat;
     background-color: rgb(253, 253, 253);
-    background-image: url(../img/gorrito2.jpg.webp);
+    background-image: url(../img/gorro.png);
     background-size: contain;
     width: 70%;
     height: 100%;
@@ -107,7 +106,7 @@ body{
 .img2{
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
-    background-image: url(../img/Rectangle\ 17.png);
+    background-image: url(../img/gorrito1.jpg.png);
     background-size: contain;
     width: 70%;
     height: 100%;
@@ -116,7 +115,7 @@ body{
 .img3{
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
-    background-image: url(../img/gorritos.jpg);
+    background-image: url(../img/gorrito3.png);
     background-size: contain;
     width: 70%;
     height: 100%;
@@ -150,50 +149,68 @@ h4{
 
 }
 
-.formulario{
+
+.cantidades{
     display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
     
-    justify-content: flex-start;
-    margin-top: 50px;
-    align-items: center;
 }
-.formulario label{
-    margin-right: 5px;
-    margin-top: 3px;
-}
-.formulario p{
-    margin-left: 250px;
-    margin-top: 5px;
-    font-family: 'Comfortaa', cursive;
-
+.cantidades p{
+    margin-top: 6px;
 }
 
-.cantidad{
-    
-    font-size: 'Comfortaa', cursive;
-    margin-right: 25px;
-    
-    width: 45px;
+.más{
+    border-radius: 50px;
+    font-weight:normal;
+    font-size: 15px;
+    border: 0px;
+    width: 30px;
     height: 25px;
-    background: #C4C4C4;
-    border: none;
-    border-radius: 5px;  
-    align-items: center;    
-}
-.cant{
-    margin-right: 5px;
-    background-color: #b3120a;
-    width: 15px;
-    height: 30px;
+    background-color: #77DD77;
+    margin-left: 10px;
+    margin-top: 5px;
+
     
 }
+
+.menos{
+    border-radius: 50px;
+    border: 0;
+    font-weight: normal;
+    font-size: 15px;
+    width: 30px;
+    height: 25px;
+    background-color: #FF6961 ;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+.form-control{
+    border-radius: 5px;
+    width: 40px;
+    height: 35px;
+    margin-left: 10px;
+    background-color: #C4C4C4;
+}
+.pago{
+    margin-left: 110px;
+    margin-top: 3px;
+    height: 28px;
+    border: 0px;
+    background-color: rgb(233, 229, 229);
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    
+}
+
 
 .boton-confirmar{
     
     margin-left: 300px;
     margin-top: 15px;
-    width: 250px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
     background: #77DD77;
     border: none;
     border-radius: 10px;
@@ -201,4 +218,30 @@ h4{
 .boton-confirmar, label{
     font-family: 'Comfortaa',cursive;
     font-weight: bold;
+}
+
+.color{
+    height: 100px;
+}
+
+.c1{
+    background: #84B6F4;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+    transform: rotate(-180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.c3{
+    height: 130px;
+    background: #FF6961;
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
