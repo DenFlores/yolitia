@@ -45,74 +45,71 @@ body {
     letter-spacing: 4.5px;
 }
 /*Banner sobre nosotros*/
-  .nosotros {
+.nosotros {
     margin: 20px;
-    position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-  }
-  .nosotros img {
-    width: 80%;
-  }
-  .texto-encima {
-    position: absolute;
-    top: 31px;
-    left: 530px;
-    font-family:var(--fuenteTitulos);
-    font-size: 50px;
-    color: var(--colorRojo);
-    
+    background-image: url(/assets/img/nosotros/Ventana.png);
+    padding: 25px;
+    max-height: 290px;
+    background-size:cover;
+    background-repeat: no-repeat;
   }
 
-  .centrado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.texto-encima {
+  font-size: 50px;
+    font-family:var(--fuenteTitulos);
+    color: var(--colorRojo);
   }
 
 .nosotros .centrado p{
     font-family: var(--tamTexto);
-    font-size: 22px;
     text-align: center;
+    font-size: 22px;
+    padding: 0;
+    margin: 0%;
+    
 }
 
  /*Cards Mision y Vision*/ 
-
-.mv {
-    display: flex;
-    width: 90%;
-    height: 60vh;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 20px;
-
-
-  }
-.card-body{
+.container{
+  display: flex;
+  justify-content: center;
+}
+ .card-body{
     background-color: white;
-    margin: 0 10px 20px;
+    margin: 0 20px 30px;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     font-size: 23px;
     padding: 8px;
     height: 250px;
-    width: 583px;
+    width: 580px;
     font-family:var(--tamTexto) ;
+    text-align: center;
   }
   .card-title{
       font-family: var(--fuenteTitulos);
       font-size: 40px;
   }
+  .cardn img{
+  width: 600px;
+  padding-left: 10px;
+}
+.cardn{
+  margin:0;
+  padding: 0;
+}
 
   /*titulo equipo de trabajo*/
 .tituloequipo{
     background-color: var(--colorVerde);
     border-radius: 10px;
     text-align: center;
-    margin: 120px; 
+    margin: 30px ; 
+    
 }
 .tituloequipo h3{
     font-family: var(--fuenteTitulos);
@@ -135,35 +132,30 @@ body {
 }
 .cards{
     margin: 60px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
-
-    .front,
+.front,
     .back {
       backface-visibility: hidden;
       position: absolute;
       top:0;
       left: 0;
+}
 
-    }
-
-    .front {
+ .front {
       z-index: 2;
       transition: all 0.3s linear;
       border-radius: 10px;
+      color: beige;
     }
 
-    .back {
+.back {
       transition: all 0.3s linear;
       transform: rotateY(180deg);
       border-radius: 10px;   
     }
-
-    .cards {
-      position: relative;
-      transform-style: preserve-3d;
-      perspective: 1000px;
-    }
-
  .cards:hover .front {
       transform: rotateY(180deg);
     }
@@ -174,42 +166,66 @@ body {
     } */
 
 .cards img{
-    background: rgb(255, 255, 255);
-    position: static;
+    background: #ffffff;
 }
-
 .icon{
     width:50px;
     left: 20px;
     z-index: 10;
-    display: flex;
-    float: left;
     position: relative;
     top: 300px;
   }
-
-.footer img{
-    width: 1348px;
-    height: 180px;
- 
-}
 .cards .front h2{
   top: 28px;
   left: 550px;
+  margin: 10px;
   font-family:var(--fuenteTexto);
-  font-size: 20px;
+  font-size: 22px;
   color: white;
   z-index: 10px;
+}
+.cards .front img{
+  margin:21px auto;
+  border: none;
+  padding:20px;
+ width: 320px;
+  
 }
 .cards .back-text h2{
    font-family:var(--fuenteTexto);
   font-size: 25px;
   color: white;
-  text-align: justify;
-}
+  text-align: center;
+} 
 .cards .back-text p{
   font-family:var(--fuenteTexto);
  font-size: 18px;
  color: white;
  text-align: center;
+}
+/*footer*/
+.color{
+  height: 100px;
+}
+
+.c1{
+  background: #84B6F4;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c3{
+  height: 130px;
+  background: #FF6961;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
