@@ -112,17 +112,18 @@ margin-top: 30px;
 .card-direccion{
     background-color: #DFEDFE;
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .card-correo{
     background-color: #FCC9C6;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     text-align: center;
 }
 
 .card-whats{
     background-color: #B0F2C2;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     border-radius: 16px;
     text-align: center;
 }
@@ -135,12 +136,7 @@ margin-top: 30px;
     align-items: center;
 }
 
-/* .oso-formulario{
-    width: 500px;
-    margin-right: 50%;
-    margin-top: 30px;
- 
-}*/
+
 
 .col-formulario11{
    width: 65%;
@@ -155,3 +151,44 @@ margin-top: 30px;
     width: 100%;
 }
 
+.juntos{
+    display: flex;
+}
+
+.rellenar{
+    flex-grow: 1;
+}
+
+
+.formulario{
+    color: white;
+    background-color: var(--colorRojo);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.color{
+    height: 100px;
+}
+
+.c1{
+    background: #84B6F4;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+    transform: rotate(-180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.c3{
+    height: 130px;
+    background: #FF6961;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
