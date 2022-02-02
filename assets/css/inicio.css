@@ -53,6 +53,24 @@ html{
 }
 
 
+.circulo-carrito{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--colorRojo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    z-index: 5;
+    text-decoration: none;
+}
+
+
 /*----------------------------------- Inicio --------------------------------*/
 
 .container-fluid{
@@ -73,9 +91,15 @@ html{
 .btn-personalizar{
     background-color: var(--colorRojo);
     font-size: var(--tamTexto);
+    transition: 0.5s;
 }
 .btn-personalizar span{
     font-family: var(--fuenteNavbar);
+}
+
+.btn-personalizar:hover{
+    transform: scale(1.05);
+    text-decoration: none;
 }
 
 .img-inicio{
@@ -102,6 +126,11 @@ html{
     background-color: var(--colorRosa);
     border: 3px dashed var(--colorRojo);
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.color-cards:hover{
+ background-color: #fb96c3;
 }
 
 .image-card{
@@ -173,6 +202,11 @@ html{
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    transition: 0.3s;
+}
+
+.producto-principal:hover{
+    transform: scale(1.03);
 }
 
 .cajas-pequeñas{
@@ -194,6 +228,11 @@ html{
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    transition: 0.3s;
+}
+
+.caja-azul:hover{
+    transform: scale(1.03);
 }
 
 .caja-roja{
@@ -206,6 +245,11 @@ html{
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    transition: 0.3s;
+}
+
+.caja-roja:hover{
+    transform: scale(1.03);
 }
 
 .acomodo-dentro-producto{
