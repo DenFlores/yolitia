@@ -25,6 +25,8 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
+
+
 .navbar-total{
     background-color: var(--colorMorado);
 }
@@ -246,4 +248,14 @@ h4{
     height: 130px;
     background: #FF6961;
     transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+@media screen and(min-width: 800px){
+    .contenido-imagenes{
+        width: 100%;
+    }
+    .contenido-texto{
+        width: 100%;
+    }
+    
 }
