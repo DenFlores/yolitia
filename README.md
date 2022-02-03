@@ -4,7 +4,7 @@ Este es el repositorio del proyecto "Yolitia"
 
 ## GitHub pages
 
-- Proximamente
+- https://denflores.github.io/yolitia/
 
 ## Autores ✒️
 

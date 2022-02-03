@@ -1,0 +1,230 @@
+:root {
+  --fuenteTitulos: "Lobster", cursive;
+  --fuenteSubtitulos: "Lobster", cursive;
+  --fuenteTexto: "Comfortaa", cursive;
+  --fuenteAnimada: "Butterfly Kids", cursive;
+  --fuenteNavbar: "Pacifico", cursive;
+  --tamTitulo: 4rem;
+  --tamSubtitulo: 3rem;
+  --tamTexto: 1.5rem;
+  --tamAnimada: 2rem;
+  --colorRojo: #ff6961;
+  --colorVerde: #77dd77;
+  --colorAmarillo: #fdfd96;
+  --colorAzul: #84b6f4;
+  --colorRosa: #fdcae1;
+  --colorBlanco: #ffffff;
+  --colorMorado: #dc14b0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  background-color: #fdcae1;
+  background-image: url("../img/login/osito2.5.png");
+  background-repeat: no-repeat;
+  background-size: 50% 80%;
+  background-position: bottom;
+  background-position-x: calc(90vw - 30vw);
+}
+
+/* ___________________________________ NAVBAR _______________________________________*/
+
+.navbar {
+  height: 10vh;
+}
+
+.navbar-total {
+  background-color: var(--colorMorado);
+}
+.nav-link {
+  font-size: var(--tamTexto);
+  color: white;
+  margin: 0 30px;
+}
+.nav-inicio {
+  font-family: var(--fuenteNavbar);
+  font-size: var(--tamSubtitulo);
+  /* -webkit-text-stroke: 2px var(--colorMorado); */
+  letter-spacing: 4.5px;
+}
+
+/* .circulo-carrito {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--colorRojo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  z-index: 5;
+  text-decoration: none;
+} */
+
+/*__________________________________  FORMULARIO  ______________________________________________*/
+
+.registro {
+  height: 90%;
+}
+
+.form-registro {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px;
+  background-color: #ff6961;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.registro h2 {
+  font-family: "Lobster", cursive;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.form-registro input {
+  width: 80%;
+  margin-bottom: 15px;
+  border-style: none;
+  border-radius: 15px;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.submit-registrarse {
+  background-color: rgb(137, 230, 137);
+}
+
+.form-sesion {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px;
+  background-color: #8fc8f6;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.form-sesion input {
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: none;
+  border-radius: 15px;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.submit-iniciar {
+  background-color: rgb(243, 243, 150);
+  font-weight: bold;
+}
+
+/*------------ _____________________  Footer _______________-------------------*/
+
+/* .mt-5 {
+  height: 8vh;
+}
+
+.color {
+  height: 100%;
+}
+.c1 {
+  background: #84b6f4;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.c1::before {
+  content: "";
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(0deg, #ff362c 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.c3 {
+  height: 60%;
+  background: #ff6961;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+} */
+
+@media screen and (min-width: 470px) {
+  body {
+    /* display: flex; */
+    background-position-x: 22vw;
+    background-position-y: bottom;
+    background-size: 85% 100%;
+  }
+
+  .registro {
+    width: 70%;
+    margin: 20px 20px 0;
+  }
+
+  .form-registro,
+  .form-sesion {
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    background-position-y: center;
+    background-position-x: 40vw;
+    background-size: 60% 118%;
+  }
+
+  .registro h2 {
+    font-size: 1.8rem;
+  }
+
+  .registro {
+    width: 60%;
+    margin: 20px 30px 0;
+  }
+
+  .form-registro .submit-registrarse {
+    width: 40%;
+    align-self: flex-end;
+    margin-right: 40px;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .form-sesion .submit-iniciar {
+    width: 40%;
+    align-self: flex-end;
+    margin-right: 40px;
+    font-size: 1rem;
+  }
+}
