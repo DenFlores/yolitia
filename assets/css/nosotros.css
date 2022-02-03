@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --fuenteTitulos: 'Lobster', cursive;
+    --fuenteSubtitulos: 'Lobster', cursive;
+    --fuenteTexto: 'Comfortaa', cursive;
+    --fuenteAnimada: 'Butterfly Kids', cursive;
+    --fuenteNavbar: 'Pacifico', cursive;
+
+    --tamTitulo: 4rem;
+    --tamSubtitulo: 3rem;
+    --tamTexto: 1.5rem;
+    --tamAnimada: 2rem;
+
+    --colorRojo: #ff6961;
+    --colorVerde: #77dd77;
+    --colorAmarillo: #fdfd96;
+    --colorAzul: #84b6f4;
+    --colorRosa: #fdcae1;
+    --colorBlanco: #ffffff;
+    --colorMorado: #DC14B0;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+  }
+/*Navbar*/
+.navbar-total{
+    background-color: var(--colorMorado);
+}
+
+.nav-link{
+    font-size: var(--tamTexto);
+    color: white;
+    margin: 0 30px;
+}
+
+.nav-inicio{
+    font-family: var(--fuenteNavbar);
+    font-size: var(--tamSubtitulo);
+    /* -webkit-text-stroke: 2px var(--colorMorado); */
+    letter-spacing: 4.5px;
+}
+/*Banner sobre nosotros*/
+.nosotros {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(/assets/img/nosotros/Ventana.png);
+    padding: 25px;
+    max-height: 290px;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+.texto-encima {
+  font-size: 50px;
+    font-family:var(--fuenteTitulos);
+    color: var(--colorRojo);
+  }
+
+.nosotros .centrado p{
+    font-family: var(--tamTexto);
+    text-align: center;
+    font-size: 22px;
+    padding: 0;
+    margin: 0%;
+    
+}
+
+ /*Cards Mision y Vision*/ 
+.container{
+  display: flex;
+  justify-content: center;
+}
+ .card-body{
+    background-color: white;
+    margin: 0 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    font-size: 23px;
+    padding: 8px;
+    height: 250px;
+    width: 580px;
+    font-family:var(--tamTexto) ;
+    text-align: center;
+  }
+  .card-title{
+      font-family: var(--fuenteTitulos);
+      font-size: 40px;
+  }
+  .cardn img{
+  width: 600px;
+  padding-left: 10px;
+}
+.cardn{
+  margin:0;
+  padding: 0;
+}
+
+  /*titulo equipo de trabajo*/
+.tituloequipo{
+    background-color: var(--colorVerde);
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px ; 
+    
+}
+.tituloequipo h3{
+    font-family: var(--fuenteTitulos);
+    font-size: 80px; 
+}
+
+/*Cards que giran*/
+.equipo{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+.front,
+    .back,
+    .cards {
+      width:300px;
+      height: 400px;
+    
+}
+.cards{
+    margin: 60px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.front,
+    .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top:0;
+      left: 0;
+}
+
+ .front {
+      z-index: 2;
+      transition: all 0.3s linear;
+      border-radius: 10px;
+      color: beige;
+    }
+
+.back {
+      transition: all 0.3s linear;
+      transform: rotateY(180deg);
+      border-radius: 10px;   
+    }
+ .cards:hover .front {
+      transform: rotateY(180deg);
+    }
+
+ .cards:hover .back {
+      transform: rotateY(360deg);
+      text-align: center;   
+    } */
+
+.cards img{
+    background: #ffffff;
+}
+.icon{
+    width:50px;
+    left: 20px;
+    z-index: 10;
+    position: relative;
+    top: 300px;
+  }
+.cards .front h2{
+  top: 28px;
+  left: 550px;
+  margin: 10px;
+  font-family:var(--fuenteTexto);
+  font-size: 22px;
+  color: white;
+  z-index: 10px;
+}
+.cards .front img{
+  margin:21px auto;
+  border: none;
+  padding:20px;
+ width: 320px;
+  
+}
+.cards .back-text h2{
+   font-family:var(--fuenteTexto);
+  font-size: 25px;
+  color: white;
+  text-align: center;
+} 
+.cards .back-text p{
+  font-family:var(--fuenteTexto);
+ font-size: 18px;
+ color: white;
+ text-align: center;
+}
+/*footer*/
+.color{
+  height: 100px;
+}
+
+.c1{
+  background: #84B6F4;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c3{
+  height: 130px;
+  background: #FF6961;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
