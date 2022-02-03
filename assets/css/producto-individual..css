@@ -97,7 +97,7 @@ body{
     background-repeat: no-repeat;
     background-color: rgb(253, 253, 253);
     background-image: url(../img/gorro.png);
-    background-size: contain;
+    background-size: cover;
     width: 70%;
     height: 100%;
     margin: 20px;
