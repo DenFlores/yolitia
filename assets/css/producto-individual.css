@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+    --fuenteTitulos: 'Lobster', cursive;
+    --fuenteSubtitulos: 'Lobster', cursive;
+    --fuenteTexto: 'Comfortaa', cursive;
+    --fuenteAnimada: 'Butterfly Kids', cursive;
+    --fuenteNavbar: 'Pacifico', cursive;
+
+    --tamTitulo: 4rem;
+    --tamSubtitulo: 3rem;
+    --tamTexto: 1.5rem;
+    --tamAnimada: 2rem;
+
+    --colorRojo: #ff6961;
+    --colorVerde: #77dd77;
+    --colorAmarillo: #fdfd96;
+    --colorAzul: #84b6f4;
+    --colorRosa: #fdcae1;
+    --colorBlanco: #ffffff;
+    --colorMorado: #DC14B0;
+
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*----------------------------------- Carritp --------------------------------*/
+
+.circulo-carrito{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--colorMorado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.navbar-total{
+    background-color: var(--colorMorado);
+}
+
+.nav-link{
+    font-size: var(--tamTexto);
+    color: white;
+    margin: 0 30px;
+}
+
+.nav-inicio{
+    font-family: var(--fuenteNavbar);
+    font-size: var(--tamSubtitulo);
+    /* -webkit-text-stroke: 2px var(--colorMorado); */
+    letter-spacing: 4.5px;
+}
+
+
+.contenido-principal{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 70vh;
+    background: #FDCAE1;
+    border: 1px dashed #FF6961;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contenido-imagenes{
+    background-color:#FDCAE1;
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    margin: 50px;
+
+    align-items:center;
+    
+    
+
+}
+.imagen1{
+    background-position: center;
+    background-image: url(../img/gorrito1.jpg.png);
+    background-repeat: no-repeat;
+    background-color: #FDCAE1;
+    background-size: contain;
+    width: 100%;
+    height: 200%;
+   
+    
+    
+}
+
+.imagenes2{
+    background-color: #FDCAE1;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 80%;
+
+}
+.img1{
+    background-repeat: no-repeat;
+    background-color: rgb(253, 253, 253);
+    background-image: url(../img/gorro.png);
+    background-size: cover;
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+
+}
+.img2{
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../img/gorrito1.jpg.png);
+    background-size: contain;
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+}
+.img3{
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../img/gorrito3.png);
+    background-size: contain;
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+}
+
+
+.contenido-texto{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 95%;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+    
+
+}
+.contenido-texto p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+
+}
+
+
+h4{
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 70px;
+    align-self: flex-start;
+    
+    
+
+}
+
+
+.cantidades{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+.cantidades p{
+    margin-top: 6px;
+}
+
+.más{
+    border-radius: 50px;
+    font-weight:normal;
+    font-size: 15px;
+    border: 0px;
+    width: 30px;
+    height: 25px;
+    background-color: #77DD77;
+    margin-left: 10px;
+    margin-top: 5px;
+
+    
+}
+
+.menos{
+    border-radius: 50px;
+    border: 0;
+    font-weight: normal;
+    font-size: 15px;
+    width: 30px;
+    height: 25px;
+    background-color: #FF6961 ;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+.form-control{
+    border-radius: 5px;
+    width: 40px;
+    height: 35px;
+    margin-left: 10px;
+    background-color: #C4C4C4;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+.pago{
+    margin-left: 110px;
+    margin-top: 3px;
+    height: 28px;
+    border: 0px;
+    background-color: rgb(233, 229, 229);
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    
+}
+
+
+.boton-confirmar{
+    
+    margin-left: 300px;
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    background: #77DD77;
+    border: none;
+    border-radius: 10px;
+}
+.boton-confirmar, label{
+    font-family: 'Comfortaa',cursive;
+    font-weight: bold;
+}
+
+.color{
+    height: 100px;
+}
+
+.c1{
+    background: #84B6F4;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+    transform: rotate(-180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.c3{
+    height: 130px;
+    background: #FF6961;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+@media screen and(min-width: 800px){
+    .contenido-imagenes{
+        width: 100%;
+    }
+    .contenido-texto{
+        width: 100%;
+    }
+    
+}

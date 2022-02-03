@@ -28,6 +28,10 @@
     padding: 0;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 html{
     font-family: var(--fuenteTexto);
     font-size: 16px;
@@ -52,6 +56,7 @@ html{
     letter-spacing: 4.5px;
 }
 
+/*----------------------------------- Carritp --------------------------------*/
 
 .circulo-carrito{
     position: fixed;
@@ -60,7 +65,7 @@ html{
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    background-color: var(--colorRojo);
+    background-color: var(--colorMorado);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +79,7 @@ html{
 /*----------------------------------- Inicio --------------------------------*/
 
 .container-fluid{
-    background-image: url(/assets/img/inicio/FondoInicio.png);
+    background-image: url(../img/inicio/FondoInicio.png);
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -198,7 +203,7 @@ html{
     border-radius: 10px;
     padding: 20px;
     background-color: var(--colorRosa);
-    background-image: url(/assets/img/inicio/gorroConejo.png);
+    background-image: url(../img/inicio/gorroConejo.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -218,13 +223,18 @@ html{
     justify-content: space-between;
 }
 
+.cajas-pequeñas a{
+    width: 100%;
+    height: calc(50% - 10px);;
+}
+
 .caja-azul{
     width: 100%;
-    height: calc(50% - 10px);
+    height: 100%;
     border-radius: 10px;
     padding: 20px;
     background-color: var(--colorAzul);
-    background-image: url(/assets/img/inicio/bufandaOso.png);
+    background-image: url(../img/inicio/bufandaOso.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -237,11 +247,11 @@ html{
 
 .caja-roja{
     width: 100%;
-    height: calc(50% - 10px);
+    height: 100%;
     border-radius: 10px;
     padding: 20px;
     background-color: var(--colorRojo);
-    background-image: url(/assets/img/inicio/llaveroGato.png);
+    background-image: url(../img/inicio/llaveroGato.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -366,11 +376,11 @@ html{
 }
 
 .carousel__anterior{
-    left: -40px;
+    left: -30px;
 }
 
 .carousel__siguiente{
-    right: -30px;
+    right: -10px;
 }
 
 
