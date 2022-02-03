@@ -53,7 +53,9 @@ body {
     background-color: #77dd77;
     padding: 8px 40px;
     font-size: 20px;
-    
+    width: 150px;
+    height: 45px;
+    border: none;
 }
 .seccion {
     height: auto;
@@ -79,16 +81,17 @@ body {
     margin-left: 1rem; 
     width: 40px; 
     background-color: #d3d3d3;
+    border: none;
 }
 .bagregar {
     background-color: var(--colorRojo);
-    border-color: var(--colorRojo);
+    border: none;
     
     margin-left: 1rem;
 }
 .beliminar {
     background-color: var(--colorVerde);
-    border-color: var(--colorVerde);
+    border: none;
     margin-left: 0.5rem;
 }
 .total {
