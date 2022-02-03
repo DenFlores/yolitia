@@ -36,6 +36,7 @@
 }
 .row {
   margin: 0;
+  padding: 0;
 }
 .card {
   border: 0;
@@ -192,7 +193,27 @@
   font-size: var(--tamTexto);
   color: white;
 }
+.bton{
+  display: inline-block;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  background-color: transparent;
+  border: 5px solid transparent;
+}
+.carousel-control-prev-icon{
+  background-image: url(../img/personalizacion/nivel3/Ellipse\ 39.png);
+  width: 60px;
+  height: 60px;
+}
 
+.carousel-control-next-icon{
+  background-image: url(../img/personalizacion/nivel3/Ellipse\ 38.png);
+  width: 60px;
+  height: 60px;
+}
 .nav-inicio{
   font-family: var(--fuenteNavbar);
   font-size: var(--tamSubtitulo);
