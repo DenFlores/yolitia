@@ -4,7 +4,7 @@ Este es el repositorio del proyecto "Yolitia"
 
 ## GitHub pages
 
-- Proximamente
+- https://github.com/davidenc93
 
 ## Autores ✒️
 

@@ -23,10 +23,10 @@ let paginaActual = 1;
 let registrosPorPagina = 9;
 
 function crearObjetosRandom () {
-    let nombresDeProducto = ["Llavero1", "Llavero2", "Pantuflas", "Pantuflas2", "Garras", "Garras1", "Garras2", "Gorro", "Gorro1", "Gorro2"];
+    let nombresDeProducto = ["Llavero de pinguino", "Llavero de osito", "Llavero osito polar", "Pantuflas peluche", "Garras Oso", "Gorro Oso", "Pijama oso", "Gorro conejo"];
     let nombreRandom = nombresDeProducto[Math.floor(Math.random()*nombresDeProducto.length)]
     let numeros = [1,2,3,4,5,6,7,8,9];
-    let precios = [100,200,300,400,500,600];
+    let precios = [150,284,546,440,890,610];
     let numeroRandom = numeros[Math.floor(Math.random()*numeros.length)];
     let precioRandom = precios[Math.floor(Math.random()*precios.length)];
     const producto = new Productos(nombreRandom, precioRandom, numeroRandom);
