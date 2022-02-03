@@ -70,7 +70,7 @@ function pintarRegistros (productos) {
         let item = `<div class="col-12 col-md-4 my-3">
         <div class="card h-100 color-cards m-4">
           <img
-            src="assets/img/productos/${producto.imagen}.png"
+            src="../assets/img/productos/${producto.imagen}.png"
             class="image-card img-fluid"
             alt="..."
           />
@@ -78,7 +78,7 @@ function pintarRegistros (productos) {
             <h5 class="card-title text-center">${producto.nombre}</h5>
             <p class="card-text text-center">$${producto.precio}.00 MXN</p>
             <div class="btn-info-card">
-              <a class="btn-comprar-info" href="">Comprar</a>
+              <a class="btn-comprar-info" href="producto-individual.html">Comprar</a>
             </div>
           </div>
         </div>

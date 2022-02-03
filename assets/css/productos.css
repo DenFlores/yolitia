@@ -52,6 +52,24 @@ html{
     letter-spacing: 4.5px;
 }
 
+/*----------------------------------- Carritp --------------------------------*/
+
+.circulo-carrito{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--colorMorado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    z-index: 5;
+    text-decoration: none;
+}
 
 /*----------------------------------- Populares --------------------------------*/
 
