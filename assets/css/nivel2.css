@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --fuenteTitulos: 'Lobster', cursive;
+    --fuenteSubtitulos: 'Lobster', cursive;
+    --fuenteTexto: 'Comfortaa', cursive;
+    --fuenteAnimada: 'Butterfly Kids', cursive;
+    --fuenteNavbar: 'Pacifico', cursive;
+
+    --tamTitulo: 64px;
+    --tamSubtitulo: 54px;
+    --tamTexto: 30px;
+    --tamAnimada: 34px;
+
+    --colorRojo: #ff6961;
+    --colorVerde: #77dd77;
+    --colorAmarillo: #fdfd96;
+    --colorAzul: #84b6f4;
+    --colorRosa: #fdcae1;
+    --colorBlanco: #ffffff;
+    --colorMorado: #DC14B0;
+
+}
+.container-fluid{
+    padding: 0;
+  }
+
+.bg-figma-2 {
+  background: #fdcae1;
+}
+
+.bg-figma-3 {
+  background: rgba(183, 203, 255, 0.55);
+
+}
+.row{
+    margin: 0;
+}
+.card {
+  border: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.bg-figma-1 {
+  position: relative;
+  width: 32px;
+  height: 68px;
+  background: #c4c4c4;
+  border: 2px solid #010101;
+  box-sizing: border-box;
+}
+.nav-bg-figma {
+  background-color: #dc14b0;
+}
+
+.nav-text {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  color: #ffffff;
+}
+.btn-regresar {
+  position: absolute;
+  left: 12%;
+  top: 95%;
+  width: 337px;
+  height: 112px;
+  background: #fdfd96;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.regresar{
+  position: absolute;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  top:5%;
+  left: 15%;
+  color: #000000;
+}
+
+.btn-siguiente {
+  position: absolute;
+  left: 55%;
+  top: 95%;
+  width: 335px;
+  height: 112px;
+  text-align: center;
+  background: #77dd77;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.siguiente{
+  position: absolute;
+  width: 244px;
+  height: 112px;
+  left:15%;
+  top: -5%;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 112px;
+  color: #000000;
+}
+
+.brazo {
+  position: absolute;
+  width: 300px;
+  height: 249px;
+  top: 13%;
+  left: 5%;
+  
+}
+
+.peluche {
+  position:absolute;
+  width: 300px;
+  height: 410px;
+  left: 35%;
+  top: 35%;
+  z-index: 100;
+}
+
+.colores {
+  position: relative;
+  width: 300px;
+  height: 449px;
+  left: 10%;
+  top:20%;
+}
+
+.text-logo{
+    font-family: var(--fuenteNavbar);
+    font-size: 18px;
+    -webkit-text-stroke: 1px white;
+    letter-spacing: 4.5px;
+    color:#DC14B0;
+    text-align: center;
+}
+.card-body{
+    padding-top: 0;
+    padding-bottom: 10%;
+}
+.text-instruction {
+  position: absolute;
+  top:25%;
+  width: 100%;
+  height: 237px;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+
+  text-align: center;
+  color: #000000;
+  z-index: 100;
+}
+
+.navbar-total{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 60px;
+  background-color: var(--colorMorado);
+}
+
+.nav-link{
+  margin-top: 30px;
+  font-size: var(--tamTexto);
+  color: white;
+}
+
+.nav-inicio{
+  font-family: var(--fuenteNavbar);
+  font-size: var(--tamSubtitulo);
+  -webkit-text-stroke: 2px var(--colorMorado);
+  letter-spacing: 4.5px;
+}
+.bg-gris{
+height: 200px;
+}
+.color{
+  height: 100px;
+}
+.c1{
+  background: #84B6F4;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c3{
+  height: 130px;
+  background: #FF6961;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
