@@ -113,12 +113,14 @@ margin-top: 30px;
     background-color: #DFEDFE;
     text-align: center;
     margin-bottom: 10%;
+    border-radius: 16px;
 }
 
 .card-correo{
     background-color: #FCC9C6;
     margin-bottom: 10%;
     text-align: center;
+    border-radius: 16px;
 }
 
 .card-whats{
