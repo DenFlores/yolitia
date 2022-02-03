@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root {
+  --fuenteTitulos: "Lobster", cursive;
+  --fuenteSubtitulos: "Lobster", cursive;
+  --fuenteTexto: "Comfortaa", cursive;
+  --fuenteAnimada: "Butterfly Kids", cursive;
+  --fuenteNavbar: "Pacifico", cursive;
+
+  --tamTitulo: 64px;
+  --tamSubtitulo: 54px;
+  --tamTexto: 30px;
+  --tamAnimada: 34px;
+
+  --colorRojo: #ff6961;
+  --colorVerde: #77dd77;
+  --colorAmarillo: #fdfd96;
+  --colorAzul: #84b6f4;
+  --colorRosa: #fdcae1;
+  --colorBlanco: #ffffff;
+  --colorMorado: #dc14b0;
+}
+.nav-bg-figma {
+  background-color: #dc14b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.bg-figma-1 {
+  background-color: #ff6961;
+  height: 249px;
+}
+
+.txt-1-figma {
+  font-family: Pacifico;
+  font-style: italic;
+  font-size: 64px;
+  text-align: center;
+  line-height: 112px;
+  color: #000000;
+}
+
+.bg-figma-2 {
+  background: #fdcae1;
+}
+
+.bg-figma-3 {
+  background: rgba(183, 203, 255, 0.55);
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.base-palanca {
+  position: absolute;
+  width: 400px;
+  height: 140px;
+  left: 30%;
+  top: 20%;
+
+  /* Verde */
+
+  background: #77dd77;
+  border-radius: 26px;
+}
+
+.move-palanca{
+  position: relative;
+  top:-120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: center bottom; 
+  transform: rotate(0deg);
+}
+
+.btn-left {
+  position: absolute;
+  width: 94px;
+  height: 63px;
+  top: 30%;
+  left: 5%;
+  border-radius: 50%;
+  background: #000000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.btn-right {
+  position: absolute;
+  width: 94px;
+  height: 63px;
+  top: 30%;
+  left: 72%;
+  border-radius: 50%;
+  background: #000000;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  bottom: 0%;
+  border-radius: 50%;
+  /*Amarillo*/
+  background: #fdfd96;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.tank {
+  width: 50px;
+  height: 120px;
+  background-color: cadetblue;
+}
+
+.tank .middle {
+  border-radius: 10% 10% 20px 20px;
+  width: 50px;
+  height: 80px;
+  background-color: #020202;
+  position: absolute;
+  -webkit-border-radius: 10% 10% 20px 20px;
+  -moz-border-radius: 10% 10% 20px 20px;
+  -ms-border-radius: 10% 10% 20px 20px;
+  -o-border-radius: 10% 10% 20px 20px;
+}
+
+.base-botones {
+  position: absolute;
+  width: 324px;
+  height: 108px;
+  left: 70%;
+  /*Verde*/
+  background: #77dd77;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+}
+.ovalo {
+  position: relative;
+  width: 130px;
+  height: 80px;
+  left: 35%;
+  top: -220%;
+  border-radius: 50%;
+  background: #c4c4c4;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.navbar-total {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 60px;
+  background-color: var(--colorMorado);
+}
+
+.nav-link {
+  margin-top: 30px;
+  font-size: var(--tamTexto);
+  color: white;
+}
+
+.nav-inicio {
+  font-family: var(--fuenteNavbar);
+  font-size: var(--tamSubtitulo);
+  -webkit-text-stroke: 2px var(--colorMorado);
+  letter-spacing: 4.5px;
+}
+.color {
+  height: 100px;
+}
+.c1 {
+  background: #84b6f4;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #ff362c 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.c3 {
+  height: 130px;
+  background: #ff6961;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.coin {
+  position: absolute;
+  width: 29px;
+  height: 58px;
+  left: 5%;
+  top: 25%;
+  background: #070707;
+  border-radius: 13px;
+}
+
+.base-llave {
+  position: absolute;
+  width: 95px;
+  height: 73px;
+  left: 60%;
+  top: 15%;
+  border-radius: 50%;
+  background: #838181;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cerradura {
+  position: absolute;
+  width: 15px;
+  height: 51px;
+  left: 45%;
+  top: 10%;
+
+  /* Rojo */
+
+  background: #ff6961;
+  border-radius: 9px;
+}

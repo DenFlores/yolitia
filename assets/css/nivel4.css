@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root {
+  --fuenteTitulos: "Lobster", cursive;
+  --fuenteSubtitulos: "Lobster", cursive;
+  --fuenteTexto: "Comfortaa", cursive;
+  --fuenteAnimada: "Butterfly Kids", cursive;
+  --fuenteNavbar: "Pacifico", cursive;
+
+  --tamTitulo: 64px;
+  --tamSubtitulo: 54px;
+  --tamTexto: 30px;
+  --tamAnimada: 34px;
+
+  --colorRojo: #ff6961;
+  --colorVerde: #77dd77;
+  --colorAmarillo: #fdfd96;
+  --colorAzul: #84b6f4;
+  --colorRosa: #fdcae1;
+  --colorBlanco: #ffffff;
+  --colorMorado: #dc14b0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--colorRosa);
+}
+.container-fluid {
+  padding: 0;
+}
+
+.bg-figma-2 {
+  background: #fdcae1;
+  width: 100%;
+  height: 700px;
+}
+
+.bg-figma-3 {
+  background: rgba(183, 203, 255, 0.55);
+}
+.row {
+  margin: 0;
+}
+.card {
+  border: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.bg-figma-1 {
+  position: relative;
+  width: 32px;
+  height: 68px;
+  background: #c4c4c4;
+  border: 2px solid #010101;
+  box-sizing: border-box;
+}
+.nav-bg-figma {
+  background-color: #dc14b0;
+}
+
+.logo {
+  position: relative;
+  width: 28.57px;
+  height: 25px;
+  padding: 0;
+  bottom: 95%;
+}
+.nav-text {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.peluche {
+  position: relative;
+  width: 300px;
+  height: 410px;
+  left: 10%;
+  top: 10%;
+}
+
+.card-body {
+  padding-top: 0;
+}
+.text-instruction {
+  position: relative;
+  top: 25%;
+  width: 470px;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+
+  text-align: center;
+  color: #000000;
+  z-index: 100;
+}
+.navbar-total {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 60px;
+  background-color: var(--colorMorado);
+}
+
+.nav-link {
+  margin-top: 30px;
+  font-size: var(--tamTexto);
+  color: white;
+}
+
+.nav-inicio {
+  font-family: var(--fuenteNavbar);
+  font-size: var(--tamSubtitulo);
+  -webkit-text-stroke: 2px var(--colorMorado);
+  letter-spacing: 4.5px;
+}
+.gorro {
+  position: relative;
+  z-index: 100;
+  right: 28%;
+  width: 130px;
+  height: 200px;
+  bottom: 25%;
+}
+.monio {
+  position: relative;
+  z-index: 100;
+  right: 52%;
+  width: 150px;
+  height: 100px;
+  top: 30%;
+  z-index: 100;
+}
+.form-control {
+  width: 470px;
+}
+
+.form-control {
+  position: absolute;
+  width: 556px;
+  height: 117px;
+  background: rgba(220, 20, 176, 0.31);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.form-control:placeholder-shown {
+  position: absolute;
+  width: 526px;
+  height: 84px;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 84px;
+  display: flex;
+  align-items: center;
+  color: #9d8d8d;
+}
+.btn-green {
+  position: absolute;
+  top: 450%;
+  width: 526px;
+  height: 117px;
+  text-align: center;
+  background: #77dd77;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  z-index: 100;
+}
+.confirmar {
+  position: relative;
+  width: 443px;
+  height: 123px;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 112px;
+  text-align: center;
+  color: #000000;
+}
+.color{
+    height: 100px;
+}
+.c1{
+    background: #84B6F4;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+    transform: rotate(-180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.c3{
+    height: 130px;
+    background: #FF6961;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
