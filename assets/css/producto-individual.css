@@ -66,10 +66,11 @@ body{
 .contenido-principal{
     display: flex;
     margin: 0 auto;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    width: 100%;
+    height: 150vh;
     background: #FDCAE1;
     border: 1px dashed #FF6961;
     border-radius: 10px;
@@ -82,11 +83,10 @@ body{
     flex-direction: column;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 50%;
-    height: 100%;
-    margin: 50px;
-
-    align-items:center;
+    width: 95%;
+    height: 50%;
+    padding: 1px;
+    
     
     
 
@@ -98,7 +98,7 @@ body{
     background-color: #FDCAE1;
     background-size: contain;
     width: 100%;
-    height: 200%;
+    height: 75%;
    
     
     
@@ -108,19 +108,20 @@ body{
     background-color: #FDCAE1;
     display: flex;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 100%;
-    height: 80%;
+    height: 20%;
 
 }
 .img1{
     background-repeat: no-repeat;
     background-color: rgb(253, 253, 253);
     background-image: url(../img/gorro.png);
-    background-size: cover;
-    width: 70%;
+    background-size: contain;
+    background-position: center;
+    width: 33%;
     height: 100%;
-    margin: 20px;
+    margin: 8px;
 
 }
 .img2{
@@ -128,41 +129,46 @@ body{
     background-color: rgb(255, 255, 255);
     background-image: url(../img/gorrito1.jpg.png);
     background-size: contain;
-    width: 70%;
+    background-position: center;
+    width: 33%;
     height: 100%;
-    margin: 20px;
+    margin: 8px;
 }
 .img3{
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
     background-image: url(../img/gorrito3.png);
     background-size: contain;
-    width: 70%;
+    background-position: center;
+    width: 33%;
     height: 100%;
-    margin: 20px;
+    margin: 8px;
 }
 
 
 .contenido-texto{
     background-color: rgb(255, 255, 255);
-    width: 50%;
-    height: 95%;
+    width: 95%;
+    height: 50%;
     border-radius: 20px;
-    padding: 20px;
-    margin: 50px;
+    padding: 10px;
+    
+    
     
 
 }
 .contenido-texto p{
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
+    font-size: .8rem;
+    padding: 5px;
 
 }
 
 
 h4{
     font-family: 'Butterfly Kids', cursive;
-    font-size: 70px;
+    font-size: 30px;
     align-self: flex-start;
     
     
@@ -172,8 +178,12 @@ h4{
 
 .cantidades{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-left: 10px;
+    justify-content: center;
+    width: 90%;
+    
     
 }
 .cantidades p{
@@ -216,7 +226,7 @@ h4{
     font-weight: bold;
 }
 .pago{
-    margin-left: 110px;
+    margin-left: 100px;
     margin-top: 3px;
     height: 28px;
     border: 0px;
@@ -229,17 +239,18 @@ h4{
 
 .boton-confirmar{
     
-    margin-left: 300px;
-    margin-top: 15px;
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 30px;
     background: #77DD77;
     border: none;
     border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 100px;
 }
 .boton-confirmar, label{
     font-family: 'Comfortaa',cursive;
     font-weight: bold;
+    font-size: .8rem;
 }
 
 .color{
@@ -268,12 +279,75 @@ h4{
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-@media screen and(min-width: 800px){
+@media screen and (min-width: 768px){
+    .contenido-principal{
+        height: 140vh;
+        
+        
+       
+    }
     .contenido-imagenes{
-        width: 100%;
+        height: 60%;
+        margin-left: 20px;
+        
+    }
+    .imagen1{
+        height: 60%;
+    }
+    
+    .imegenes2{
+        height: 70%;
+
     }
     .contenido-texto{
-        width: 100%;
+        height: 50%;
+        margin-left: 20px;
     }
+    .boton-confirmar{
+        margin-left: 395px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        .contenido-principal{
+            flex-direction: row;
+            align-items: center;
+            width: 95%;
+            height: 90vh;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
+
+        .contenido-imagenes{
+            width: 50%;
+            height: 100%;
+        }
+        .contenido-texto{
+            width: 50%;
+            height: 80%;
+            
+        }
+        h4{
+            font-size: 50px;
+        }
+        .contenido-texto p{
+            font-size: 1.3rem;
+        }
+
+        .cantidades p{
+            margin-top: auto;
+        }
+
+        .boton-confirmar{
+            margin-left: 375px;
+            height: 55px;
+        }
+
+       
+
+
+        
+    }
+    
     
 }
