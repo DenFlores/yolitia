@@ -1,15 +1,4 @@
-/* let ball = document.getElementById('ball');
-let tank = document.getElementById('tank');
-
-ball.addEventListener("mousedown",(e)=>{
-    console.log(e.clientX);
-   
-        ball.style.transformOrigin=`50% 0%`;
-        ball.style.transform=`rotate(10deg)`;
-   
-}) */
-
-const ball = document.querySelector("#ball")
+/* const ball = document.querySelector("#ball")
 const palanca = document.querySelector(".move-palanca");
 
 
@@ -25,7 +14,7 @@ function mousedown(e){
     function mousemove(e) {
         let newX = e.clientX;
         
-        /* console.log(newX) */
+       
         let angulo = Math.tan(newX/220) * 10;
         console.log(angulo)
         if(Math.abs(angulo) < 45){
@@ -40,4 +29,15 @@ function mousedown(e){
         window.removeEventListener("mousemove", mousemove);
         window.removeEventListener("mouseup", mouseup);
     }
+}  */
+
+const brazo=document.querySelector("#brazo");
+const btnleft=document.querySelector(".btn-left");
+const btnright=document.querySelector(".btn-right");
+
+btnleft.addEventListener("click",bajarBrazo);
+
+function bajarBrazo(e){
+console.log(e);
+brazo.style.height="100%";
 }
