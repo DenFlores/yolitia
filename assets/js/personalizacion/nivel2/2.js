@@ -21,4 +21,4 @@ colores.addEventListener("mousedown",(e)=>{
     else if ((e.clientX<=1000 && e.clientX>=900)&&(e.clientY>=314&&e.clientY<=450)){
         peluche.style.filter=`hue-rotate(270deg) saturate(3)`;
     }
-})
+});
