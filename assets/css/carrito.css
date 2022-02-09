@@ -51,11 +51,12 @@ body {
 
 .precio {
     background-color: #77dd77;
-    padding: 8px 40px;
+    padding: 8px 30px;
     font-size: 20px;
     width: 150px;
     height: 45px;
     border: none;
+    text-align: center;
 }
 .seccion {
     height: auto;
@@ -82,6 +83,7 @@ body {
     width: 40px; 
     background-color: #d3d3d3;
     border: none;
+    text-align: center;
 }
 .bagregar {
     background-color: var(--colorRojo);
