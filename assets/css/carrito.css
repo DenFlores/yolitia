@@ -56,7 +56,11 @@ body {
     width: 150px;
     height: 45px;
     border: none;
+<<<<<<< HEAD
     text-align: center;
+=======
+
+>>>>>>> 9f46c5a79a8747c570b4bdf30cb8fd9b9f434187
 }
 .seccion {
     height: auto;
@@ -88,7 +92,7 @@ body {
 .bagregar {
     background-color: var(--colorRojo);
     border: none;
-    
+  
     margin-left: 1rem;
 }
 .beliminar {
