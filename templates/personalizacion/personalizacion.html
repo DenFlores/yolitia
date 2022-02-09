@@ -63,7 +63,7 @@
     </header>
 
     <section>
-      <div class="step step-one d-none">
+      <div class="step step-one activo">
         <div class="card bg-figma-1">
             <div class="card-body pt-5">
               <h5 class="card-title txt-1-figma pt-5">Selecciona tu tipo de peluche</h5>
@@ -73,55 +73,57 @@
             <div class="card-body"></div>
           </div>
           <div class="card bg-figma-3 border border-dark">
+            <img
+            id="brazo"
+            src="/assets/img/personalizacion/models/Rectangle 126.png"
+            alt="brazo"
+            class="roboticos"
+          />
             <div class="row w-100 d-flex justify-content-lg-center">
-              <div class="col-2">
+              <div class="col-xl-2 col-12">
                 <img
-                  src="/assets/img/personalizacion/models/5 3.png"
+                  id="conejo"
+                  src="/assets/img/personalizacion/models/conejo.png"
                   alt="conejo"
-                  class="img-fluid p-2"
+                  class="img-fluid"
                 />
               </div>
-              <div class="col-2">
+              <div class="col-xl-2 col-12">
                 <img
-                  src="/assets/img/personalizacion/models/4 1.png"
+                id="osoCafe"
+                  src="/assets/img/personalizacion/models/osoCafe.png"
                   alt="oso"
-                  class="img-fluid p-2"
-                />
-              </div>
-    
-              <div class="col-2">
-                <img
-                  src="/assets/img/personalizacion/models/3 1.png"
-                  alt="perro"
-                  class="img-fluid p-2"
-                />
-              </div>
-              <div class="col-1">
-                <img
-                  id="brazo"
-                  src="/assets/img/personalizacion/models/Rectangle 126.png"
-                  alt="brazo"
                   class="img-fluid"
                 />
               </div>
     
-              <div class="col-2">
+              <div class="col-xl-2 col-12">
                 <img
-                  src="/assets/img/personalizacion/models/2 1.png"
+                id="perro"
+                  src="/assets/img/personalizacion/models/perro.png"
+                  alt="perro"
+                  class="img-fluid"
+                />
+              </div>
+    
+              <div class="col-xl-2 col-12">
+                <img
+                id="osoAzul"
+                  src="/assets/img/personalizacion/models/osoAzul.png"
                   alt="oso"
-                  class="img-fluid p-2"
+                  class="img-fluid"
                 />
               </div>
             </div>
           </div>
-          <div class="card border border-dark bg-figma-1">
+          <div class="card border border-dark bg-figma-1 bg-figma-responsive">
             <div class="card-body">
               <div class="base-palanca" id="base-palanca">
                 <div class="btn-left"></div>
                 <div class="btn-right"></div>
                 <div class="palanca">
                   <div class="row">
-                    <div class="col-12 move-palanca">
+                    <div class="col-xl-12 move-palanca">
                       
                         <div class="ball" id="ball"></div>
                         <div class="tank" id="tank">
@@ -131,7 +133,7 @@
                       
                     </div>
                     <div class="row">
-                      <div class="col-12">
+                      <div class="col-xl-12">
                         <div class="ovalo"></div>
                       </div>
                     </div>
@@ -148,22 +150,22 @@
             </div>
           </div>
       </div>
-      <div class="step step-two activo">
+      <div class="step step-two d-none">
         <div class="container-fluid">
           <div class="card bg-figma-2">
             <div class="card-body">
               <div class="row">
-                <div class="col-4">
+                <div class="col-xl-4">
                   <img
                     class="brazo"
                     src="/assets/img/personalizacion/nivel2/Rectangle 127.png"
                     alt="maquina"
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4">
                   <h3 class="text-instruction">Elige el color de tu peluche</h3>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4">
                   <img
                     class="colores"
                     id="colores"
@@ -178,7 +180,7 @@
         <img
           class="peluche"
           id="peluche"
-          src="/assets/img/personalizacion/nivel2/3 1.png"
+          src=""
           alt="peluche"
         />
         <button type="button" class="btn btn-regresar btn-step-prev">
@@ -188,13 +190,13 @@
           <p class="siguiente">Siguiente</p>
         </button>
         <div class="row">
-          <div class="col-1 bg-figma-4"></div>
-          <div class="col-2 bg-figma-4"></div>
-          <div class="col-2 bg-figma-4"></div>
-          <div class="col-2 bg-figma-4"></div>
-          <div class="col-2 bg-figma-4"></div>
-          <div class="col-2 bg-figma-4"></div>
-          <div class="col-1 bg-figma-4"></div>
+          <div class="col-xl-1 bg-figma-4"></div>
+          <div class="col-xl-2 bg-figma-4"></div>
+          <div class="col-xl-2 bg-figma-4"></div>
+          <div class="col-xl-2 bg-figma-4"></div>
+          <div class="col-xl-2 bg-figma-4"></div>
+          <div class="col-xl-2 bg-figma-4"></div>
+          <div class="col-xl-1 bg-figma-4"></div>
         </div>
       </div>
       <div class="step step-three d-none">
@@ -202,22 +204,22 @@
             <div class="card bg-figma-2">
               <div class="card-body">
                 <div class="row pt-3">
-                  <div class="col-4">
+                  <div class="col-xl-4">
                     <h3 class="text-instruction-2">Elige los accesorios</h3>
                   </div>
-                  <div class="col-4"></div>
-                  <div class="col-4 pt-5">
+                  <div class="col-xl-4"></div>
+                  <div class="col-xl-4 pt-5">
                     <div class="container">
                       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active d-flex justify-content-center">
-                            <img src="/assets/img/personalizacion/nivel3/Rectangle 148.png" class="w-50" alt="gorro">
+                            <img id="gadget-1" src="/assets/img/personalizacion/nivel3/Rectangle 148.png" class="w-50" alt="gorro">
                           </div>
                           <div class="carousel-item d-flex justify-content-center">
-                            <img src="/assets/img/personalizacion/nivel3/gorro1-removebg-preview.png" class="w-50" alt="gorro">
+                            <img id="gadget-2" src="/assets/img/personalizacion/nivel3/gorro1-removebg-preview.png" class="w-50" alt="gorro">
                           </div>
                           <div class="carousel-item d-flex justify-content-center">
-                            <img src="/assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.34_PM-removebg-preview.png" class="w-50" alt="gorro">
+                            <img id="gadget-3" src="/assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.34_PM-removebg-preview.png" class="w-50" alt="gorro">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
@@ -233,13 +235,13 @@
                       <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active d-flex justify-content-center">
-                            <img src="/assets/img/personalizacion/nivel3/Rectangle 149.png" class="w-50" alt="gorro">
+                            <img id="gadget-4" src="/assets/img/personalizacion/nivel3/Rectangle 149.png" class="w-50" alt="gorro">
                           </div>
                           <div class="carousel-item d-flex justify-content-center">
-                            <img src="/assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.33_PM__3_-removebg-preview.png" class="w-50" alt="gorro">
+                            <img id="gadget-5" src="/assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.33_PM__3_-removebg-preview.png" class="w-50" alt="gorro">
                           </div>
                           <div class="carousel-item d-flex justify-content-center">
-                            <img src="/assets/img/personalizacion/nivel3/monios-removebg-preview.png" class="w-50" alt="gorro">
+                            <img id="gadget-6" src="/assets/img/personalizacion/nivel3/monios-removebg-preview.png" class="w-50" alt="gorro">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade2" data-slide="prev">
@@ -259,27 +261,31 @@
           </div>
     
           <div class="row">
-            <div class="col-1 bg-figma-4"></div>
-            <div class="col-2 bg-figma-4">
+            <div class="col-xl-1 bg-figma-4">
+              <img class="sombrero-n3" src="" alt="sombrero">
+            </div>
+            <div class="col-xl-2 bg-figma-4">
               <button type="button" class="btn btn-regresar2 btn-step-prev">
                 <p class="regresar2">Regresar</p>
               </button>
             </div>
-            <div class="col-2 bg-figma-4"></div>
-            <div class="col-2 bg-figma-4">
+            <div class="col-xl-2 bg-figma-4"></div>
+            <div class="col-xl-2 bg-figma-4">
               <img
                 class="peluche2"
-                src="/assets/img/personalizacion/nivel3/Copia de Historias de instagram - Restaurante & Hamburguesas - Black Friday Stories 1.png"
+                src=""
                 alt="peluche"
               />
             </div>
-            <div class="col-2 bg-figma-4"></div>
-            <div class="col-2 bg-figma-4">
+            <div class="col-xl-2 bg-figma-4">
+              <img class="monio-n3" src="" alt="monio">
+            </div>
+            <div class="col-xl-2 bg-figma-4">
               <button type="button" class="btn btn-siguiente2 btn-step-next">
                 <p class="siguiente2">Siguiente</p>
               </button>
             </div>
-            <div class="col-1 bg-figma-4"></div>
+            <div class="col-xl-1 bg-figma-4"></div>
           </div>
       </div>
       <div class="step step-four d-none">
@@ -287,15 +293,15 @@
             <div class="card bg-figma-2">
               <div class="card-body pt-5">
                 <div class="row">
-                  <div class="col-6">
-                   <div class="col-6">
+                  <div class="col-xl-6">
+                   <div class="col-xl-6">
                     <label class="text-instruction-3">Hola me llamo:</label>
                    </div>
                    <br/>
                    <br/>
                    <br/>
                    <br/>
-                    <div class="col-6">
+                    <div class="col-xl-6">
                         <form action="">
                             <div class="form-group">
                               <input
@@ -316,7 +322,7 @@
                   </div>
                  
                   <div class="col-6 pt-5">
-                    <img class="peluche3" src="/assets/img/personalizacion/nivel4/Perro rosa.png" alt="peluche">
+                    <img class="peluche3" src="" alt="peluche">
                     <img class="gorro" src="/assets/img/personalizacion/nivel4/8311ce07416a732250a602eeb670eabf-removebg-preview 1.png" alt="gorro">
                     <img class="monio" src="/assets/img/personalizacion/nivel4/png-transparent-bow-tie-necktie-suit-tie-angle-ribbon-tie-removebg-preview 1.png" alt="monio">
                   </div>

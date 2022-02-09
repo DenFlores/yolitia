@@ -268,7 +268,7 @@
   border-radius: 9px;
 }
 
-.btn-siguiente{
+.btn-siguiente {
   position: absolute;
   left: 65%;
   top: 95%;
@@ -296,7 +296,7 @@
   z-index: 100;
 }
 
-.siguiente{
+.siguiente {
   position: absolute;
   width: 244px;
   height: 112px;
@@ -324,7 +324,7 @@
   color: #000000;
 }
 
-.btn-regresar{
+.btn-regresar {
   position: absolute;
   left: 6%;
   top: 95%;
@@ -350,7 +350,7 @@
   z-index: 100;
 }
 
-.regresar{
+.regresar {
   position: absolute;
   display: flex;
   align-items: center;
@@ -379,58 +379,58 @@
 }
 
 .btn-siguiente2 {
-    position: absolute;
-    left: -25%;
-    top: 20%;
-    width: 335px;
-    height: 112px;
-    text-align: center;
-    background: #77dd77;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    border-radius: 20px;
-    z-index: 100;
-  }
-  
-  .siguiente2 {
-    position: absolute;
-    width: 244px;
-    height: 112px;
-    left: 15%;
-    top: -5%;
-    font-family: Pacifico;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 112px;
-    color: #000000;
-  }
-  .btn-regresar2 {
-    position: absolute;
-    left: -25%;
-    top: 20%;
-    width: 337px;
-    height: 112px;
-    background: #fdfd96;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    border-radius: 20px;
-    z-index: 100;
-  }
-  
-  .regresar2 {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-family: Pacifico;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    top: 5%;
-    left: 15%;
-    color: #000000;
-  }
+  position: absolute;
+  left: -25%;
+  top: 20%;
+  width: 335px;
+  height: 112px;
+  text-align: center;
+  background: #77dd77;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.siguiente2 {
+  position: absolute;
+  width: 244px;
+  height: 112px;
+  left: 15%;
+  top: -5%;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 112px;
+  color: #000000;
+}
+.btn-regresar2 {
+  position: absolute;
+  left: -25%;
+  top: 20%;
+  width: 337px;
+  height: 112px;
+  background: #fdfd96;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.regresar2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: Pacifico;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  top: 5%;
+  left: 15%;
+  color: #000000;
+}
 
 .brazo {
   position: absolute;
@@ -445,7 +445,7 @@
   width: 300px;
   height: 410px;
   left: 35%;
-  top: 35%;
+  top: 53%;
   z-index: 100;
 }
 
@@ -472,7 +472,7 @@
   z-index: 100;
 }
 
-.text-instruction-2{
+.text-instruction-2 {
   position: absolute;
   top: 25%;
   width: 100%;
@@ -486,7 +486,7 @@
   color: #000000;
   z-index: 100;
 }
-.text-instruction-3{
+.text-instruction-3 {
   position: absolute;
   top: 25%;
   width: 500px;
@@ -513,13 +513,13 @@
 }
 
 .peluche3 {
-    position: absolute;
-    width: 300px;
-    height: 410px;
-    left: 35%;
-    bottom: -55%;
-    z-index: 100;
-  }
+  position: absolute;
+  width: 300px;
+  height: 410px;
+  left: 35%;
+  bottom: -55%;
+  z-index: 100;
+}
 
 .gorro {
   position: relative;
@@ -588,24 +588,117 @@
   text-align: center;
   color: #000000;
 }
-.carousel-control-prev-icon{
-    background-image: url(../img/personalizacion/nivel3/Ellipse\ 39.png);
-    width: 60px;
-    height: 60px;
+.carousel-control-prev-icon {
+  background-image: url(../img/personalizacion/nivel3/Ellipse\ 39.png);
+  width: 60px;
+  height: 60px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../img/personalizacion/nivel3/Ellipse\ 38.png);
+  width: 60px;
+  height: 60px;
+}
+.roboticos{
+position: absolute;
+width: 80px;
+height: 60px;
+right: 45%;
+z-index: 100;
+}
+
+.sombrero-n3{
+  position: relative;
+  bottom: 105%;
+  left: 850%;
+  z-index: 300;
+}
+
+.monio-n3{
+  position: relative;
+  bottom: 0%;
+  right: 75%;
+  z-index: 300;
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-figma-1 {
+    position: absolute;
+    left: -1.98px;
+    top: 60px;
+    width: 100%;
+    height: 43.69px;
+    background: #ff6961;
   }
-  
-  .carousel-control-next-icon{
-    background-image: url(../img/personalizacion/nivel3/Ellipse\ 38.png);
-    width: 60px;
-    height: 60px;
+  .txt-1-figma {
+    position: absolute;
+    width: 262px;
+    height: 30px;
+    left: 63px;
+    top: -35px;
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
   }
 
-/*   #grad1{
-  background-color: red;
-  background-image: conic-gradient(purple 0deg 60deg, red 60deg 120deg, orange 120deg 180deg, yellow 180deg 240deg,green 240deg 300deg,blue 300deg 360deg);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-} */
+  .base-palanca {
+    position: absolute;
+    width: 116.41px;
+    height: 63.48px;
+    left: 113.3px;
+    top: 811.5px;
+    background: #77dd77;
+    border-radius: 26px;
+  }
+
+  .btn-right {
+    position: absolute;
+    width: 18.42px;
+    height: 28.57px;
+    left: 196.99px;
+    top: 829.18px;
+    background: #000000;
+  }
+
+  .btn-left {
+    position: absolute;
+    width: 18.42px;
+    height: 28.57px;
+    left: 127.61px;
+    top: 829.18px;
+    background: #000000;
+  }
+
+  .ball {
+    position: absolute;
+    width: 27.63px;
+    height: 53.05px;
+    left: 157.79px;
+    top: 860px;
+    z-index: 100;
+    background: #fdfd96;
+  }
+
+  .tank {
+    position: absolute;
+    width: 10.19px;
+    height: 48.07px;
+    left: 166.41px;
+    top: 910.17px;
+    background: #020202;
+    border-radius: 21px;
+  }
+  .ovalo {
+    position: absolute;
+    width: 25.48px;
+    height: 19.95px;
+    left: 158.77px;
+    top: 833.26px;
+    background: #c4c4c4;
+  }
+
+}
