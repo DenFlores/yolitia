@@ -11,42 +11,52 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="contacto.css">
-    <enlace rel="preconectar" href="https://fonts.googleapis.com">
-        <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-            <enlace rel="preconectar" href="https://fonts.googleapis.com">
-                <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-                    <enlace href="https: //fonts.googleapis.com/css2? family= Mukta:wght@400;700 & display=swap"
-                        rel="stylesheet">
-                        <link rel="preconnect" href="https://fonts.googleapis.com">
-                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap"
-                            rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/contacto.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap"
+        rel="stylesheet">
 
-                        <title>Contacto</title>
+    <title>Contacto</title>
 </head>
 
 <body>
 
     <!--------------- Navbar  ---------->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-total text-white">
-        <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler mr-5"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-
+  
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-                <a class="nav-link" href="#">Nosotros</a>
-                <a class="nav-link" href="#historia">Contacto</a>
-                <a class="nav-link nav-inicio" href="#personajes">Unique</a>
-                <a class="nav-link" href="#frutas">Productos</a>
-                <a class="nav-link" href="#">Registrarse</a>
-
-            </ul>
+          <ul class="navbar-nav m-auto">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link nav-inicio" href="../index.html">Unique</a>
+            <a class="nav-link" href="productos.html">Productos</a>
+            <a class="nav-link" href="login.html">Registrarse</a>
+            
+          </ul>
         </div>
-    </nav>
-    <!-- /navBar -->
+      </nav>
+  
+      <!--------------- Carrito  ---------->
+      <div class="carrito">
+        <a href="carrito.html">
+          <div class="circulo-carrito">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </a>
+      </div>
 
     <!--  contactanos -->
 
@@ -60,7 +70,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm 12 col-md-12 col-lg-4">
                     <div class="card-direccion">
-                        <img src="/assets/img/contacto/direccion:contacto.png" class="card-img-top" alt="...">
+                        <img src="../assets/img/contacto/direccionContacto.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Dirección</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -73,7 +83,7 @@
 
                 <div class="col-xs-12 col-sm 12 col-md-12 col-lg-4">
                     <div class="card-correo">
-                        <img src="/assets/img/contacto/correo:contacto.png" class="card-img-top" alt="...">
+                        <img src="../assets/img/contacto/correoContacto.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Correo</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -86,7 +96,7 @@
 
                 <div class="col-xs-12 col-sm 12 col-md-12 col-lg-4 col-xl-4">
                     <div class="card-whats">
-                        <img src="/assets/img/contacto/whats:contacto.png" class="card-img-top" alt="...">
+                        <img src="../assets/img/contacto/whatsContacto.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Telefono y WhtasApp</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -118,7 +128,7 @@
         <div class="container col-xs-12 col-sm-12 col-lg-8">
            <div class="row mt-5 img-oso2 ">
                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 " >
-                <img class="img-fluid width: " src="/assets/img/contacto/oso2 (1).png" alt="" srcset="">
+                <img class="img-fluid width: " src="../assets/img/contacto/oso2 (1).png" alt="" srcset="">
                </div>
 
                <div class="col-sm-12 col-lg-8">
@@ -188,13 +198,15 @@
     
 
 
-<script src="contacto.js"></script>
+<script src="../assets/js/contacto.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script> 
+     <!--ICONOS-->
+     <script src="https://kit.fontawesome.com/5a36ceff30.js" crossorigin="anonymous"></script>
 
 
 </body>

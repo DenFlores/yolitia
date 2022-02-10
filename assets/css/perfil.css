@@ -67,6 +67,7 @@ li {
     letter-spacing: 4.5px;
 }
 
+/*----------------------------------- Carritp --------------------------------*/
 
 .circulo-carrito{
     position: fixed;
@@ -75,7 +76,7 @@ li {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    background-color: var(--colorRojo);
+    background-color: var(--colorMorado);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,25 +84,6 @@ li {
     font-size: 2.5rem;
     z-index: 5;
     text-decoration: none;
-}
-
-
-
-.navbar-total{
-    background-color: #DC14B0;
-}
-
-.nav-link{
-    font-size: var(--tamTexto);
-    color: white;
-    margin: 0 30px;
-}
-
-.nav-inicio{
-    font-family: var(--fuenteNavbar);
-    font-size: var(--tamSubtitulo);
-    /* -webkit-text-stroke: 2px var(--colorMorado); */
-    letter-spacing: 4.5px;
 }
 
 /* IMAGEN PERFIL */
@@ -134,7 +116,7 @@ li {
     background-color: #ff6961;
 }
 
-.nav-link {
+.nav-link2 {
     font-size: var(--tamTexto);
     color: #ff6961;
     margin: 0 30px;

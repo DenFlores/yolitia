@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 :root {
   --fuenteTitulos: "Lobster", cursive;
   --fuenteSubtitulos: "Lobster", cursive;
@@ -30,12 +31,14 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  width: 100vw;
+  height: 95vh;
   background-color: #fdcae1;
   background-image: url("../img/login/osito2.5.png");
   background-repeat: no-repeat;
-  background-size: 50% 80%;
+  background-size: contain;
   background-position: bottom;
-  background-position-x: calc(90vw - 30vw);
+  /* background-position-x: calc(90vw - 30vw); */
 }
 
 /* ___________________________________ NAVBAR _______________________________________*/
@@ -76,10 +79,29 @@ body {
   text-decoration: none;
 } */
 
+/*----------------------------------- Carritp --------------------------------*/
+
+.circulo-carrito{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--colorMorado);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  z-index: 5;
+  text-decoration: none;
+}
+
 /*__________________________________  FORMULARIO  ______________________________________________*/
 
 .registro {
-  height: 90%;
+  height: 80%;
 }
 
 .form-registro {

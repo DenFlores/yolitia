@@ -46,23 +46,23 @@ function calcular() {
   const imagen = document.querySelector(".imagen1")
   
   img1.addEventListener("mouseover", function(){
-    img1.style.backgroundImage = "url(/assets/img/gorro.png)";
+    img1.style.backgroundImage = "url(../assets/img/gorro.png)";
     console.log(img1.style.backgroundImage);
-    imagen.style.backgroundImage = "url(/assets/img/gorro.png)";
+    imagen.style.backgroundImage = "url(../assets/img/gorro.png)";
 
   });
 
   img2.addEventListener("mouseover", function(){
-    img2.style.backgroundImage = "url(/assets/img/gorrito1.jpg.png)";
+    img2.style.backgroundImage = "url(../assets/img/gorrito1.jpg.png)";
     console.log(img1.style.backgroundImage);
-    imagen.style.backgroundImage = "url(/assets/img/gorrito.jpg.png)";
+    imagen.style.backgroundImage = "url(../assets/img/gorrito.jpg.png)";
 
   })
 
   img3.addEventListener("mouseover", function(){
-    img3.style.backgroundImage = "url(/assets/img/gorrito3.png)";
+    img3.style.backgroundImage = "url(../assets/img/gorrito3.png)";
     console.log(img1.style.backgroundImage);
-    imagen.style.backgroundImage = "url(/assets/img/gorrito3.png)";
+    imagen.style.backgroundImage = "url(../assets/img/gorrito3.png)";
 
   })
 
