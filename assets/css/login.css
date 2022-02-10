@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --fuenteTitulos: "Lobster", cursive;
   --fuenteSubtitulos: "Lobster", cursive;
@@ -41,8 +41,6 @@ body {
   background-size: 55% 120%;
   /* background-position-y: bottom; */
   background-position-x: calc(81vw - 30vw);
-
-
 }
 
 /* ___________________________________ NAVBAR _______________________________________*/
@@ -66,7 +64,6 @@ body {
   letter-spacing: 4.5px;
 }
 
-<<<<<<< HEAD
 /*__________________________________  FORMULARIO  ______________________________________________*/
 
 .contenedor {
@@ -74,7 +71,10 @@ body {
   background-color: #ff6961a6;
   margin-left: auto;
   margin-right: auto;
-=======
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
 /* .circulo-carrito {
   position: fixed;
   bottom: 25px;
@@ -94,7 +94,7 @@ body {
 
 /*----------------------------------- Carritp --------------------------------*/
 
-.circulo-carrito{
+.circulo-carrito {
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -118,7 +118,6 @@ body {
 }
 
 .form-registro {
->>>>>>> 533de7d09eade8c88fae63ff7c92aeeea1139fa9
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,7 +246,7 @@ button {
   body {
     background-position-x: calc(80vw - 30vw);
 
-    background-size: 60% 115%;
+    background-size: 60% 100%;
     /* background-position-y: center; */
   }
 
@@ -266,14 +265,16 @@ button {
 @media screen and (min-width: 1000px) {
   body {
     background-position-x: calc(70vw - 30vw);
-    background-position-y: bottom;
-    background-size: 60% 110%;
+    /* background-position-y: bottom; */
+    background-size: 60% 100%;
   }
   .contenedor {
     width: 40%;
     margin-left: 30px;
     margin-bottom: 40px;
     padding: 8px 0;
+    border-radius: 15px;
+    text-align: center;
   }
 
   .inicio-sesion {
