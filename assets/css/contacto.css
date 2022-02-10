@@ -24,6 +24,25 @@
 
 }
 
+/*----------------------------------- Carritp --------------------------------*/
+
+.circulo-carrito{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--colorMorado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    z-index: 5;
+    text-decoration: none;
+}
+
 .navbar-total{
     background-color: var(--colorMorado);
 }
@@ -62,6 +81,7 @@ body{
 }
 .containrer{
     background-color: #ff696f; 
+    
 }
 
 .escribenos{
@@ -74,9 +94,14 @@ body{
     text-align: center;
 }
 
-.contactanos{
+.container11 {
    
-    
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.osocont{
+   
 }
 
 .form-container{
@@ -141,16 +166,17 @@ margin-top: 30px;
 
 
 .col-formulario11{
-   width: 65%;
+  
     background-color: tomato;
     border-radius: 16px;
     margin-right: 10%;
     color: white;
+    
 }
 
-.img-oso{
-    margin-left: 10%;
-    width: 100%;
+.OsoForm {
+  margin-left:60px;
+  margin-right: 60px;
 }
 
 .juntos{
@@ -161,12 +187,27 @@ margin-top: 30px;
     flex-grow: 1;
 }
 
+span {
+    color: white;
+}
+
 
 .formulario{
     color: white;
     background-color: var(--colorRojo);
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
+    margin-left: 60px;
+    width:550px;
+    
+}
+
+input:invalid{
+    border: 3px solid red;
+}
+
+input:valid{
+    border: 3px solid green;
 }
 
 .color{
