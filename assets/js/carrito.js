@@ -3,17 +3,22 @@ let $mas = document.querySelector('#mas');
 let $menos = document.querySelector('#menos');
 let $precio = document.queryCommandValue('#precio');
 let $preciotot = document.querySelector('#preciotot');
+let preciob = 499.00;
+
 
 $mas.addEventListener('click', () => {
-    $cantidad.value++;    
-    //$preciotot.value = ($cantidad.value * $precio.value); 
+    $cantidad.value++;       
+    $preciotot.value = `$${(cantidad.value * preciob).toFixed(2)}`; 
 });
 
 $menos.addEventListener('click', () => {
     $cantidad.value--;     
-    //$preciotot.value = ($cantidad.value * $preciotot.value); 
+    $preciotot.value = `$${(cantidad.value * preciob).toFixed(2)}`; 
 });
 
+$cantidad.oninput = function(){
+    $preciotot.value = `$${(cantidad.value * preciob).toFixed(2)}`; 
+}
 
 class Producto {
     constructor (id, img, nombre, descripcion, cantidad, precio) {
