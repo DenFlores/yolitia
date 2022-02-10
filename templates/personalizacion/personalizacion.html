@@ -25,41 +25,32 @@
   </head>
   <body>
     <header>
-      <!--------------- Navbar  ---------->
-      <nav class="navbar navbar-expand-lg navbar-total">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          style="z-index: 5"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!--------------- Navbar  ---------->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-total text-white">
+    <button
+      class="navbar-toggler mr-5"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item">
-              <a class="nav-link ml-5 mr-5" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ml-5 mr-5" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ml-5 mr-5 nav-inicio" href="#"> Unique </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ml-5 mr-5" href="#">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ml-5 mr-5" href="#">Registrarse</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <a class="nav-link" href="#">Nosotros</a>
+        <a class="nav-link" href="#historia">Contacto</a>
+        <a class="nav-link nav-inicio" href="#personajes">Unique</a>
+        <a class="nav-link" href="#frutas">Productos</a>
+        <a class="nav-link" href="#">Registrarse</a>
+        
+      </ul>
+    </div>
+  </nav>
+
     </header>
 
     <section>
@@ -79,7 +70,7 @@
             alt="brazo"
             class="roboticos"
           />
-            <div class="row w-100 d-flex justify-content-lg-center">
+            <div class="row w-100 d-flex justify-content-center">
               <div class="col-xl-2 col-12">
                 <img
                   id="conejo"
@@ -116,19 +107,17 @@
               </div>
             </div>
           </div>
-          <div class="card border border-dark bg-figma-1 bg-figma-responsive">
+          <div class="card border border-dark bg-figma-1">
             <div class="card-body">
               <div class="base-palanca" id="base-palanca">
                 <div class="btn-left"></div>
                 <div class="btn-right"></div>
                 <div class="palanca">
                   <div class="row">
-                    <div class="col-xl-12 move-palanca">
+                    <div class="col-xl-12 col-12 move-palanca">
                       
                         <div class="ball" id="ball"></div>
-                        <div class="tank" id="tank">
-              
-                        </div>
+                        <div class="tank" id="tank"></div>
                       </div>
                       
                     </div>
@@ -155,17 +144,17 @@
           <div class="card bg-figma-2">
             <div class="card-body">
               <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-12">
                   <img
                     class="brazo"
                     src="/assets/img/personalizacion/nivel2/Rectangle 127.png"
                     alt="maquina"
                   />
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-12">
                   <h3 class="text-instruction">Elige el color de tu peluche</h3>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-12">
                   <img
                     class="colores"
                     id="colores"
@@ -190,13 +179,13 @@
           <p class="siguiente">Siguiente</p>
         </button>
         <div class="row">
-          <div class="col-xl-1 bg-figma-4"></div>
-          <div class="col-xl-2 bg-figma-4"></div>
-          <div class="col-xl-2 bg-figma-4"></div>
-          <div class="col-xl-2 bg-figma-4"></div>
-          <div class="col-xl-2 bg-figma-4"></div>
-          <div class="col-xl-2 bg-figma-4"></div>
-          <div class="col-xl-1 bg-figma-4"></div>
+          <div class="col-xl-1 col-1 bg-figma-4"></div>
+          <div class="col-xl-2 col-2 bg-figma-4"></div>
+          <div class="col-xl-2 col-1 bg-figma-4"></div>
+          <div class="col-xl-2 col-2 bg-figma-4"></div>
+          <div class="col-xl-2 col-2 bg-figma-4"></div>
+          <div class="col-xl-2 col-2 bg-figma-4"></div>
+          <div class="col-xl-1 col-2 bg-figma-4"></div>
         </div>
       </div>
       <div class="step step-three d-none">
@@ -204,11 +193,11 @@
             <div class="card bg-figma-2">
               <div class="card-body">
                 <div class="row pt-3">
-                  <div class="col-xl-4">
+                  <div class="col-xl-4 col-12">
                     <h3 class="text-instruction-2">Elige los accesorios</h3>
                   </div>
                   <div class="col-xl-4"></div>
-                  <div class="col-xl-4 pt-5">
+                  <div class="col-xl-4 pt-5 col-12">
                     <div class="container">
                       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
@@ -261,31 +250,31 @@
           </div>
     
           <div class="row">
-            <div class="col-xl-1 bg-figma-4">
+            <div class="col-xl-1 col-1 bg-figma-4">
               <img class="sombrero-n3" src="" alt="sombrero">
             </div>
-            <div class="col-xl-2 bg-figma-4">
+            <div class="col-xl-2 col-2 bg-figma-4">
               <button type="button" class="btn btn-regresar2 btn-step-prev">
                 <p class="regresar2">Regresar</p>
               </button>
             </div>
-            <div class="col-xl-2 bg-figma-4"></div>
-            <div class="col-xl-2 bg-figma-4">
+            <div class="col-xl-2 col-2 bg-figma-4"></div>
+            <div class="col-xl-2 col-2 bg-figma-4">
               <img
                 class="peluche2"
                 src=""
                 alt="peluche"
               />
             </div>
-            <div class="col-xl-2 bg-figma-4">
+            <div class="col-xl-2 col-2 bg-figma-4">
               <img class="monio-n3" src="" alt="monio">
             </div>
-            <div class="col-xl-2 bg-figma-4">
+            <div class="col-xl-2 col-2 bg-figma-4">
               <button type="button" class="btn btn-siguiente2 btn-step-next">
                 <p class="siguiente2">Siguiente</p>
               </button>
             </div>
-            <div class="col-xl-1 bg-figma-4"></div>
+            <div class="col-xl-1 col-1 bg-figma-4"></div>
           </div>
       </div>
       <div class="step step-four d-none">
@@ -293,15 +282,15 @@
             <div class="card bg-figma-2">
               <div class="card-body pt-5">
                 <div class="row">
-                  <div class="col-xl-6">
-                   <div class="col-xl-6">
+                  <div class="col-xl-6 col-12">
+                   <div class="col-xl-6 col-12">
                     <label class="text-instruction-3">Hola me llamo:</label>
                    </div>
                    <br/>
                    <br/>
                    <br/>
                    <br/>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-12">
                         <form action="">
                             <div class="form-group">
                               <input
@@ -313,7 +302,7 @@
                                 required
                               />
                               <br/>
-                              <button class="btn btn-green" type="button">
+                              <button id="confirmar" class="btn btn-green" type="button">
                                 <p class="confirmar">Confirmar</p>
                               </button>
                             </div>
@@ -321,13 +310,14 @@
                     </div>
                   </div>
                  
-                  <div class="col-6 pt-5">
+                  <div class="col-xl-6 col-12 pt-5">
                     <img class="peluche3" src="" alt="peluche">
-                    <img class="gorro" src="/assets/img/personalizacion/nivel4/8311ce07416a732250a602eeb670eabf-removebg-preview 1.png" alt="gorro">
-                    <img class="monio" src="/assets/img/personalizacion/nivel4/png-transparent-bow-tie-necktie-suit-tie-angle-ribbon-tie-removebg-preview 1.png" alt="monio">
+                    <img class="gorro" src="" alt="gorro">
+                    <img class="monio" src="" alt="monio">
                   </div>
                 </div>
               </div>
+              <canvas id='canvas' class="d-none"></canvas>
             </div>
           </div>
       </div>

@@ -42,6 +42,7 @@ const gadget6=document.querySelector('#gadget-6');
 /* Anexar los distintos gadgets a los ids sombrero y monio */
 const sombreroN3 = document.querySelector(".sombrero-n3");
 const monioN3 = document.querySelector(".monio-n3");
+const selectionAudio = new Audio("/assets/audio/selection.mp3");
 
 gadget1.addEventListener("click",seccionOne);
 function seccionOne(){
@@ -81,7 +82,7 @@ function seccionSeis(){
 /* Comienza la lógica de los eventos para lograr los efectos deseados */
 
 const movimientoHorizontal = new Audio("/assets/audio/horizontal.mp3");
-ball.addEventListener("mousedown", mousedown)
+ball.addEventListener("mousedown", mousedown);
 
 function mousedown(e) {
   window.addEventListener("mousemove", mousemove);
@@ -120,71 +121,145 @@ function mousedown(e) {
   }
 }
 
-/* Nivel uno movimiento arriba y abajo brazo robotico */
-
-btnleft.addEventListener("click", bajarBrazo);
-
-function bajarBrazo(e) {
-  console.log(e);
-  const audioBajarBrazo = new Audio("/assets/audio/bajar-brazo.mp3");
-  audioBajarBrazo.play();
-  brazo.style.height = "100%";
-  function getOffset( el ) {
-    let _x = 0;
-    let _y = 0;
-    while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
-          _x += el.offsetLeft - el.scrollLeft;
-          _y += el.offsetTop - el.scrollTop;
-          el = el.offsetParent;
-    }
-    return { top: _y, left: _x };
-    }
-  var x = getOffset(brazo).left;
-  var y = getOffset(brazo).top;
-  console.log("x: "+ x);
-  console.log("y: "+ y);
- 
-  if (x >= 878 && x <=947 && y==377) {
-    console.log('oso azul');
-    osoAzul.style.display="none";
-    changeStep("next");
-    peluche.src="/assets/img/personalizacion/models/osoAzul.png";
-    peluche2.src="/assets/img/personalizacion/models/osoAzul.png";
-    peluche3.src="/assets/img/personalizacion/models/osoAzul.png";
+/* Movimiento palanca no disponible para  versión móvil en su lugar se usara
+la parte tactil de los dedos*/
+/* Seleccion tactil del conejo */
+conejo.addEventListener("click",modeloUno);
+function modeloUno(e){
+  console.log('conejo');
+  if(screen.width<=576){
+       selectionAudio.play();
+      changeStep("next");
+      peluche.src="/assets/img/personalizacion/models/conejo.png";
+      peluche2.src="/assets/img/personalizacion/models/conejo.png";
+      peluche3.src="/assets/img/personalizacion/models/conejo.png";
   }
-  else if(x>=677&&x<=735&&y==377){
-    console.log('perro');
-    perro.style.display="none";
-    changeStep("next");
-    peluche.src="/assets/img/personalizacion/models/perro.png";
-    peluche2.src="/assets/img/personalizacion/models/perro.png";
-    peluche3.src="/assets/img/personalizacion/models/perro.png";
+  else{
+    e.preventDefault();
   }
-  else if(x>=454&&x<=517&&y==377){
-    console.log('oso cafe');
-    osoCafe.style.display="none";
+}
+/* Seleccion tactil del oso cafe */
+osoCafe.addEventListener("click",modeloDos);
+function modeloDos(e){
+  console.log('Oso café');
+  if(screen.width<=576){
+    selectionAudio.play();
     changeStep("next");
     peluche.src="/assets/img/personalizacion/models/osoCafe.png";
     peluche2.src="/assets/img/personalizacion/models/osoCafe.png";
     peluche3.src="/assets/img/personalizacion/models/osoCafe.png";
   }
-  else if(x>=273&&x<=294&&y==377){
-    console.log('conejo');
-    conejo.style.display="none";
+  else{
+    e.preventDefault();
+  }
+}
+/* Seleccion tactil del perro */
+perro.addEventListener("click",modeloTres);
+function modeloTres(e){
+console.log('Perro');
+if(screen.width<=576){
+  selectionAudio.play();
+  changeStep("next");
+  peluche.src="/assets/img/personalizacion/models/perro.png";
+  peluche2.src="/assets/img/personalizacion/models/perro.png";
+  peluche3.src="/assets/img/personalizacion/models/perro.png";
+}
+else{
+  e.preventDefault();
+}
+}
+/* Seleccion tactil del oso azul */
+osoAzul.addEventListener("click",modeloCuatro);
+function modeloCuatro(e){
+  console.log('oso azul');
+  if(screen.width<=576){
+    selectionAudio.play();
     changeStep("next");
-    peluche.src="/assets/img/personalizacion/models/conejo.png";
-    peluche2.src="/assets/img/personalizacion/models/conejo.png";
-    peluche3.src="/assets/img/personalizacion/models/conejo.png";
+    peluche.src="/assets/img/personalizacion/models/osoAzul.png";
+    peluche2.src="/assets/img/personalizacion/models/osoAzul.png";
+    peluche3.src="/assets/img/personalizacion/models/osoAzul.png";
+  }
+  else{
+    e.preventDefault();
+  }
+}
+
+/* Nivel uno movimiento arriba y abajo brazo robotico solo disponible para
+pantalla de escritorio*/
+
+btnleft.addEventListener("click", bajarBrazo);
+
+function bajarBrazo(e) {
+  if(screen.width>=1200){
+    console.log(e);
+    const audioBajarBrazo = new Audio("/assets/audio/bajar-brazo.mp3");
+    audioBajarBrazo.play();
+    brazo.style.height = "100%";
+    function getOffset( el ) {
+      let _x = 0;
+      let _y = 0;
+      while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
+            _x += el.offsetLeft - el.scrollLeft;
+            _y += el.offsetTop - el.scrollTop;
+            el = el.offsetParent;
+      }
+      return { top: _y, left: _x };
+      }
+    var x = getOffset(brazo).left;
+    var y = getOffset(brazo).top;
+    console.log("x: "+ x);
+    console.log("y: "+ y);
+   
+    if (x >= 878 && x <=947 && y==377) {
+      console.log('oso azul');
+      osoAzul.style.display="none";
+      changeStep("next");
+      peluche.src="/assets/img/personalizacion/models/osoAzul.png";
+      peluche2.src="/assets/img/personalizacion/models/osoAzul.png";
+      peluche3.src="/assets/img/personalizacion/models/osoAzul.png";
+    }
+    else if(x>=677&&x<=735&&y==377){
+      console.log('perro');
+      perro.style.display="none";
+      changeStep("next");
+      peluche.src="/assets/img/personalizacion/models/perro.png";
+      peluche2.src="/assets/img/personalizacion/models/perro.png";
+      peluche3.src="/assets/img/personalizacion/models/perro.png";
+    }
+    else if(x>=454&&x<=517&&y==377){
+      console.log('oso cafe');
+      osoCafe.style.display="none";
+      changeStep("next");
+      peluche.src="/assets/img/personalizacion/models/osoCafe.png";
+      peluche2.src="/assets/img/personalizacion/models/osoCafe.png";
+      peluche3.src="/assets/img/personalizacion/models/osoCafe.png";
+    }
+    else if(x>=273&&x<=294&&y==377){
+      console.log('conejo');
+      conejo.style.display="none";
+      changeStep("next");
+      peluche.src="/assets/img/personalizacion/models/conejo.png";
+      peluche2.src="/assets/img/personalizacion/models/conejo.png";
+      peluche3.src="/assets/img/personalizacion/models/conejo.png";
+    }
+  }
+  else{
+    e.preventDefault();
   }
 }
 
 btnright.addEventListener("click", subirBrazo);
 
 function subirBrazo(e) {
+if(screen.width>=1200){
   console.log(e);
   const audioSubirBrazo = new Audio("/assets/audio/subir-brazo.mp3");
   audioSubirBrazo.play();
   brazo.style.height = "60px";
+}
+else{
+  e.preventDefault();
+}
 }
 
 /* Nivel 2 cambio de colores */
@@ -194,7 +269,6 @@ colores.addEventListener("click", (e) => {
   const opcion2="http://127.0.0.1:5500/assets/img/personalizacion/models/perro.png";
   const opcion3="http://127.0.0.1:5500/assets/img/personalizacion/models/osoCafe.png";
   const opcion4="http://127.0.0.1:5500/assets/img/personalizacion/models/conejo.png";
-  const selectionAudio = new Audio("/assets/audio/selection.mp3")
   console.log(e.clientX + " " + e.clientY);
   console.log(peluche.src);
   if(peluche.src==opcion1){
@@ -322,6 +396,52 @@ colores.addEventListener("click", (e) => {
       peluche.style.filter=`hue-rotate(270deg) saturate(2)`;
       peluche2.style.filter=`hue-rotate(270deg) saturate(2)`;
       peluche3.style.filter=`hue-rotate(270deg) saturate(2)`;
+    }
+   
+  }
+
+  else if(peluche.src==opcion4){
+    /* Rojo */
+    if((e.clientX<=1111&&e.clientX>=994)&&(e.clientY>=106&&e.clientY<=272)){
+      selectionAudio.play();
+      peluche.style.filter=`hue-rotate(15deg) saturate(5)`;
+      peluche2.style.filter=`hue-rotate(15deg) saturate(5)`;
+      peluche3.style.filter=`hue-rotate(15deg) saturate(5)`;
+    }
+    /* Naranja */
+    else if((e.clientX<=1180&&e.clientX>=1120)&&(e.clientY>=130&&e.clientY<=301)){
+      selectionAudio.play();
+      peluche.style.filter=`hue-rotate(30deg) saturate(5)`;
+      peluche2.style.filter=`hue-rotate(30deg) saturate(5)`;
+      peluche3.style.filter=`hue-rotate(30deg) saturate(5)`;
+    }
+    /* Amarillo */
+    else if((e.clientX<=1194&&e.clientX>=1075)&&(e.clientY>=321&&e.clientY<=486)){
+      selectionAudio.play();
+      peluche.style.filter=`hue-rotate(60deg) brightness(100%) saturate(5)`;
+      peluche2.style.filter=`hue-rotate(60deg) brightness(100%) saturate(5)`;
+      peluche3.style.filter=`hue-rotate(60deg) brightness(100%) saturate(5)`;
+    }
+    /* Verde */
+    else if((e.clientX<=1095&&e.clientX>=979)&&(e.clientY>=336&&e.clientY<=510)){
+      selectionAudio.play();
+      peluche.style.filter=`hue-rotate(90deg) brightness(100%) saturate(5)`;
+      peluche2.style.filter=`hue-rotate(90deg) brightness(100%) saturate(5)`;
+      peluche3.style.filter=`hue-rotate(90deg) brightness(100%) saturate(5)`;
+    }
+    /* Azul */
+    else if((e.clientX<=1032&&e.clientX>=910)&&(e.clientY>=316&&e.clientY<=462)){
+      selectionAudio.play();
+      peluche.style.filter=`hue-rotate(210deg) saturate(3)`;
+      peluche2.style.filter=`hue-rotate(210deg) saturate(3)`;
+      peluche3.style.filter=`hue-rotate(210deg) saturate(3)`;
+    }
+    /* Morado */
+    else if((e.clientX<=1038&&e.clientX>=912)&&(e.clientY>=149&&e.clientY<=290)){
+      selectionAudio.play();
+      peluche.style.filter=`hue-rotate(0deg) saturate(5)`;
+      peluche2.style.filter=`hue-rotate(0deg) saturate(5)`;
+      peluche3.style.filter=`hue-rotate(0deg) saturate(5)`;
     }
    
   }

@@ -21,9 +21,6 @@
   --colorBlanco: #ffffff;
   --colorMorado: #dc14b0;
 }
-.nav-bg-figma {
-  background-color: #dc14b0;
-}
 
 * {
   margin: 0;
@@ -186,26 +183,25 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+/*----------------------------------- Navbar --------------------------------*/
+
 .navbar-total {
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-  height: 60px;
   background-color: var(--colorMorado);
 }
 
 .nav-link {
-  margin-top: 30px;
   font-size: var(--tamTexto);
   color: white;
+  margin: 0 30px;
 }
 
 .nav-inicio {
   font-family: var(--fuenteNavbar);
   font-size: var(--tamSubtitulo);
-  -webkit-text-stroke: 2px var(--colorMorado);
+  /* -webkit-text-stroke: 2px var(--colorMorado); */
   letter-spacing: 4.5px;
 }
+/* footer */
 .color {
   height: 100px;
 }
@@ -505,8 +501,8 @@
 }
 .peluche2 {
   position: absolute;
-  width: 300px;
-  height: 410px;
+  width: 352px;
+  height: 346px;
   left: 10%;
   bottom: 15%;
   z-index: 100;
@@ -514,32 +510,30 @@
 
 .peluche3 {
   position: absolute;
-  width: 300px;
-  height: 410px;
+  width: 352px;
+  height: 346px;
   left: 35%;
-  bottom: -55%;
+  top: 30%;
   z-index: 100;
 }
 
 .gorro {
   position: relative;
   z-index: 100;
+
   left: 48%;
   width: 130px;
-  height: 200px;
-  bottom: 55%;
+  height: 130px;
+  top: 15%;
 }
 .monio {
   position: relative;
   z-index: 100;
-  left: 24%;
+  left: 25%;
   width: 150px;
   height: 100px;
-  top: 50%;
+  top: 130%;
   z-index: 100;
-}
-.form-control {
-  width: 470px;
 }
 
 .form-control {
@@ -555,7 +549,7 @@
   position: absolute;
   width: 526px;
   height: 84px;
-  font-family: Pacifico;
+  font-family: Butterfly Kids;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -599,43 +593,40 @@
   width: 60px;
   height: 60px;
 }
-.roboticos{
-position: absolute;
-width: 80px;
-height: 60px;
-right: 45%;
-z-index: 100;
+.roboticos {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  right: 45%;
+  z-index: 100;
 }
 
-.sombrero-n3{
+.sombrero-n3 {
   position: relative;
   bottom: 105%;
   left: 850%;
   z-index: 300;
 }
 
-.monio-n3{
+.monio-n3 {
   position: relative;
   bottom: 0%;
   right: 75%;
   z-index: 300;
 }
 
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
 @media only screen and (max-width: 600px) {
-  .bg-figma-1 {
-    position: absolute;
-    left: -1.98px;
-    top: 60px;
-    width: 100%;
-    height: 43.69px;
-    background: #ff6961;
+  #conejo {
+    margin-left: 10%;
   }
   .txt-1-figma {
-    position: absolute;
-    width: 262px;
-    height: 30px;
-    left: 63px;
-    top: -35px;
     font-family: Lobster;
     font-style: normal;
     font-weight: normal;
@@ -650,55 +641,285 @@ z-index: 100;
     width: 116.41px;
     height: 63.48px;
     left: 113.3px;
-    top: 811.5px;
+    top: 35%;
     background: #77dd77;
     border-radius: 26px;
   }
 
   .btn-right {
-    position: absolute;
+    position: relative;
     width: 18.42px;
     height: 28.57px;
-    left: 196.99px;
-    top: 829.18px;
+    left: 75%;
+    top: -20%;
     background: #000000;
   }
 
   .btn-left {
-    position: absolute;
+    position: relative;
     width: 18.42px;
     height: 28.57px;
-    left: 127.61px;
-    top: 829.18px;
+    left: 15%;
+    top: 20%;
     background: #000000;
   }
 
   .ball {
-    position: absolute;
+    position: relative;
     width: 27.63px;
     height: 53.05px;
     left: 157.79px;
-    top: 860px;
-    z-index: 100;
+    top: 20%;
+    left: 0%;
+    z-index: 200;
     background: #fdfd96;
   }
 
   .tank {
-    position: absolute;
+    position: relative;
     width: 10.19px;
     height: 48.07px;
-    left: 166.41px;
-    top: 910.17px;
     background: #020202;
     border-radius: 21px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -ms-border-radius: 21px;
+    -o-border-radius: 21px;
+    z-index: 100;
   }
   .ovalo {
-    position: absolute;
+    position: relative;
+    top: -650%;
     width: 25.48px;
     height: 19.95px;
-    left: 158.77px;
-    top: 833.26px;
     background: #c4c4c4;
+    z-index: 100;
   }
 
+  .move-palanca {
+    position: relative;
+    top: -120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-origin: center bottom;
+    transform: rotate(0deg);
+  }
+
+  .base-botones {
+    position: absolute;
+    width: 63.5px;
+    height: 48.97px;
+    left: 80%;
+    top: 35%;
+  }
+  .base-llave {
+    width: 18.62px;
+    height: 33.1px;
+  }
+  .cerradura {
+    width: 2.94px;
+    height: 23.13px;
+  }
+  .coin {
+    position: relative;
+    left: 15%;
+    width: 5.68px;
+    height: 26.3px;
+  }
+  .navbar-toggler {
+    position: relative;
+    left: 80%;
+    background: #ff6961;
+    border-radius: 10px;
+  }
+  #conejo {
+    margin-left: 60px;
+    margin-top: 60px;
+    width: 162px;
+    height: 150px;
+  }
+  #osoCafe {
+    margin-left: 280px;
+    width: 153.8px;
+    height: 150px;
+  }
+  #perro {
+    margin-left: 60px;
+    width: 153.7px;
+    height: 150px;
+  }
+  #osoAzul {
+    margin-left: 280px;
+    width: 154.55px;
+    height: 162px;
+  }
+  .brazo {
+    display: none;
+  }
+  .colores {
+    width: 212px;
+    height: 212px;
+    margin-left: 20%;
+  }
+  .text-instruction {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .peluche {
+    position: absolute;
+    width: 300px;
+    height: 311.5px;
+    left: 45px;
+    top: 402px;
+  }
+  .btn-regresar {
+    position: absolute;
+    width: 148px;
+    height: 50px;
+    left: 20%;
+    top: 135%;
+  }
+  .regresar {
+    position: absolute;
+    /* Subtitulo - mobile */
+
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    top: 10%;
+    left: 20%;
+    color: #000000;
+  }
+  .btn-siguiente {
+    position: absolute;
+    width: 148px;
+    height: 50px;
+    left: 55%;
+    top: 135%;
+  }
+  .siguiente {
+    position: absolute;
+    width: 88px;
+    height: 30px;
+    left: 20%;
+    top: 10%;
+
+    /* Subtitulo - mobile */
+
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #000000;
+  }
+  body {
+    background-color: #000000;
+  }
+  .text-instruction-2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .btn-regresar2 {
+    position: absolute;
+    width: 148px;
+    height: 50px;
+    left: 20%;
+    top: 235%;
+  }
+  .regresar2 {
+    position: absolute;
+    width: 85px;
+    height: 30px;
+    left: 20%;
+    top: 10%;
+    /* Subtitulo - mobile */
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .btn-siguiente2 {
+    position: absolute;
+    width: 148px;
+    height: 50px;
+    left: -135%;
+    top: 235%;
+  }
+  .siguiente2 {
+    position: absolute;
+    width: 88px;
+    height: 30px;
+    left: 20%;
+    top: 10%;
+
+    /* Subtitulo - mobile */
+
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #000000;
+  }
+  .peluche2 {
+    position: absolute;
+    width: 300px;
+    height: 344.37px;
+  }
+  #confirmar {
+    position: absolute;
+    left: 20%;
+    top: 2000%;
+    width: 272px;
+    height: 92px;
+  }
+  .confirmar {
+    position: relative;
+    left: -35%;
+    top: 20%;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .text-instruction-3 {
+    /* Subtitulo - mobile */
+    font-family: Pacifico;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #010101;
+  }
+  .bg-figma-2 {
+    width: 100%;
+    height: 896px;
+  }
+  .form-control {
+    width: 272px;
+    height: 57.24px;
+    left: 28%;
+  }
+  .form-control:placeholder-shown {
+    width: 244px;
+    height: 41px;
+    font-family: Butterfly Kids;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #9d8d8d;
+  }
+  .bg-figma-2 {
+    width: 100%;
+    height: 8.13px;
+  }
 }
