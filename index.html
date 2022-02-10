@@ -41,18 +41,19 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
-          <a class="nav-link" href="#">Nosotros</a>
-          <a class="nav-link" href="#historia">Contacto</a>
-          <a class="nav-link nav-inicio" href="#personajes">Unique</a>
-          <a class="nav-link" href="#frutas">Productos</a>
-          <a class="nav-link" href="#">Registrarse</a>
+          <a class="nav-link" href="templates/nosotros.html">Nosotros</a>
+          <a class="nav-link" href="templates/contacto.html">Contacto</a>
+          <a class="nav-link nav-inicio" href="#">Unique</a>
+          <a class="nav-link" href="templates/productos.html">Productos</a>
+          <a class="nav-link" href="templates/login.html">Registrarse</a>
           
         </ul>
       </div>
     </nav>
 
+    <!--------------- Carrito  ---------->
     <div class="carrito">
-      <a href="#">
+      <a href="templates/carrito.html">
         <div class="circulo-carrito">
           <i class="fas fa-shopping-cart"></i>
         </div>
@@ -74,7 +75,7 @@
         <div class="col center-image">
           <a
             class="text-white btn-personalizar mt-5 pl-5 pr-5 pt-4 pb-4 rounded-lg "
-            href="#"
+            href="templates/personalizacion/nivel1.html"
             >Crear mi <span>peluche</span></a
           >
         </div>
@@ -104,8 +105,8 @@
                   <h5 class="card-title text-center">Conejo gordito</h5>
                   <p class="card-text text-center">$499.99 MXN</p>
                   <div class="btn-info-card">
-                    <a class="btn-per-info" href="">Personalizar</a>
-                    <a class="btn-comprar-info" href="">Comprar</a>
+                    <a class="btn-per-info" href="templates/personalizacion/nivel1.html">Personalizar</a>
+                    <a class="btn-comprar-info" href="templates/producto-individual.html">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -124,8 +125,8 @@
                   <h5 class="card-title text-center">Oso esponjoso</h5>
                   <p class="card-text text-center">$499.99 MXN</p>
                   <div class="btn-info-card">
-                    <a class="btn-per-info" href="">Personalizar</a>
-                    <a class="btn-comprar-info" href="">Comprar</a>
+                    <a class="btn-per-info" href="templates/personalizacion/nivel1.html">Personalizar</a>
+                    <a class="btn-comprar-info" href="templates/producto-individual.html">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -144,8 +145,8 @@
                   <h5 class="card-title text-center">Gato elegante</h5>
                   <p class="card-text text-center">$499.99 MXN</p>
                   <div class="btn-info-card">
-                    <a class="btn-per-info" href="">Personalizar</a>
-                    <a class="btn-comprar-info" href="">Comprar</a>
+                    <a class="btn-per-info" href="templates/personalizacion/nivel1.html">Personalizar</a>
+                    <a class="btn-comprar-info" href="templates/producto-individual.html">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -161,30 +162,40 @@
 
       <div class="row mt-5" style="height: 400px">
         <div class="col-12 col-lg-8">
-          <div class="row h-100">
-            <div class="producto-principal">
-               <div class="acomodo-dentro-producto">
-                   <div class="etiqueta-nuevo">Nuevo</div>
-                    <div class="texto-animado-producto">Gorro de conejo con orejas moviles</div>
-               </div>
-              
+          <a href="templates/producto-individual.html">
+            <div class="row h-100">
+              <div class="producto-principal">
+                 <div class="acomodo-dentro-producto">
+                     <div class="etiqueta-nuevo">Nuevo</div>
+                      <div class="texto-animado-producto">Gorro de conejo con orejas moviles</div>
+                 </div>
+              </div>
             </div>
-          </div>
+          </a>
+
         </div>
         <div class="col-12 col-lg-4">
           <div class="cajas-pequeñas">
-            <div class="caja-azul">
+            <a href="templates/producto-individual.html">
+              <div class="caja-azul">
                 <div class="acomodo-dentro-producto texto-animado-producto">Bufanda de oso</div>
             </div>
-            <div class="caja-roja">
+            </a>
+            
+            <a href="templates/producto-individual.html">
+              <div class="caja-roja">
                 <div class="acomodo-dentro-producto texto-animado-producto">Llavero de gato</div>
             </div>
+            </a>
           </div>
         </div>
       </div>
 
       <div class="row mt-5">
-        <div class="ver-mas mr-5">Ver más</div>
+        <a class="text-left w-100" href="templates/productos.html">
+          <div class="ver-mas mr-5">Ver más</div>
+        </a>
+        
       </div>
 
       <!--------------- Comentarios  ---------->

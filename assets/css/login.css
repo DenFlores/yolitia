@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 :root {
   --fuenteTitulos: "Lobster", cursive;
   --fuenteSubtitulos: "Lobster", cursive;
@@ -32,12 +33,16 @@ body {
   height: 100vh;
   padding: 0;
   font-size: 62.5%;
+  width: 100vw;
   background-color: #fdcae1;
   background-image: url("../img/login/osito2.5.png");
   background-repeat: no-repeat;
+
   background-size: 55% 120%;
   /* background-position-y: bottom; */
   background-position-x: calc(81vw - 30vw);
+
+
 }
 
 /* ___________________________________ NAVBAR _______________________________________*/
@@ -61,6 +66,7 @@ body {
   letter-spacing: 4.5px;
 }
 
+<<<<<<< HEAD
 /*__________________________________  FORMULARIO  ______________________________________________*/
 
 .contenedor {
@@ -68,6 +74,51 @@ body {
   background-color: #ff6961a6;
   margin-left: auto;
   margin-right: auto;
+=======
+/* .circulo-carrito {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--colorRojo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  z-index: 5;
+  text-decoration: none;
+} */
+
+/*----------------------------------- Carritp --------------------------------*/
+
+.circulo-carrito{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--colorMorado);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  z-index: 5;
+  text-decoration: none;
+}
+
+/*__________________________________  FORMULARIO  ______________________________________________*/
+
+.registro {
+  height: 80%;
+}
+
+.form-registro {
+>>>>>>> 533de7d09eade8c88fae63ff7c92aeeea1139fa9
   display: flex;
   flex-direction: column;
   justify-content: center;
