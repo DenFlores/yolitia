@@ -20,13 +20,15 @@
     --colorRosa: #fdcae1;
     --colorBlanco: #ffffff;
     --colorMorado: #DC14B0;
-
 }
-body {
+
+  body {
     margin: 0;
     padding: 0;
     background-color: pink;
+  
   }
+
 /*Navbar*/
 .navbar-total{
     background-color: var(--colorMorado);
@@ -44,67 +46,69 @@ body {
     /* -webkit-text-stroke: 2px var(--colorMorado); */
     letter-spacing: 4.5px;
 }
+
 /*Banner sobre nosotros*/
 .nosotros {
-    margin: 20px;
+    margin: 25px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url(/assets/img/nosotros/Ventana.png);
-    padding: 25px;
-    max-height: 290px;
+    background-image: url(/assets/img/nosotros/mantel.png);
+    padding: 50px;
     background-size:cover;
-    background-repeat: no-repeat;
-  }
-
+    background-repeat: no-repeat;  
+}
 .texto-encima {
-  font-size: 50px;
     font-family:var(--fuenteTitulos);
     color: var(--colorRojo);
+    font-size: 2rem;   
   }
-
 .nosotros .centrado p{
     font-family: var(--tamTexto);
-    text-align: center;
-    font-size: 22px;
+    font-size: 0.9rem;
+    text-align: justify;
     padding: 0;
     margin: 0%;
-    
 }
 
  /*Cards Mision y Vision*/ 
-.container{
+ .container{
+   width: 90%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin-left :auto; 
+  margin-right :auto;
 }
  .card-body{
     background-color: white;
     margin: 0 20px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    font-size: 23px;
+    font-size: 1.2rem;
     padding: 8px;
     height: 250px;
-    width: 580px;
     font-family:var(--tamTexto) ;
     text-align: center;
   }
-  .card-title{
+  .card-title {
       font-family: var(--fuenteTitulos);
-      font-size: 40px;
+      font-size: 1.8rem;
   }
-  .cardn img{
-  width: 600px;
-  padding-left: 10px;
-}
+  .card-img-top{
+    width: 90%;
+    margin-right: 4px;
+  }
 .cardn{
-  margin:0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
-  /*titulo equipo de trabajo*/
-.tituloequipo{
+
+ /*titulo equipo de trabajo*/
+ .tituloequipo{
     background-color: var(--colorVerde);
     border-radius: 10px;
     text-align: center;
@@ -113,23 +117,22 @@ body {
 }
 .tituloequipo h3{
     font-family: var(--fuenteTitulos);
-    font-size: 80px; 
+    font-size: 2.8rem; 
 }
+
 
 /*Cards que giran*/
 .equipo{
-    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 50px;
+   justify-content: center;
 }
-.front,
-    .back,
-    .cards {
+.front, .back, .cards {
       width:300px;
       height: 400px;
-    
+      max-width: 400px;
 }
+
 .cards{
     margin: 60px;
     position: relative;
@@ -148,7 +151,6 @@ body {
       z-index: 2;
       transition: all 0.3s linear;
       border-radius: 10px;
-      color: beige;
     }
 
 .back {
@@ -163,11 +165,7 @@ body {
  .cards:hover .back {
       transform: rotateY(360deg);
       text-align: center;   
-    } */
-
-.cards img{
-    background: #ffffff;
-}
+    } 
 .icon{
     width:50px;
     left: 20px;
@@ -188,7 +186,7 @@ body {
   margin:21px auto;
   border: none;
   padding:20px;
- width: 320px;
+  width: 320px;
   
 }
 .cards .back-text h2{
@@ -228,4 +226,76 @@ body {
   height: 130px;
   background: #FF6961;
   transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 768px) {
+  .container{
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .card-img-top{
+    width: 95%;
+    margin-right: 6px;
+  }
+  .card-text{
+    font-size: 1.6rem;
+  }
+  .texto-encima{
+    font-size: 40px;
+  }
+  .nosotros .centrado p{
+    font-size: 20px;
+    text-align: center;
+  }
+  .tituloequipo h3{
+    font-size: 4rem; 
+}
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .front, .back, .cards{
+    width: 250px;
+  }
+  .cards .front img{
+    width:270px;
+    left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .card-img-top{
+     width: 95%;
+     margin-right: 6px;
+   }
+   .card-text{
+     font-size: 1.6rem;
+   }
+   .texto-encima{
+     font-size: 50px;
+   }
+   .nosotros .centrado p{
+     font-size: 25px;
+     text-align: center;
+   }
+   .tituloequipo h3{
+    font-size: 4.5rem; 
+}
+.front, .back, .cards{
+  width: 300px;
+}
+.cards .front img{
+  width:320px;
+  left: auto;
+  border-radius: 30px;
+}
 }
