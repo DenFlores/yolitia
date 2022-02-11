@@ -210,7 +210,7 @@ function bajarBrazo(e) {
     console.log("x: "+ x);
     console.log("y: "+ y);
    
-    if (x >= 878 && x <=947 && y==377) {
+    if (x >= 878 && x <=947 && y==490) {
       console.log('oso azul');
       osoAzul.style.display="none";
       changeStep("next");
@@ -218,7 +218,7 @@ function bajarBrazo(e) {
       peluche2.src="/assets/img/personalizacion/models/osoAzul.png";
       peluche3.src="/assets/img/personalizacion/models/osoAzul.png";
     }
-    else if(x>=677&&x<=735&&y==377){
+    else if(x>=677&&x<=735&&y==490){
       console.log('perro');
       perro.style.display="none";
       changeStep("next");
@@ -226,7 +226,7 @@ function bajarBrazo(e) {
       peluche2.src="/assets/img/personalizacion/models/perro.png";
       peluche3.src="/assets/img/personalizacion/models/perro.png";
     }
-    else if(x>=454&&x<=517&&y==377){
+    else if(x>=454&&x<=517&&y==490){
       console.log('oso cafe');
       osoCafe.style.display="none";
       changeStep("next");
@@ -234,7 +234,7 @@ function bajarBrazo(e) {
       peluche2.src="/assets/img/personalizacion/models/osoCafe.png";
       peluche3.src="/assets/img/personalizacion/models/osoCafe.png";
     }
-    else if(x>=273&&x<=294&&y==377){
+    else if(x>=273&&x<=294&&y==490){
       console.log('conejo');
       conejo.style.display="none";
       changeStep("next");
@@ -269,46 +269,52 @@ colores.addEventListener("click", (e) => {
   const opcion2="http://127.0.0.1:5500/assets/img/personalizacion/models/perro.png";
   const opcion3="http://127.0.0.1:5500/assets/img/personalizacion/models/osoCafe.png";
   const opcion4="http://127.0.0.1:5500/assets/img/personalizacion/models/conejo.png";
-  console.log(e.clientX + " " + e.clientY);
-  console.log(peluche.src);
+  console.log(e.clientX + " "+ e.clientY);
+  //console.log(peluche.src);
   if(peluche.src==opcion1){
     /* Rojo */
-    if((e.clientX<=1111&&e.clientX>=994)&&(e.clientY>=106&&e.clientY<=272)){
+    if((e.clientX <= 1060 && e.clientX >= 1030) && (e.clientY <= 240 && e.clientY >= 99)
+    || (e.clientX<=307&&e.clientX>=252)&&(e.clientY>=224&&e.clientY<=447)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(140deg) saturate(3)`;
       peluche2.style.filter=`hue-rotate(140deg) saturate(3)`;
       peluche3.style.filter=`hue-rotate(140deg) saturate(3)`;
     }
     /* Naranja */
-    else if((e.clientX<=1180&&e.clientX>=1120)&&(e.clientY>=130&&e.clientY<=301)){
+    else if((e.clientX <= 1185 && e.clientX >= 1080) && (e.clientY >= 169 && e.clientY <= 306)
+    || (e.clientX<=394&&e.clientX>=308)&&(e.clientY>=4&&e.clientY<=168)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(150deg) saturate(3)`;
       peluche2.style.filter=`hue-rotate(150deg) saturate(3)`;
       peluche3.style.filter=`hue-rotate(150deg) saturate(3)`;
     }
     /* Amarillo */
-    else if((e.clientX<=1194&&e.clientX>=1075)&&(e.clientY>=321&&e.clientY<=486)){
+    else if((e.clientX <= 1192 && e.clientX >= 1110) && (e.clientY >= 316 && e.clientY <= 470)
+    || (e.clientX>=303&&e.clientX<=387)&&(e.clientY>=168&&e.clientY<=224)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(200deg) brightness(200%) saturate(100%)`;
       peluche2.style.filter=`hue-rotate(200deg) brightness(200%) saturate(100%)`;
       peluche3.style.filter=`hue-rotate(200deg) brightness(200%) saturate(100%)`;
     }
     /* Verde */
-    else if((e.clientX<=1095&&e.clientX>=979)&&(e.clientY>=336&&e.clientY<=510)){
+    else if((e.clientX <= 1117 && e.clientX >= 990) && (e.clientY >= 471 && e.clientY <= 537)
+    || (e.clientX>=251&&e.clientX<=334)&&(e.clientY>=125&&e.clientY<=210)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(210deg) saturate(3)`;
       peluche2.style.filter=`hue-rotate(210deg) saturate(3)`;
       peluche3.style.filter=`hue-rotate(210deg) saturate(3)`;
     }
     /* Azul */
-    else if((e.clientX<=1032&&e.clientX>=910)&&(e.clientY>=316&&e.clientY<=462)){
+    else if((e.clientX <= 1000 && e.clientX >= 900) && (e.clientY >= 314 && e.clientY <= 450)
+    || (e.clientX>=192&&e.clientX<=279)&&(e.clientY>=294&&e.clientY<=363)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(30deg) saturate(100%)`;
       peluche2.style.filter=`hue-rotate(30deg) saturate(100%)`;
       peluche3.style.filter=`hue-rotate(30deg) saturate(100%)`;
     }
     /* Morado */
-    else if((e.clientX<=1038&&e.clientX>=912)&&(e.clientY>=149&&e.clientY<=290)){
+    else if((e.clientX <= 990 && e.clientX >= 903) && (e.clientY >= 146 && e.clientY <= 303)
+    || (e.clientX>=192&&e.clientX<=285)&&(e.clientY>=159&&e.clientY<=268)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(90deg) saturate(100%)`;
       peluche2.style.filter=`hue-rotate(90deg) saturate(100%)`;
@@ -317,37 +323,49 @@ colores.addEventListener("click", (e) => {
    
   }
   else if(peluche.src==opcion2){
-    if ((e.clientX <= 1060 && e.clientX >= 1030) && (e.clientY <= 240 && e.clientY >= 99)) {
+    /* Rojo */
+    if ((e.clientX <= 1060 && e.clientX >= 1030) && (e.clientY <= 240 && e.clientY >= 99)
+    || (e.clientX<=307&&e.clientX>=252)&&(e.clientY>=224&&e.clientY<=447)) {
       selectionAudio.play();
       peluche.style.filter = `hue-rotate(70deg)`;
       peluche2.style.filter = `hue-rotate(70deg)`;
       peluche3.style.filter = `hue-rotate(70deg)`;
     }
-    else if ((e.clientX <= 990 && e.clientX >= 903) && (e.clientY >= 146 && e.clientY <= 303)) {
+    /* Morado */
+    else if ((e.clientX <= 990 && e.clientX >= 903) && (e.clientY >= 146 && e.clientY <= 303)
+    || (e.clientX>=192&&e.clientX<=285)&&(e.clientY>=159&&e.clientY<=268)) {
       selectionAudio.play();
       peluche.style.filter = `hue-rotate(20deg)`;
       peluche2.style.filter = `hue-rotate(20deg)`;
       peluche3.style.filter = `hue-rotate(20deg)`;
     }
-    else if ((e.clientX <= 1185 && e.clientX >= 1080) && (e.clientY >= 169 && e.clientY <= 306)) {
+    /* Naranja */
+    else if ((e.clientX <= 1185 && e.clientX >= 1080) && (e.clientY >= 169 && e.clientY <= 306)
+    || (e.clientX<=394&&e.clientX>=308)&&(e.clientY>=4&&e.clientY<=168)) {
       selectionAudio.play();
       peluche.style.filter = `hue-rotate(120deg) saturate(3)`;
       peluche2.style.filter = `hue-rotate(120deg) saturate(3)`;
       peluche3.style.filter = `hue-rotate(120deg) saturate(3)`;
     }
-    else if ((e.clientX <= 1192 && e.clientX >= 1110) && (e.clientY >= 316 && e.clientY <= 470)) {
+    /* Amarillo */
+    else if ((e.clientX <= 1192 && e.clientX >= 1110) && (e.clientY >= 316 && e.clientY <= 470)
+    || (e.clientX>=303&&e.clientX<=387)&&(e.clientY>=168&&e.clientY<=224)) {
       selectionAudio.play();
       peluche.style.filter = `hue-rotate(120deg) brightness(200%) saturate(100%)`;
       peluche2.style.filter = `hue-rotate(120deg) brightness(200%) saturate(100%)`;
       peluche3.style.filter = `hue-rotate(120deg) brightness(200%) saturate(100%)`;
     }
-    else if ((e.clientX <= 1117 && e.clientX >= 990) && (e.clientY >= 471 && e.clientY <= 537)) {
+    /* Verde */
+    else if ((e.clientX <= 1117 && e.clientX >= 990) && (e.clientY >= 471 && e.clientY <= 537)
+    || (e.clientX>=251&&e.clientX<=334)&&(e.clientY>=125&&e.clientY<=210)) {
       selectionAudio.play();
       peluche.style.filter = `hue-rotate(150deg) saturate(3)`;
       peluche2.style.filter = `hue-rotate(150deg) saturate(3)`;
       peluche3.style.filter = `hue-rotate(150deg) saturate(3)`;
     }
-    else if ((e.clientX <= 1000 && e.clientX >= 900) && (e.clientY >= 314 && e.clientY <= 450)) {
+    /* Azul */
+    else if ((e.clientX <= 1000 && e.clientX >= 900) && (e.clientY >= 314 && e.clientY <= 450)
+    || (e.clientX>=192&&e.clientX<=279)&&(e.clientY>=294&&e.clientY<=363)) {
       selectionAudio.play();
       peluche.style.filter = `hue-rotate(270deg) saturate(3)`;
       peluche2.style.filter = `hue-rotate(270deg) saturate(3)`;
@@ -356,42 +374,48 @@ colores.addEventListener("click", (e) => {
   }
   else if(peluche.src==opcion3){
     /* Rojo */
-    if((e.clientX<=1111&&e.clientX>=994)&&(e.clientY>=106&&e.clientY<=272)){
+    if((e.clientX <= 1060 && e.clientX >= 1030) && (e.clientY <= 240 && e.clientY >= 99)
+    || (e.clientX<=307&&e.clientX>=252)&&(e.clientY>=224&&e.clientY<=447)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(350deg) saturate(5)`;
       peluche2.style.filter=`hue-rotate(350deg) saturate(5)`;
       peluche3.style.filter=`hue-rotate(350deg) saturate(5)`;
     }
     /* Naranja */
-    else if((e.clientX<=1180&&e.clientX>=1120)&&(e.clientY>=130&&e.clientY<=301)){
+    else if((e.clientX <= 1185 && e.clientX >= 1080) && (e.clientY >= 169 && e.clientY <= 306)
+    || (e.clientX<=394&&e.clientX>=308)&&(e.clientY>=4&&e.clientY<=168)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(15deg) brightness(100%) saturate(5)`;
       peluche2.style.filter=`hue-rotate(15deg) brightness(100%) saturate(5)`;
       peluche3.style.filter=`hue-rotate(15deg) brightness(100%) saturate(5)`;
     }
     /* Amarillo */
-    else if((e.clientX<=1194&&e.clientX>=1075)&&(e.clientY>=321&&e.clientY<=486)){
+    else if((e.clientX <= 1192 && e.clientX >= 1110) && (e.clientY >= 316 && e.clientY <= 470)
+    || (e.clientX>=303&&e.clientX<=387)&&(e.clientY>=168&&e.clientY<=224)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(30deg) brightness(200%) saturate(100%)`;
       peluche2.style.filter=`hue-rotate(30deg) brightness(200%) saturate(100%)`;
       peluche3.style.filter=`hue-rotate(30deg) brightness(200%) saturate(100%)`;
     }
     /* Verde */
-    else if((e.clientX<=1095&&e.clientX>=979)&&(e.clientY>=336&&e.clientY<=510)){
+    else if((e.clientX <= 1117 && e.clientX >= 990) && (e.clientY >= 471 && e.clientY <= 537)
+    || (e.clientX>=251&&e.clientX<=334)&&(e.clientY>=125&&e.clientY<=210)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(60deg) brightness(100%) saturate(5)`;
       peluche2.style.filter=`hue-rotate(60deg) brightness(100%) saturate(5)`;
       peluche3.style.filter=`hue-rotate(60deg) brightness(100%) saturate(5)`;
     }
     /* Azul */
-    else if((e.clientX<=1032&&e.clientX>=910)&&(e.clientY>=316&&e.clientY<=462)){
+    else if((e.clientX <= 1000 && e.clientX >= 900) && (e.clientY >= 314 && e.clientY <= 450)
+    || (e.clientX>=192&&e.clientX<=279)&&(e.clientY>=294&&e.clientY<=363)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(210deg) saturate(3)`;
       peluche2.style.filter=`hue-rotate(210deg) saturate(3)`;
       peluche3.style.filter=`hue-rotate(210deg) saturate(3)`;
     }
     /* Morado */
-    else if((e.clientX<=1038&&e.clientX>=912)&&(e.clientY>=149&&e.clientY<=290)){
+    else if((e.clientX <= 990 && e.clientX >= 903) && (e.clientY >= 146 && e.clientY <= 303)
+    || (e.clientX>=192&&e.clientX<=285)&&(e.clientY>=159&&e.clientY<=268)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(270deg) saturate(2)`;
       peluche2.style.filter=`hue-rotate(270deg) saturate(2)`;
@@ -402,42 +426,48 @@ colores.addEventListener("click", (e) => {
 
   else if(peluche.src==opcion4){
     /* Rojo */
-    if((e.clientX<=1111&&e.clientX>=994)&&(e.clientY>=106&&e.clientY<=272)){
+    if((e.clientX <= 1060 && e.clientX >= 1030) && (e.clientY <= 240 && e.clientY >= 99)
+    || (e.clientX<=307&&e.clientX>=252)&&(e.clientY>=224&&e.clientY<=447)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(15deg) saturate(5)`;
       peluche2.style.filter=`hue-rotate(15deg) saturate(5)`;
       peluche3.style.filter=`hue-rotate(15deg) saturate(5)`;
     }
     /* Naranja */
-    else if((e.clientX<=1180&&e.clientX>=1120)&&(e.clientY>=130&&e.clientY<=301)){
+    else if((e.clientX <= 1185 && e.clientX >= 1080) && (e.clientY >= 169 && e.clientY <= 306)
+    || (e.clientX<=394&&e.clientX>=308)&&(e.clientY>=4&&e.clientY<=168)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(30deg) saturate(5)`;
       peluche2.style.filter=`hue-rotate(30deg) saturate(5)`;
       peluche3.style.filter=`hue-rotate(30deg) saturate(5)`;
     }
     /* Amarillo */
-    else if((e.clientX<=1194&&e.clientX>=1075)&&(e.clientY>=321&&e.clientY<=486)){
+    else if((e.clientX <= 1192 && e.clientX >= 1110) && (e.clientY >= 316 && e.clientY <= 470)
+    || (e.clientX>=303&&e.clientX<=387)&&(e.clientY>=168&&e.clientY<=224)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(60deg) brightness(100%) saturate(5)`;
       peluche2.style.filter=`hue-rotate(60deg) brightness(100%) saturate(5)`;
       peluche3.style.filter=`hue-rotate(60deg) brightness(100%) saturate(5)`;
     }
     /* Verde */
-    else if((e.clientX<=1095&&e.clientX>=979)&&(e.clientY>=336&&e.clientY<=510)){
+    else if((e.clientX <= 1117 && e.clientX >= 990) && (e.clientY >= 471 && e.clientY <= 537)
+    || (e.clientX>=251&&e.clientX<=334)&&(e.clientY>=125&&e.clientY<=210)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(90deg) brightness(100%) saturate(5)`;
       peluche2.style.filter=`hue-rotate(90deg) brightness(100%) saturate(5)`;
       peluche3.style.filter=`hue-rotate(90deg) brightness(100%) saturate(5)`;
     }
     /* Azul */
-    else if((e.clientX<=1032&&e.clientX>=910)&&(e.clientY>=316&&e.clientY<=462)){
+    else if((e.clientX <= 1000 && e.clientX >= 900) && (e.clientY >= 314 && e.clientY <= 450)
+    || (e.clientX>=192&&e.clientX<=279)&&(e.clientY>=294&&e.clientY<=363)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(210deg) saturate(3)`;
       peluche2.style.filter=`hue-rotate(210deg) saturate(3)`;
       peluche3.style.filter=`hue-rotate(210deg) saturate(3)`;
     }
     /* Morado */
-    else if((e.clientX<=1038&&e.clientX>=912)&&(e.clientY>=149&&e.clientY<=290)){
+    else if((e.clientX <= 990 && e.clientX >= 903) && (e.clientY >= 146 && e.clientY <= 303)
+    || (e.clientX>=192&&e.clientX<=285)&&(e.clientY>=159&&e.clientY<=268)){
       selectionAudio.play();
       peluche.style.filter=`hue-rotate(0deg) saturate(5)`;
       peluche2.style.filter=`hue-rotate(0deg) saturate(5)`;

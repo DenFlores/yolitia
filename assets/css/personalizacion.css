@@ -267,7 +267,7 @@
 .btn-siguiente {
   position: absolute;
   left: 65%;
-  top: 95%;
+  top: 105%;
   width: 335px;
   height: 112px;
   text-align: center;
@@ -323,7 +323,7 @@
 .btn-regresar {
   position: absolute;
   left: 6%;
-  top: 95%;
+  top: 105%;
   width: 337px;
   height: 112px;
   background: #fdfd96;
@@ -432,7 +432,7 @@
   position: absolute;
   width: 300px;
   height: 249px;
-  top: 13%;
+  top: 0%;
   left: 5%;
 }
 
@@ -441,7 +441,7 @@
   width: 300px;
   height: 410px;
   left: 35%;
-  top: 53%;
+  top: 63%;
   z-index: 100;
 }
 
@@ -455,7 +455,7 @@
 
 .text-instruction {
   position: absolute;
-  top: 25%;
+  top: 10%;
   width: 100%;
   height: 237px;
   font-family: Pacifico;
@@ -503,7 +503,7 @@
   position: absolute;
   width: 352px;
   height: 346px;
-  left: 10%;
+  left: -135%;
   bottom: 15%;
   z-index: 100;
 }
@@ -538,8 +538,8 @@
 
 .form-control {
   position: absolute;
-  width: 556px;
-  height: 117px;
+  width: 526px;
+  height: 84px;
   background: rgba(220, 20, 176, 0.31);
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -554,9 +554,12 @@
   font-weight: normal;
   font-size: 48px;
   line-height: 84px;
-  display: flex;
-  align-items: center;
+  text-align: center;
   color: #9d8d8d;
+}
+.form-control:focus{
+  width: 526px;
+  height: 84px;
 }
 .btn-green {
   position: absolute;
@@ -758,27 +761,32 @@
     display: none;
   }
   .colores {
+    position: relative;
     width: 212px;
     height: 212px;
     margin-left: 20%;
+    top: 30%;
+    z-index: 100;
   }
   .text-instruction {
+    position: relative;
     font-size: 24px;
     line-height: 30px;
+    top: 50%;
   }
   .peluche {
     position: absolute;
     width: 300px;
     height: 311.5px;
-    left: 45px;
-    top: 402px;
+    left: 25%;
+    top: 125%;
   }
   .btn-regresar {
     position: absolute;
     width: 148px;
     height: 50px;
     left: 20%;
-    top: 135%;
+    top: 180%;
   }
   .regresar {
     position: absolute;
@@ -799,7 +807,7 @@
     width: 148px;
     height: 50px;
     left: 55%;
-    top: 135%;
+    top: 180%;
   }
   .siguiente {
     position: absolute;
@@ -877,7 +885,7 @@
   }
   #confirmar {
     position: absolute;
-    left: 20%;
+    left: 25%;
     top: 2000%;
     width: 272px;
     height: 92px;
@@ -918,8 +926,15 @@
     text-align: center;
     color: #9d8d8d;
   }
-  .bg-figma-2 {
+  .bg-figma-2-responsive {
     width: 100%;
     height: 8.13px;
+  }
+  .bg-figma-1-responsive {
+    width: 100%;
+    height: 43.69px;
+  }
+  .peluche3{
+    left: 18%;
   }
 }
