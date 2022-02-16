@@ -47,14 +47,41 @@
     letter-spacing: 4.5px;
 }
 
+<<<<<<< HEAD
+=======
+/*----------------------------------- Carritp --------------------------------*/
+
+.circulo-carrito{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--colorMorado);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  z-index: 5;
+  text-decoration: none;
+}
+>>>>>>> 87298577e5656b1692c2e3650404be953a73d978
 /*Banner sobre nosotros*/
 .nosotros {
     margin: 25px;
     display: flex;
     flex-direction: column;
     text-align: center;
+<<<<<<< HEAD
     background-image: url(/assets/img/nosotros/mantel.png);
     padding: 50px;
+=======
+    background-image: url(../img/nosotros/Ventana.png);
+    padding: 25px 50px;
+    max-height: 290px;
+>>>>>>> 87298577e5656b1692c2e3650404be953a73d978
     background-size:cover;
     background-repeat: no-repeat;  
 }
