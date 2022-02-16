@@ -56,7 +56,7 @@
 }
 .bg-figma-4 {
   position: relative;
-  width: 32px;
+  width: 10%;
   height: 200px;
   background: #c4c4c4;
   border: 2px solid #010101;
@@ -445,14 +445,6 @@
   z-index: 100;
 }
 
-.colores {
-  position: relative;
-  width: 300px;
-  height: 449px;
-  left: 10%;
-  top: 20%;
-}
-
 .text-instruction {
   position: absolute;
   top: 10%;
@@ -503,7 +495,7 @@
   position: absolute;
   width: 352px;
   height: 346px;
-  left: -135%;
+  left: -55%;
   bottom: 15%;
   z-index: 100;
 }
@@ -557,7 +549,7 @@
   text-align: center;
   color: #9d8d8d;
 }
-.form-control:focus{
+.form-control:focus {
   width: 526px;
   height: 84px;
 }
@@ -605,17 +597,17 @@
 }
 
 .sombrero-n3 {
-  position: relative;
-  bottom: 105%;
-  left: 850%;
-  z-index: 300;
+width: 100px;
+height: 100px;
+  z-index: 100;
+
 }
 
 .monio-n3 {
-  position: relative;
-  bottom: 0%;
-  right: 75%;
-  z-index: 300;
+ width: 100px;
+ height: 100px;
+  z-index: 100;
+
 }
 
 #canvas {
@@ -625,7 +617,45 @@
   z-index: -10;
 }
 
-@media only screen and (max-width: 600px) {
+.confetti {
+  left: 0;
+  pointer-events: none ;
+  position: fixed;
+  top: 0;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  height: 100%;
+  width: 100%;
+}
+/*/ -------------------------------------
+//   Scaffolding
+// -------------------------------------*/
+
+.confetti-item {
+  position: absolute;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+/*/ -------------------------------------
+//   Keyframe Animations
+// -------------------------------------
+
+// ----- Confetti Fall ----- //*/
+
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100%)
+  }
+  95%{
+    animation-timing-function: ease-in-out;
+    transform: translateY(calc(100vh - 55%))
+  }
+  100% {
+    transform: translateY(calc(150vh - 65%))
+  }}
+
+@media only screen and (max-width: 576px) {
   #conejo {
     margin-left: 10%;
   }
@@ -737,37 +767,30 @@
     border-radius: 10px;
   }
   #conejo {
-    margin-left: 60px;
+    margin-left: 30%;
     margin-top: 60px;
     width: 162px;
     height: 150px;
   }
   #osoCafe {
-    margin-left: 280px;
+    margin-left: 60%;
     width: 153.8px;
     height: 150px;
   }
   #perro {
-    margin-left: 60px;
+    margin-left: 30%;
     width: 153.7px;
     height: 150px;
   }
   #osoAzul {
-    margin-left: 280px;
+    margin-left: 60%;
     width: 154.55px;
     height: 162px;
   }
   .brazo {
     display: none;
   }
-  .colores {
-    position: relative;
-    width: 212px;
-    height: 212px;
-    margin-left: 20%;
-    top: 30%;
-    z-index: 100;
-  }
+
   .text-instruction {
     position: relative;
     font-size: 24px;
@@ -776,8 +799,8 @@
   }
   .peluche {
     position: absolute;
-    width: 300px;
-    height: 311.5px;
+    width: 200px;
+    height: 200px;
     left: 25%;
     top: 125%;
   }
@@ -785,7 +808,7 @@
     position: absolute;
     width: 148px;
     height: 50px;
-    left: 20%;
+    left: 5%;
     top: 180%;
   }
   .regresar {
@@ -806,7 +829,7 @@
     position: absolute;
     width: 148px;
     height: 50px;
-    left: 55%;
+    left: 58%;
     top: 180%;
   }
   .siguiente {
@@ -837,8 +860,8 @@
     position: absolute;
     width: 148px;
     height: 50px;
-    left: 20%;
-    top: 235%;
+    right: 15%;
+    top: 120%;
   }
   .regresar2 {
     position: absolute;
@@ -858,8 +881,8 @@
     position: absolute;
     width: 148px;
     height: 50px;
-    left: -135%;
-    top: 235%;
+    left: -120%;
+    top: 120%;
   }
   .siguiente2 {
     position: absolute;
@@ -880,31 +903,33 @@
   }
   .peluche2 {
     position: absolute;
-    width: 300px;
-    height: 344.37px;
+    width: 200px;
+    height: 200px;
   }
   #confirmar {
     position: absolute;
-    left: 25%;
+    right: 25%;
     top: 2000%;
-    width: 272px;
+    width: 200px;
     height: 92px;
   }
   .confirmar {
-    position: relative;
-    left: -35%;
+    position: absolute;
+    left: -57%;
     top: 20%;
     font-size: 36px;
     line-height: 45px;
   }
   .text-instruction-3 {
     /* Subtitulo - mobile */
+    position: relative;
     font-family: Pacifico;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 30px;
     color: #010101;
+    right: 45%;
   }
   .bg-figma-2 {
     width: 100%;
@@ -913,7 +938,7 @@
   .form-control {
     width: 272px;
     height: 57.24px;
-    left: 28%;
+    right: 15%;
   }
   .form-control:placeholder-shown {
     width: 244px;
@@ -934,7 +959,27 @@
     width: 100%;
     height: 43.69px;
   }
-  .peluche3{
-    left: 18%;
+  .peluche3 {
+    width: 200px;
+    height: 200px;
+    left: 15%;
+  }
+  .col-1,
+  .col-2 {
+    padding: 0;
+  }
+  .carousel-control-next,
+  .carousel-control-prev,
+  .carousel-inner {
+    z-index: 100;
+  }
+  #gadget-1,
+  #gadget-2,
+  #gadget-3,
+  #gadget-4,
+  #gadget-5,
+  #gadget-6 {
+    width: 200px;
+    height: 200px;
   }
 }
