@@ -316,10 +316,17 @@ function subirBrazo(e) {
 
 /* Nivel 2 cambio de colores */
 //Opciones de modelos de peluches a elegir
-const opcion1 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-const opcion2 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-const opcion3 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-const opcion4 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
+/* const opcion1 = "http://127.0.0.1:5500/assets/img/personalizacion/models/osoAzul.png";
+const opcion2 = "http://127.0.0.1:5500/assets/img/personalizacion/models/perro.png";
+const opcion3 = "http://127.0.0.1:5500/assets/img/personalizacion/models/osoCafe.png";
+const opcion4 = "http://127.0.0.1:5500/assets/img/personalizacion/models/conejo.png"; */
+
+/* Solo usar para pruebas locales */
+const opcion1 = "http://127.0.0.1:5500/assets/img/personalizacion/models/osoAzul.png";
+const opcion2 = "http://127.0.0.1:5500/assets/img/personalizacion/models/perro.png";
+const opcion3 = "http://127.0.0.1:5500/assets/img/personalizacion/models/osoCafe.png";
+const opcion4 = "http://127.0.0.1:5500/assets/img/personalizacion/models/conejo.png";
+
 const ninosFestejando = new Audio('/assets/audio/ninos.mp3');
 const ruletaSonido = new Audio('/assets/audio/sonido_ruleta.mp3');
 //Pintando los colores en canvas
