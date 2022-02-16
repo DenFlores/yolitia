@@ -1,17 +1,3 @@
-/* Creacion del modelo para todos los niveles */
-class ModeloPeluche {
-  modelo;
-  color;
-  sombrero;
-  monio;
-  constructor(modelo, color, sombrero, monio) {
-    this.modelo = modelo;
-    this.color = color;
-    this.sombrero = sombrero;
-    this.monio = monio;
-  }
-}
-
 /*Nivel 1 movimiento de palanca giratoria y seleccion de peluche*/
 
 const ball = document.querySelector("#ball")
@@ -124,6 +110,7 @@ function mousedown(e) {
 /* Movimiento palanca no disponible para  versión móvil en su lugar se usara
 la parte tactil de los dedos*/
 /* Seleccion tactil del conejo */
+
 conejo.addEventListener("click", modeloUno);
 function modeloUno(e) {
   console.log('conejo');
@@ -133,6 +120,14 @@ function modeloUno(e) {
     peluche.src = "/assets/img/personalizacion/models/conejo.png";
     peluche2.src = "/assets/img/personalizacion/models/conejo.png";
     peluche3.src = "/assets/img/personalizacion/models/conejo.png";
+    gorro.style.left = "29%";
+    gorro.style.top = "-10%";
+    monio.style.left = "-6%";
+    monio.style.top = "109%";
+    monioN3.style.left = "-170%";
+    monioN3.style.top = "360%";
+    sombreroN3.style.left = "-24%";
+    sombreroN3.style.top = "252%";
   }
   else {
     e.preventDefault();
@@ -148,6 +143,14 @@ function modeloDos(e) {
     peluche.src = "/assets/img/personalizacion/models/osoCafe.png";
     peluche2.src = "/assets/img/personalizacion/models/osoCafe.png";
     peluche3.src = "/assets/img/personalizacion/models/osoCafe.png";
+    gorro.style.left = "27%";
+    gorro.style.top = "-49%";
+    monio.style.left = "-8%";
+    monio.style.top = "79%";
+    monioN3.style.left = "-180%";
+    monioN3.style.top = "337%";
+    sombreroN3.style.left = "-40%";
+    sombreroN3.style.top = "218%";
   }
   else {
     e.preventDefault();
@@ -163,6 +166,14 @@ function modeloTres(e) {
     peluche.src = "/assets/img/personalizacion/models/perro.png";
     peluche2.src = "/assets/img/personalizacion/models/perro.png";
     peluche3.src = "/assets/img/personalizacion/models/perro.png";
+    gorro.style.left = "29%";
+    gorro.style.top = "-11%";
+    monio.style.left = "-8%";
+    monio.style.top = "97%";
+    monioN3.style.left = "-170%";
+    monioN3.style.top = "351%";
+    sombreroN3.style.left = "-28%";
+    sombreroN3.style.top = "241%";
   }
   else {
     e.preventDefault();
@@ -178,6 +189,14 @@ function modeloCuatro(e) {
     peluche.src = "/assets/img/personalizacion/models/osoAzul.png";
     peluche2.src = "/assets/img/personalizacion/models/osoAzul.png";
     peluche3.src = "/assets/img/personalizacion/models/osoAzul.png";
+    gorro.style.left = "30%";
+    gorro.style.top = "-42%";
+    monio.style.left = "-7%";
+    monio.style.top = "90%";
+    monioN3.style.left = "-170%";
+    monioN3.style.top = "335%";
+    sombreroN3.style.left = "-28%";
+    sombreroN3.style.top = "200%";
   }
   else {
     e.preventDefault();
@@ -217,6 +236,14 @@ function bajarBrazo(e) {
       peluche.src = "/assets/img/personalizacion/models/osoAzul.png";
       peluche2.src = "/assets/img/personalizacion/models/osoAzul.png";
       peluche3.src = "/assets/img/personalizacion/models/osoAzul.png";
+      monio.style.left = "29%";
+      monio.style.top = "85%";
+      gorro.style.left = "53%";
+      gorro.style.top = "0%";
+      monioN3.style.left = "-79%";
+      monioN3.style.top = "220%";
+      sombreroN3.style.left = "32%";
+      sombreroN3.style.top = "5%";
     }
     else if (x >= 677 && x <= 735 && y == 490) {
       console.log('perro');
@@ -225,6 +252,14 @@ function bajarBrazo(e) {
       peluche.src = "/assets/img/personalizacion/models/perro.png";
       peluche2.src = "/assets/img/personalizacion/models/perro.png";
       peluche3.src = "/assets/img/personalizacion/models/perro.png";
+      monio.style.left = "29%";
+      monio.style.top = "95%";
+      gorro.style.left = "53%";
+      gorro.style.top = "15%";
+      monioN3.style.left = "-79%";
+      monioN3.style.top = "245%";
+      sombreroN3.style.left = "32%";
+      sombreroN3.style.top = "60%";
     }
     else if (x >= 454 && x <= 517 && y == 490) {
       console.log('oso cafe');
@@ -233,6 +268,14 @@ function bajarBrazo(e) {
       peluche.src = "/assets/img/personalizacion/models/osoCafe.png";
       peluche2.src = "/assets/img/personalizacion/models/osoCafe.png";
       peluche3.src = "/assets/img/personalizacion/models/osoCafe.png";
+      monio.style.left = "27%";
+      monio.style.top = "80%";
+      gorro.style.left = "51%";
+      gorro.style.top = "0%";
+      monioN3.style.left = "-83%";
+      monioN3.style.top = "210%";
+      sombreroN3.style.left = "28%";
+      sombreroN3.style.top = "5%";
     }
     else if (x >= 273 && x <= 294 && y == 490) {
       console.log('conejo');
@@ -241,8 +284,17 @@ function bajarBrazo(e) {
       peluche.src = "/assets/img/personalizacion/models/conejo.png";
       peluche2.src = "/assets/img/personalizacion/models/conejo.png";
       peluche3.src = "/assets/img/personalizacion/models/conejo.png";
+      monio.style.left = "30%";
+      monio.style.top = "100%";
+      gorro.style.left = "53%";
+      gorro.style.top = "30%";
+      monioN3.style.left = "-78%";
+      monioN3.style.top = "250%";
+      sombreroN3.style.left = "33%";
+      sombreroN3.style.top = "80%";
     }
   }
+
   else {
     e.preventDefault();
   }
@@ -516,8 +568,6 @@ function sortear() {
   }
 }
 
-/* Nivel 3 manejo de eventos para ponerle los accesorios */
-
 /*Stepform nivel 1,2,3 y 4*/
 const steps = Array.from(document.querySelectorAll("section .step"));
 const nextBtn = document.querySelectorAll("section .btn-step-next");
@@ -562,14 +612,14 @@ const nombre = document.querySelector('#nombre');
 const aplausos = new Audio('/assets/audio/publico.mp3');
 const congratsModal = document.querySelector('#congratsModal');
 
-nombre.addEventListener("change",verificarNombre);
+nombre.addEventListener("change", verificarNombre);
 
-function verificarNombre(e){
-  if(e.target.value){
-    confirmarButton.disabled=false;
+function verificarNombre(e) {
+  if (e.target.value) {
+    confirmarButton.disabled = false;
   }
-  else if(!e.target.value){
-    confirmarButton.disabled=true;
+  else if (!e.target.value) {
+    confirmarButton.disabled = true;
   }
 }
 
@@ -581,34 +631,34 @@ function confirmacionCompra(e) {
       var randomNumber = Math.floor(Math.random() * collection.length);
       return collection[randomNumber];
     }
-    
+
     function confetti() {
       $(".confetti").remove();
       var $confettiItems = $('<div class="confetti"></div>'),
         colors = ["#3b5692", "#f9c70b", "#00abed", "#ea6747"],
         height = 6.6,
         width = 6.6;
-    
+
       var scale, $confettiItem;
-    
+
       for (var i = 0; i < 100; i++) {
         scale = Math.random() * 1.75 + 1;
         $confettiItem = $(
           "<svg class='confetti-item' width='" +
-            width * scale +
-            "' height='" +
-            height * scale +
-            "' viewbox='0 0 " +
-            width +
-            " " +
-            height +
-            "'>\n  <use transform='rotate(" +
-            Math.random() * 360 +
-            ", " +
-            width / 2 +
-            ", " +
-            height / 2 +
-            ")' xlink:href='#svg-confetti' />\n</svg>"
+          width * scale +
+          "' height='" +
+          height * scale +
+          "' viewbox='0 0 " +
+          width +
+          " " +
+          height +
+          "'>\n  <use transform='rotate(" +
+          Math.random() * 360 +
+          ", " +
+          width / 2 +
+          ", " +
+          height / 2 +
+          ")' xlink:href='#svg-confetti' />\n</svg>"
         );
         $confettiItem.css({
           animation:
@@ -624,12 +674,12 @@ function confirmacionCompra(e) {
       }
       $("body").append($confettiItems);
     }
-    
-    $("#congratsModal").on("shown.bs.modal", function() {
+
+    $("#congratsModal").on("shown.bs.modal", function () {
       confetti();
     });
-    
-  }else{
+
+  } else {
     e.preventDefault();
   }
 }

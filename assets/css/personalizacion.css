@@ -495,9 +495,9 @@
   position: absolute;
   width: 352px;
   height: 346px;
-  left: -55%;
-  bottom: 15%;
   z-index: 100;
+  left: 100%;
+  top: 35%;
 }
 
 .peluche3 {
@@ -512,20 +512,18 @@
 .gorro {
   position: relative;
   z-index: 100;
-
-  left: 48%;
+  left: 53%;
   width: 130px;
   height: 130px;
-  top: 15%;
+  top: 10%;
 }
 .monio {
   position: relative;
   z-index: 100;
-  left: 25%;
+  left: 30%;
   width: 150px;
   height: 100px;
-  top: 130%;
-  z-index: 100;
+  top: 100%;
 }
 
 .form-control {
@@ -597,17 +595,21 @@
 }
 
 .sombrero-n3 {
-width: 100px;
-height: 100px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
   z-index: 100;
-
+  left: 32%;
+  top: 60%;
 }
 
 .monio-n3 {
- width: 100px;
- height: 100px;
+  position: relative;
+  width: 100px;
+  height: 100px;
   z-index: 100;
-
+  left: -79%;
+  top:245%
 }
 
 #canvas {
@@ -619,7 +621,7 @@ height: 100px;
 
 .confetti {
   left: 0;
-  pointer-events: none ;
+  pointer-events: none;
   position: fixed;
   top: 0;
   transform: translate3d(0, 0, 0);
@@ -642,18 +644,18 @@ height: 100px;
 
 // ----- Confetti Fall ----- //*/
 
-
 @keyframes confetti-fall {
   0% {
-    transform: translateY(-100%)
+    transform: translateY(-100%);
   }
-  95%{
+  95% {
     animation-timing-function: ease-in-out;
-    transform: translateY(calc(100vh - 55%))
+    transform: translateY(calc(100vh - 55%));
   }
   100% {
-    transform: translateY(calc(150vh - 65%))
-  }}
+    transform: translateY(calc(150vh - 65%));
+  }
+}
 
 @media only screen and (max-width: 576px) {
   #conejo {
@@ -903,8 +905,20 @@ height: 100px;
   }
   .peluche2 {
     position: absolute;
+    top: 250%;
+    left: 45%;
     width: 200px;
     height: 200px;
+  }
+  .monio-n3{
+    position: relative;
+    left: -170%;
+   top:360%;
+  }
+  .sombrero-n3{
+    position: relative;
+    left: -28%;
+    top:250%;
   }
   #confirmar {
     position: absolute;
@@ -981,5 +995,22 @@ height: 100px;
   #gadget-6 {
     width: 200px;
     height: 200px;
+  }
+  .gorro {
+    position: relative;
+    z-index: 100;
+    left: 27%;
+    width: 100px;
+    height: 100px;
+    top: -10%;
+  }
+  .monio {
+    position: relative;
+    z-index: 100;
+    left: -5%;
+    width: 100px;
+    height: 100px;
+    top: 105%;
+    z-index: 100;
   }
 }
