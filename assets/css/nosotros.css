@@ -306,14 +306,15 @@ body {
     left: auto;
     border-radius: 30px;
   }
-}
-.front,
-.back,
-.cards {
-  width: 300px;
-}
-.cards .front img {
-  width: 320px;
-  left: auto;
-  border-radius: 30px;
+
+  .front,
+  .back,
+  .cards {
+    width: 300px;
+  }
+  .cards .front img {
+    width: 320px;
+    left: auto;
+    border-radius: 30px;
+  }
 }
