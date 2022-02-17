@@ -28,46 +28,46 @@ const gadget6 = document.querySelector('#gadget-6');
 /* Anexar los distintos gadgets a los ids sombrero y monio */
 const sombreroN3 = document.querySelector(".sombrero-n3");
 const monioN3 = document.querySelector(".monio-n3");
-const selectionAudio = new Audio("../assets/audio/selection.mp3");
+const selectionAudio = new Audio("https://denflores.github.io/yolitia/assets/audio/selection.mp3");
 
 gadget1.addEventListener("click", seccionOne);
 function seccionOne() {
-  sombreroN3.src = "../assets/img/personalizacion/nivel3/Rectangle 148.png";
-  gorro.src = "../assets/img/personalizacion/nivel3/Rectangle 148.png";
+  sombreroN3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/Rectangle 148.png";
+  gorro.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/Rectangle 148.png";
 }
 
 gadget2.addEventListener("click", seccionDos);
 function seccionDos() {
-  sombreroN3.src = "../assets/img/personalizacion/nivel3/gorro1-removebg-preview.png";
-  gorro.src = "../assets/img/personalizacion/nivel3/gorro1-removebg-preview.png";
+  sombreroN3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/gorro1-removebg-preview.png";
+  gorro.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/gorro1-removebg-preview.png";
 }
 
 gadget3.addEventListener("click", seccionTres);
 function seccionTres() {
-  sombreroN3.src = "../assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.34_PM-removebg-preview.png";
-  gorro.src = "../assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.34_PM-removebg-preview.png";
+  sombreroN3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.34_PM-removebg-preview.png";
+  gorro.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.34_PM-removebg-preview.png";
 }
 
 gadget4.addEventListener("click", seccionCuatro);
 function seccionCuatro() {
-  monioN3.src = "../assets/img/personalizacion/nivel3/Rectangle 149.png";
-  monio.src = "../assets/img/personalizacion/nivel3/Rectangle 149.png";
+  monioN3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/Rectangle 149.png";
+  monio.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/Rectangle 149.png";
 }
 
 gadget5.addEventListener("click", seccionCinco);
 function seccionCinco() {
-  monioN3.src = "../assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.33_PM__3_-removebg-preview.png";
-  monio.src = "../assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.33_PM__3_-removebg-preview.png";
+  monioN3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.33_PM__3_-removebg-preview.png";
+  monio.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/WhatsApp_Image_2022-02-02_at_5.37.33_PM__3_-removebg-preview.png";
 }
 
 gadget6.addEventListener("click", seccionSeis);
 function seccionSeis() {
-  monioN3.src = "../assets/img/personalizacion/nivel3/monios-removebg-preview.png";
-  monio.src = "../assets/img/personalizacion/nivel3/monios-removebg-preview.png";
+  monioN3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/monios-removebg-preview.png";
+  monio.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/nivel3/monios-removebg-preview.png";
 }
 /* Comienza la lógica de los eventos para lograr los efectos deseados */
 
-const movimientoHorizontal = new Audio("../assets/audio/horizontal.mp3");
+const movimientoHorizontal = new Audio("https://denflores.github.io/yolitia/assets/audio/horizontal.mp3");
 ball.addEventListener("mousedown", mousedown);
 
 function mousedown(e) {
@@ -117,9 +117,9 @@ function modeloUno(e) {
   if (screen.width <= 576) {
     selectionAudio.play();
     changeStep("next");
-    peluche.src = "../assets/img/personalizacion/models/conejo.png";
-    peluche2.src = "../assets/img/personalizacion/models/conejo.png";
-    peluche3.src = "../assets/img/personalizacion/models/conejo.png";
+    peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
+    peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
+    peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
     gorro.style.left = "29%";
     gorro.style.top = "-10%";
     monio.style.left = "-6%";
@@ -140,9 +140,9 @@ function modeloDos(e) {
   if (screen.width <= 576) {
     selectionAudio.play();
     changeStep("next");
-    peluche.src = "../assets/img/personalizacion/models/osoCafe.png";
-    peluche2.src = "../assets/img/personalizacion/models/osoCafe.png";
-    peluche3.src = "../assets/img/personalizacion/models/osoCafe.png";
+    peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
+    peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
+    peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
     gorro.style.left = "27%";
     gorro.style.top = "-49%";
     monio.style.left = "-8%";
@@ -163,9 +163,9 @@ function modeloTres(e) {
   if (screen.width <= 576) {
     selectionAudio.play();
     changeStep("next");
-    peluche.src = "../assets/img/personalizacion/models/perro.png";
-    peluche2.src = "../assets/img/personalizacion/models/perro.png";
-    peluche3.src = "../assets/img/personalizacion/models/perro.png";
+    peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
+    peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
+    peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
     gorro.style.left = "29%";
     gorro.style.top = "-11%";
     monio.style.left = "-8%";
@@ -186,9 +186,9 @@ function modeloCuatro(e) {
   if (screen.width <= 576) {
     selectionAudio.play();
     changeStep("next");
-    peluche.src = "../assets/img/personalizacion/models/osoAzul.png";
-    peluche2.src = "../assets/img/personalizacion/models/osoAzul.png";
-    peluche3.src = "../assets/img/personalizacion/models/osoAzul.png";
+    peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
+    peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
+    peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
     gorro.style.left = "30%";
     gorro.style.top = "-42%";
     monio.style.left = "-7%";
@@ -211,7 +211,7 @@ btnleft.addEventListener("click", bajarBrazo);
 function bajarBrazo(e) {
   if (screen.width >= 1200) {
     console.log(e);
-    const audioBajarBrazo = new Audio("../assets/audio/bajar-brazo.mp3");
+    const audioBajarBrazo = new Audio("https://denflores.github.io/yolitia/assets/audio/bajar-brazo.mp3");
     audioBajarBrazo.play();
     brazo.style.height = "100%";
     function getOffset(el) {
@@ -233,9 +233,9 @@ function bajarBrazo(e) {
       console.log('oso azul');
       osoAzul.style.display = "none";
       changeStep("next");
-      peluche.src = "../assets/img/personalizacion/models/osoAzul.png";
-      peluche2.src = "../assets/img/personalizacion/models/osoAzul.png";
-      peluche3.src = "../assets/img/personalizacion/models/osoAzul.png";
+      peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
+      peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
+      peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
       monio.style.left = "29%";
       monio.style.top = "85%";
       gorro.style.left = "53%";
@@ -249,9 +249,9 @@ function bajarBrazo(e) {
       console.log('perro');
       perro.style.display = "none";
       changeStep("next");
-      peluche.src = "../assets/img/personalizacion/models/perro.png";
-      peluche2.src = "../assets/img/personalizacion/models/perro.png";
-      peluche3.src = "../assets/img/personalizacion/models/perro.png";
+      peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
+      peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
+      peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
       monio.style.left = "29%";
       monio.style.top = "95%";
       gorro.style.left = "53%";
@@ -265,9 +265,9 @@ function bajarBrazo(e) {
       console.log('oso cafe');
       osoCafe.style.display = "none";
       changeStep("next");
-      peluche.src = "../assets/img/personalizacion/models/osoCafe.png";
-      peluche2.src = "../assets/img/personalizacion/models/osoCafe.png";
-      peluche3.src = "../assets/img/personalizacion/models/osoCafe.png";
+      peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
+      peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
+      peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
       monio.style.left = "27%";
       monio.style.top = "80%";
       gorro.style.left = "51%";
@@ -281,9 +281,9 @@ function bajarBrazo(e) {
       console.log('conejo');
       conejo.style.display = "none";
       changeStep("next");
-      peluche.src = "../assets/img/personalizacion/models/conejo.png";
-      peluche2.src = "../assets/img/personalizacion/models/conejo.png";
-      peluche3.src = "../assets/img/personalizacion/models/conejo.png";
+      peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
+      peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
+      peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
       monio.style.left = "30%";
       monio.style.top = "100%";
       gorro.style.left = "53%";
@@ -305,7 +305,7 @@ btnright.addEventListener("click", subirBrazo);
 function subirBrazo(e) {
   if (screen.width >= 1200) {
     console.log(e);
-    const audioSubirBrazo = new Audio("../assets/audio/subir-brazo.mp3");
+    const audioSubirBrazo = new Audio("https://denflores.github.io/yolitia/assets/audio/subir-brazo.mp3");
     audioSubirBrazo.play();
     brazo.style.height = "60px";
   }
@@ -327,8 +327,8 @@ const opcion2 = "https://denflores.github.io/yolitia/assets/img/personalizacion/
 const opcion3 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
 const opcion4 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
 
-const ninosFestejando = new Audio('../assets/audio/ninos.mp3');
-const ruletaSonido = new Audio('../assets/audio/sonido_ruleta.mp3');
+const ninosFestejando = new Audio("https://denflores.github.io/yolitia/assets/audio/ninos.mp3");
+const ruletaSonido = new Audio("https://denflores.github.io/yolitia/assets/audio/sonido_ruleta.mp3");
 //Pintando los colores en canvas
 const array_colores =
   [
@@ -579,7 +579,7 @@ function sortear() {
 const steps = Array.from(document.querySelectorAll("section .step"));
 const nextBtn = document.querySelectorAll("section .btn-step-next");
 const prevBtn = document.querySelectorAll("section .btn-step-prev");
-const audioClick = new Audio("../assets/audio/click.mp3");
+const audioClick = new Audio("https://denflores.github.io/yolitia/assets/audio/click.mp3");
 
 nextBtn.forEach((button) => {
   button.addEventListener("click", () => {
@@ -616,7 +616,7 @@ function changeStep(btn) {
 const confirmarButton = document.querySelector('#confirmar');
 confirmarButton.addEventListener("click", confirmacionCompra);
 const nombre = document.querySelector('#nombre');
-const aplausos = new Audio('../assets/audio/publico.mp3');
+const aplausos = new Audio("https://denflores.github.io/yolitia/assets/audio/publico.mp3");
 const congratsModal = document.querySelector('#congratsModal');
 
 nombre.addEventListener("change", verificarNombre);
