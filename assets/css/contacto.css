@@ -81,7 +81,6 @@ body{
 }
 .containrer{
     background-color: #ff696f; 
-    
 }
 
 .escribenos{
@@ -94,14 +93,9 @@ body{
     text-align: center;
 }
 
-.container11 {
+.contactanos{
    
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.osocont{
-   
+    
 }
 
 .form-container{
@@ -166,17 +160,16 @@ margin-top: 30px;
 
 
 .col-formulario11{
-  
+   width: 65%;
     background-color: tomato;
     border-radius: 16px;
     margin-right: 10%;
     color: white;
-    
 }
 
-.OsoForm {
-  margin-left:60px;
-  margin-right: 60px;
+.img-oso{
+    margin-left: 10%;
+    width: 100%;
 }
 
 .juntos{
@@ -187,19 +180,12 @@ margin-top: 30px;
     flex-grow: 1;
 }
 
-span {
-    color: white;
-}
-
 
 .formulario{
     color: white;
     background-color: var(--colorRojo);
-    padding: 15px;
+    padding: 20px;
     border-radius: 20px;
-    margin-left: 60px;
-    width:550px;
-    
 }
 
 input:invalid{
@@ -209,6 +195,7 @@ input:invalid{
 input:valid{
     border: 3px solid green;
 }
+
 
 .color{
     height: 100px;

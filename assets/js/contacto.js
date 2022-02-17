@@ -6,7 +6,7 @@ const asunto = document.getElementById("asunto");
 const mensaje = document.getElementById("mensaje"); 
 
 
-formulario.addEventListener('input', function(event) {
+foormulario.addEventListener('input', function(event) {
    if (email.validity.typeMismatch) {
    email.setCustomValidity('El email no es válido');
    email.reportValidity();
