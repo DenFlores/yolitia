@@ -1,154 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-:root{
-    --fuenteTitulos: 'Lobster', cursive;
-    --fuenteSubtitulos: 'Lobster', cursive;
-    --fuenteTexto: 'Comfortaa', cursive;
-    --fuenteAnimada: 'Butterfly Kids', cursive;
-    --fuenteNavbar: 'Pacifico', cursive;
+:root {
+  --fuenteTitulos: "Lobster", cursive;
+  --fuenteSubtitulos: "Lobster", cursive;
+  --fuenteTexto: "Comfortaa", cursive;
+  --fuenteAnimada: "Butterfly Kids", cursive;
+  --fuenteNavbar: "Pacifico", cursive;
 
-    --tamTitulo: 4rem;
-    --tamSubtitulo: 3rem;
-    --tamTexto: 1.5rem;
-    --tamAnimada: 2rem;
+  --tamTitulo: 4rem;
+  --tamSubtitulo: 3rem;
+  --tamTexto: 1.5rem;
+  --tamAnimada: 2rem;
 
-    --colorRojo: #ff6961;
-    --colorVerde: #77dd77;
-    --colorAmarillo: #fdfd96;
-    --colorAzul: #84b6f4;
-    --colorRosa: #fdcae1;
-    --colorBlanco: #ffffff;
-    --colorMorado: #DC14B0;
-
+  --colorRojo: #ff6961;
+  --colorVerde: #77dd77;
+  --colorAmarillo: #fdfd96;
+  --colorAzul: #84b6f4;
+  --colorRosa: #fdcae1;
+  --colorBlanco: #ffffff;
+  --colorMorado: #dc14b0;
 }
 
 body {
-    background-color: var(--colorRosa);
-    
+  background-color: var(--colorRosa);
 }
 
 /*Navbar*/
 
-.navbar-total{
-    background-color: var(--colorMorado);
+.navbar-total {
+  background-color: var(--colorMorado);
 }
 
-.nav-link{
-    font-size: var(--tamTexto);
-    color: white;
-    margin: 0 30px;
+.nav-link {
+  font-size: var(--tamTexto);
+  color: white;
+  margin: 0 30px;
 }
 
-.nav-inicio{
-    font-family: var(--fuenteNavbar);
-    font-size: var(--tamSubtitulo);
-    /* -webkit-text-stroke: 2px var(--colorMorado); */
-    letter-spacing: 4.5px;
+.nav-inicio {
+  font-family: var(--fuenteNavbar);
+  font-size: var(--tamSubtitulo);
+  /* -webkit-text-stroke: 2px var(--colorMorado); */
+  letter-spacing: 4.5px;
 }
 
 /**/
 
 .precio {
-    background-color: #77dd77;
-    padding: 8px 30px;
-    font-size: 20px;
-    width: 150px;
-    height: 45px;
-    border: none;
-<<<<<<< HEAD
-    text-align: center;
-=======
-
->>>>>>> 9f46c5a79a8747c570b4bdf30cb8fd9b9f434187
+  background-color: #77dd77;
+  padding: 8px 30px;
+  font-size: 20px;
+  width: 150px;
+  height: 45px;
+  border: none;
+  text-align: center;
 }
 .seccion {
-    height: auto;
-    background-color: white;
-    margin-bottom: 20px;
-    font-family: var(--fuenteTexto);
-    padding: 1rem;
+  height: auto;
+  background-color: white;
+  margin-bottom: 20px;
+  font-family: var(--fuenteTexto);
+  padding: 1rem;
 }
 
 .fondoimg {
-    background-color: var(--colorRosa);
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--colorRosa);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .titulo {
-    font-family: var(--fuenteTexto);
-    font-size: 18px;
+  font-family: var(--fuenteTexto);
+  font-size: 18px;
 }
 .incantidad {
-    margin-left: 1rem; 
-    width: 40px; 
-    background-color: #d3d3d3;
-    border: none;
-    text-align: center;
+  margin-left: 1rem;
+  width: 40px;
+  background-color: #d3d3d3;
+  border: none;
+  text-align: center;
 }
 .bagregar {
-    background-color: var(--colorRojo);
-    border: none;
-  
-    margin-left: 1rem;
+  background-color: var(--colorRojo);
+  border: none;
+
+  margin-left: 1rem;
 }
 .beliminar {
-    background-color: var(--colorVerde);
-    border: none;
-    margin-left: 0.5rem;
+  background-color: var(--colorVerde);
+  border: none;
+  margin-left: 0.5rem;
 }
 .total {
-    height: 450px;
-    padding: 1rem;
-    font-family: var(--fuenteTexto);
-    width: 100%;
+  height: 450px;
+  padding: 1rem;
+  font-family: var(--fuenteTexto);
+  width: 100%;
 }
 @media (min-width: 992px) {
-    .total {
-        width: 30%;
-    }
-    .titulo {
-        font-size: 36px;
-    }
-    .seccion {
-        height: 230px;
-    }
- }
+  .total {
+    width: 30%;
+  }
+  .titulo {
+    font-size: 36px;
+  }
+  .seccion {
+    height: 230px;
+  }
+}
 .linea {
-    height: 5px;
-    width: 100%;
-    background-color: black;
+  height: 5px;
+  width: 100%;
+  background-color: black;
 }
 .bpagar {
-    background-color: var(--colorAzul);
+  background-color: var(--colorAzul);
 }
 
 /* Footer */
-.color{
-    height: 100px;
+.color {
+  height: 100px;
 }
 
-.c1{
-    background: #84B6F4;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-.c1::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
-    transform: rotate(-180deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.c3{
-    height: 130px;
-    background: #FF6961;
-    transform: matrix(1, 0, 0, -1, 0, 0);
+.c3 {
+  height: 130px;
+  background: var(--colorMorado);
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }

@@ -205,25 +205,10 @@
 .color {
   height: 100px;
 }
-.c1 {
-  background: #84b6f4;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-.c1::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, #ff362c 0%, rgba(196, 196, 196, 0) 100%);
-  transform: rotate(-180deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .c3 {
   height: 130px;
-  background: #ff6961;
+  background: var(--colorMorado);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
@@ -609,7 +594,7 @@
   height: 100px;
   z-index: 100;
   left: -79%;
-  top:245%
+  top: 245%;
 }
 
 #canvas {
@@ -910,15 +895,15 @@
     width: 200px;
     height: 200px;
   }
-  .monio-n3{
+  .monio-n3 {
     position: relative;
     left: -170%;
-   top:360%;
+    top: 360%;
   }
-  .sombrero-n3{
+  .sombrero-n3 {
     position: relative;
     left: -28%;
-    top:250%;
+    top: 250%;
   }
   #confirmar {
     position: absolute;
