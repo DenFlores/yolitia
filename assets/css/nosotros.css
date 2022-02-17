@@ -160,19 +160,6 @@ body {
 }
 .front,
 .back {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.front {
-  z-index: 2;
-  transition: all 0.3s linear;
-  border-radius: 10px;
-}
-
-.back {
   transition: all 0.3s linear;
   transform: rotateY(180deg);
   border-radius: 10px;
@@ -229,6 +216,21 @@ body {
   background: var(--colorMorado);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
+/*
+.c1{
+  background: #84B6F4;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.c1:before{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
 
 /*------------------------------Responsive-----------------------------*/
 
