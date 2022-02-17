@@ -53,6 +53,8 @@ body{
     font-size: var(--tamTexto);
     color: white;
     margin: 0 30px;
+    width: 180px;
+    text-align: center;
 }
 
 .nav-inicio{
@@ -60,8 +62,8 @@ body{
     font-size: var(--tamSubtitulo);
     /* -webkit-text-stroke: 2px var(--colorMorado); */
     letter-spacing: 4.5px;
+    width: 250px;
 }
-
 
 .contenido-principal{
     display: flex;
