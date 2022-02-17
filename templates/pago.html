@@ -11,13 +11,14 @@
     <div class="pago">
 
         <div class="formulario">
-            <div class="titulo"> <p>Pago Digital
-            </br> Todos los campos son necesarios           
-        </p> 
+            <div class="titulo"> <h1>Pago Digital
+            </br>         
+        </h1> 
+        <p>Todos los campos son necesarios   </p>
         </div>
 
         <div class="imagen-tarjetas">
-            <img class="" src="../assets/img/Pago/tarjetas.jpg" alt="modo de pago"/> 
+            <img class="" src="../assets/img/Pago/tarjetas.png" alt="modo de pago"/> 
        </div> 
 
         <form class="pago-digital">
@@ -36,10 +37,10 @@
         </div>
         </br>
 
-        <div>
+        <div >
             <label for="expiracion">Fecha de expiración(MM/AAAA)</label>
         </br>
-           <select name="Meses" id="">
+          <!--<select name="Meses" id="">
                <option value="1">Enero</option>
                <option value="2">Febrero</option>
                <option value="3">Marzo</option>
@@ -52,20 +53,21 @@
                <option value="10">Enero</option>
                <option value="11">Enero</option>
                <option value="12">Enero</option>
-            </select>
-
-           <input type="number" min="1900" max="2099" step="1" value="2016" />
+            </select>-->
+            <input type="number" min="1" max="12" step="1" value="01"/>
+            <span>/</span>
+            <input type="number" min="1900" max="2099" step="1" value="30" />
         </div>
         </br>
 
         <div>
             <label for="codigo-seguridad">Codigo de seguridad</label>
         </br>
-            <input class="placeholder" type="password" placeholder="3 digitos" name="codigo-seguridad" id="codigo">
+            <input class="placeholder" type="password" placeholder="CVV" name="codigo-seguridad" id="codigo">
         </div>
         </br>
 
-        <div>
+        <div class="boton-p">
             <input class="boton-pagar" type="button" onclick="alert('Pago exitoso! Tu pedido esta en proceso...')" value="Pagar Ahora">
         </div>
     
