@@ -79,12 +79,13 @@
               
 
                   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link2 active " id="#" data-toggle="pill" href="/perfil.html" role="tab" aria-controls="v-pills-home" aria-selected="true">Perfil</a>
-                    <a class="nav-link2" id="#" data-toggle="pill" href="/perfilDirecion.html" role="tab" aria-controls="v-pills-profile" aria-selected="false">Dirección de envio</a>
-                    <a class="nav-link2" id="#" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Formas de pago</a>
-                    <a class="nav-link2" id="#" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Historial de pedidos</a>
-                    <a class="nav-link2" id="#" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Notificaciones</a>
-                    <a class="nav-link2" id="#" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Seguridad</a>
+                    <a class="nav-link active" href="perfil.html">Perfil</a>
+                    <a class="nav-link" href="perfilDirecion.html" >Dirección de envio</a>
+                    <a class="nav-link" href="perfilFormaDePagos.html" >Formas de pago</a>
+                    <a class="nav-link" href="perfilPedidos.html" aria-selected="false">Historial de pedidos</a>
+                    <a class="nav-link" href="perfilNotificaciones.html">Notificaciones</a>
+                    <a class="nav-link" href="perfilSeguridad.html">Seguridad</a>
+
                     
                   
                
@@ -102,7 +103,7 @@
                             <img src="../assets/img/perfil/ImgDefaut.png" class="rounded-circle img-fluid max-width: 100%  height: auto imagenPerfil" alt="avatar">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 align-self-end ">
-                            <button type="button" class="btn btn-secondary  botonModificar ">Modificar Foto</button>
+                            <button type="file" class="btn btn-secondary  botonModificar" onclick="cambiarImg();">Modificar Foto</button>
                         </div>
                         
                     </div>
@@ -129,8 +130,9 @@
                                 <input type="mail" class="form-control" id="correo">
                               </div>
                               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  text-right">
-                              <button type="submit" class="btn btn-secondary ">Guardar</button>
+                              <button type="button" class="btn btn-secondary" onclick="cambiarDatos()" >Guardar</button>
                             </div>
+                        </div>
                       </form>
                 </div>
             </div>
