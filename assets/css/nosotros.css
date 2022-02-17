@@ -232,7 +232,7 @@
 }
 
 .c3 {
-  height: 130px;
+  height: 140px;
   background: var(--colorMorado);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
