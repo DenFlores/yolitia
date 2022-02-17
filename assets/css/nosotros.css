@@ -1,40 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-:root{
-    --fuenteTitulos: 'Lobster', cursive;
-    --fuenteSubtitulos: 'Lobster', cursive;
-    --fuenteTexto: 'Comfortaa', cursive;
-    --fuenteAnimada: 'Butterfly Kids', cursive;
-    --fuenteNavbar: 'Pacifico', cursive;
+:root {
+  --fuenteTitulos: "Lobster", cursive;
+  --fuenteSubtitulos: "Lobster", cursive;
+  --fuenteTexto: "Comfortaa", cursive;
+  --fuenteAnimada: "Butterfly Kids", cursive;
+  --fuenteNavbar: "Pacifico", cursive;
 
-    --tamTitulo: 4rem;
-    --tamSubtitulo: 3rem;
-    --tamTexto: 1.5rem;
-    --tamAnimada: 2rem;
+  --tamTitulo: 4rem;
+  --tamSubtitulo: 3rem;
+  --tamTexto: 1.5rem;
+  --tamAnimada: 2rem;
 
-    --colorRojo: #ff6961;
-    --colorVerde: #77dd77;
-    --colorAmarillo: #fdfd96;
-    --colorAzul: #84b6f4;
-    --colorRosa: #fdcae1;
-    --colorBlanco: #ffffff;
-    --colorMorado: #DC14B0;
+  --colorRojo: #ff6961;
+  --colorVerde: #77dd77;
+  --colorAmarillo: #fdfd96;
+  --colorAzul: #84b6f4;
+  --colorRosa: #fdcae1;
+  --colorBlanco: #ffffff;
+  --colorMorado: #dc14b0;
 }
 
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: pink;
-  
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+}
 
 /*--------------------------Navbar-----------------------*/
-.navbar-total{
-    background-color: var(--colorMorado);
+.navbar-total {
+  background-color: var(--colorMorado);
 }
 
+<<<<<<< HEAD
 .nav-link{
+=======
+.nav-link {
+>>>>>>> dac8f878ba97cc23131f32eba84dc8a26fcb51dd
   font-size: var(--tamTexto);
   color: white;
   margin: 0 30px;
@@ -42,7 +45,11 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 .nav-inicio{
+=======
+.nav-inicio {
+>>>>>>> dac8f878ba97cc23131f32eba84dc8a26fcb51dd
   font-family: var(--fuenteNavbar);
   font-size: var(--tamSubtitulo);
   /* -webkit-text-stroke: 2px var(--colorMorado); */
@@ -53,7 +60,7 @@
 
 /*------------------------------------ Carrito --------------------------------*/
 
-.circulo-carrito{
+.circulo-carrito {
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -72,160 +79,145 @@
 
 /*---------------------------Banner sobre nosotros------------------------------*/
 .nosotros {
-    margin: 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-image: url(../img/nosotros/Ventana.png);
-    padding: 25px 50px;
-    max-height: 290px;
-    background-size:cover;
-    background-repeat: no-repeat;  
-}
-.texto-encima {
-    font-family:var(--fuenteTitulos);
-    color: var(--colorRojo);
-    font-size: 2rem;   
-  }
-.nosotros .centrado p{
-    font-family: var(--tamTexto);
-    font-size: 0.7rem;
-    text-align: justify;
-    padding: 0;
-    margin: 0%;
-}
-
- /*----------------Cards Mision y Vision--------------------*/ 
- .container{
-   width: 90%;
+  margin: 25px;
   display: flex;
   flex-direction: column;
-  margin-left :auto; 
-  margin-right :auto;
+  text-align: center;
+  background-image: url(../img/nosotros/Ventana.png);
+  padding: 25px 50px;
+  max-height: 290px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
- .card-body{
-    background-color: white;
-    margin: 0 20px 30px;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    padding: 8px;
-    height: 250px;
-    font-family:var(--tamTexto) ;
-    text-align: center;
-  }
-  .card-title {
-      font-family: var(--fuenteTitulos);
-      font-size: 1.8rem;
-  }
-  .card-img-top{
-    width: 90%;
-    margin-right: 4px;
-  }
-.cardn{
+.texto-encima {
+  font-family: var(--fuenteTitulos);
+  color: var(--colorRojo);
+  font-size: 2rem;
+}
+.nosotros .centrado p {
+  font-family: var(--tamTexto);
+  font-size: 0.7rem;
+  text-align: justify;
+  padding: 0;
+  margin: 0%;
+}
+
+/*----------------Cards Mision y Vision--------------------*/
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-body {
+  background-color: white;
+  margin: 0 20px 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  padding: 8px;
+  height: 250px;
+  font-family: var(--tamTexto);
+  text-align: center;
+}
+.card-title {
+  font-family: var(--fuenteTitulos);
+  font-size: 1.8rem;
+}
+.card-img-top {
+  width: 90%;
+  margin-right: 4px;
+}
+.cardn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
-
- /*----------------------titulo equipo de trabajo------------------*/
- .tituloequipo{
-    background-color: var(--colorVerde);
-    border-radius: 10px;
-    text-align: center;
-    margin: 30px ; 
-    
+/*----------------------titulo equipo de trabajo------------------*/
+.tituloequipo {
+  background-color: var(--colorVerde);
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px;
 }
-.tituloequipo h3{
-    font-family: var(--fuenteTitulos);
-    font-size: 2.8rem; 
+.tituloequipo h3 {
+  font-family: var(--fuenteTitulos);
+  font-size: 2.8rem;
 }
-
 
 /*----------------------------Cards que giran-------------------------*/
-.equipo{
-    display: flex;
-    flex-wrap: wrap;
-   justify-content: center;
-}
-.front, .back, .cards {
-      width:300px;
-      height: 400px;
-      max-width: 400px;
-}
-
-.cards{
-    margin: 60px;
-    position: relative;
-    transform-style: preserve-3d;
-    perspective: 1000px;
+.equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .front,
-    .back {
-      backface-visibility: hidden;
-      position: absolute;
-      top:0;
-      left: 0;
+.back,
+.cards {
+  width: 300px;
+  height: 400px;
+  max-width: 400px;
 }
 
- .front {
-      z-index: 2;
-      transition: all 0.3s linear;
-      border-radius: 10px;
-    }
-
+.cards {
+  margin: 60px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.front,
 .back {
-      transition: all 0.3s linear;
-      transform: rotateY(180deg);
-      border-radius: 10px;   
-    }
- .cards:hover .front {
-      transform: rotateY(180deg);
-    }
+  transition: all 0.3s linear;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+.cards:hover .front {
+  transform: rotateY(180deg);
+}
 
- .cards:hover .back {
-      transform: rotateY(360deg);
-      text-align: center;   
-    } 
-.icon{
-    width:50px;
-    left: 20px;
-    z-index: 10;
-    position: relative;
-    top: 300px;
-  }
-.cards .front h2{
+.cards:hover .back {
+  transform: rotateY(360deg);
+  text-align: center;
+}
+.icon {
+  width: 50px;
+  left: 20px;
+  z-index: 10;
+  position: relative;
+  top: 300px;
+}
+.cards .front h2 {
   top: 28px;
   left: 550px;
   margin: 10px;
-  font-family:var(--fuenteTexto);
+  font-family: var(--fuenteTexto);
   font-size: 22px;
   color: white;
   z-index: 10px;
 }
-.cards .front img{
-  margin:21px auto;
+.cards .front img {
+  margin: 21px auto;
   border: none;
-  padding:20px;
+  padding: 20px;
   width: 320px;
-  
 }
-.cards .back-text h2{
-   font-family:var(--fuenteTexto);
+.cards .back-text h2 {
+  font-family: var(--fuenteTexto);
   font-size: 25px;
   color: white;
   text-align: center;
-} 
-.cards .back-text p{
-  font-family:var(--fuenteTexto);
- font-size: 18px;
- color: white;
- text-align: center;
+}
+.cards .back-text p {
+  font-family: var(--fuenteTexto);
+  font-size: 18px;
+  color: white;
+  text-align: center;
 }
 /*--------------footer---------------------------*/
+<<<<<<< HEAD
 
 .color {
   height: 100px;
@@ -238,9 +230,18 @@
 }
 /*
 .color{
+=======
+/* .color {
+>>>>>>> dac8f878ba97cc23131f32eba84dc8a26fcb51dd
   height: 100px;
 }
 
+.c3 {
+  height: 130px;
+  background: var(--colorMorado);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+} */
+/*
 .c1{
   background:var(--colorRojo);
   transform: matrix(1, 0, 0, -1, 0, 0);
@@ -255,6 +256,7 @@
   position: absolute;
   top: 0;
   left: 0;
+<<<<<<< HEAD
 }
 .c3 {
   height: 130px;
@@ -262,74 +264,82 @@
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 */
+=======
+}*/
+
+>>>>>>> dac8f878ba97cc23131f32eba84dc8a26fcb51dd
 /*------------------------------Responsive-----------------------------*/
 
 @media screen and (min-width: 768px) {
-  .container{
-   width: 80%;
-   margin-left: auto;
-   margin-right: auto;
+  .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .card-img-top{
+  .card-img-top {
     width: 95%;
     margin-right: 6px;
   }
-  .card-text{
+  .card-text {
     font-size: 1.6rem;
   }
-  .texto-encima{
+  .texto-encima {
     font-size: 40px;
   }
-  .nosotros .centrado p{
+  .nosotros .centrado p {
     font-size: 20px;
     text-align: center;
   }
-  .tituloequipo h3{
-    font-size: 4rem; 
-}
-  .cards{
+  .tituloequipo h3 {
+    font-size: 4rem;
+  }
+  .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .front, .back, .cards{
+  .front,
+  .back,
+  .cards {
     width: 250px;
   }
-  .cards .front img{
-    width:270px;
+  .cards .front img {
+    width: 270px;
     left: auto;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container{
+  .container {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-   }
-   .card-img-top{
-     width: 95%;
-     margin-right: 6px;
-   }
-   .card-text{
-     font-size: 1.6rem;
-   }
-   .texto-encima{
-     font-size: 50px;
-   }
-   .nosotros .centrado p{
-     font-size: 25px;
-     text-align: center;
-   }
-   .tituloequipo h3{
-    font-size: 4.5rem; 
-}
-.front, .back, .cards{
-  width: 300px;
-}
-.cards .front img{
-  width:320px;
-  left: auto;
-  border-radius: 30px;
-}
+  }
+  .card-img-top {
+    width: 95%;
+    margin-right: 6px;
+  }
+  .card-text {
+    font-size: 1.6rem;
+  }
+  .texto-encima {
+    font-size: 50px;
+  }
+  .nosotros .centrado p {
+    font-size: 25px;
+    text-align: center;
+  }
+  .tituloequipo h3 {
+    font-size: 4.5rem;
+  }
+  .front,
+  .back,
+  .cards {
+    width: 300px;
+  }
+  .cards .front img {
+    width: 320px;
+    left: auto;
+    border-radius: 30px;
+  }
 }

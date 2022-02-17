@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --fuenteTitulos: "Lobster", cursive;
   --fuenteSubtitulos: "Lobster", cursive;
@@ -44,7 +44,7 @@ body {
 /* ___________________________________ NAVBAR _______________________________________*/
 
 .navbar {
-  height: 10vh;
+  height: 12vh;
 }
 
 .navbar-total {
@@ -81,7 +81,7 @@ body {
 
 /*----------------------------------- Carritp --------------------------------*/
 
-.circulo-carrito{
+.circulo-carrito {
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -173,32 +173,15 @@ body {
 
 /*------------ _____________________  Footer _______________-------------------*/
 
-/* .mt-5 {
-  height: 8vh;
+.color {
+  height: 100px;
 }
 
-.color {
-  height: 100%;
-}
-.c1 {
-  background: #84b6f4;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-}
-.c1::before {
-  content: "";
-  width: 100%;
-  height: 40%;
-  background: linear-gradient(0deg, #ff362c 0%, rgba(196, 196, 196, 0) 100%);
-  transform: rotate(-180deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .c3 {
-  height: 60%;
-  background: #ff6961;
+  height: 130px;
+  background: var(--colorMorado);
   transform: matrix(1, 0, 0, -1, 0, 0);
-} */
+}
 
 @media screen and (min-width: 470px) {
   body {

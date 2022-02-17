@@ -229,7 +229,7 @@ function bajarBrazo(e) {
     console.log("x: " + x);
     console.log("y: " + y);
 
-    if (x >= 878 && x <= 947 && y >= 490) {
+    if (x >= 1387 && y >= 490) {
       console.log('oso azul');
       osoAzul.style.display = "none";
       changeStep("next");
@@ -245,7 +245,7 @@ function bajarBrazo(e) {
       sombreroN3.style.left = "32%";
       sombreroN3.style.top = "5%";
     }
-    else if (x >= 677 && x <= 735 && y >= 490) {
+    else if (x >= 1077 && y >= 490) {
       console.log('perro');
       perro.style.display = "none";
       changeStep("next");
@@ -261,7 +261,7 @@ function bajarBrazo(e) {
       sombreroN3.style.left = "32%";
       sombreroN3.style.top = "60%";
     }
-    else if (x >= 454 && x <= 517 && y >= 490) {
+    else if (x >= 743 && y >= 490) {
       console.log('oso cafe');
       osoCafe.style.display = "none";
       changeStep("next");
@@ -277,7 +277,7 @@ function bajarBrazo(e) {
       sombreroN3.style.left = "28%";
       sombreroN3.style.top = "5%";
     }
-    else if (x >= 273 && x <= 294 && y >= 490) {
+    else if (x >= 429 && y >= 490) {
       console.log('conejo');
       conejo.style.display = "none";
       changeStep("next");
