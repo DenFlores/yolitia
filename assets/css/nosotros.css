@@ -35,6 +35,7 @@
 }
 
 .nav-link{
+<<<<<<< HEAD
   font-size: var(--tamTexto);
   color: white;
   margin: 0 30px;
@@ -48,6 +49,21 @@
   /* -webkit-text-stroke: 2px var(--colorMorado); */
   letter-spacing: 4.5px;
   width: 250px;
+=======
+    font-size: var(--tamTexto);
+    color: white;
+    margin: 0 30px;
+    width: 180px;
+    text-align: center;
+}
+
+.nav-inicio{
+    font-family: var(--fuenteNavbar);
+    font-size: var(--tamSubtitulo);
+    /* -webkit-text-stroke: 2px var(--colorMorado); */
+    letter-spacing: 4.5px;
+    width: 250px;
+>>>>>>> d51b1ab1639867777834cd91fa2a3f571ff297c3
 }
 
 
