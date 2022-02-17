@@ -193,6 +193,8 @@
   font-size: var(--tamTexto);
   color: white;
   margin: 0 30px;
+  width: 180px;
+  text-align: center;
 }
 
 .nav-inicio {
@@ -200,6 +202,7 @@
   font-size: var(--tamSubtitulo);
   /* -webkit-text-stroke: 2px var(--colorMorado); */
   letter-spacing: 4.5px;
+  width: 250px;
 }
 /* footer */
 .color {
@@ -609,7 +612,7 @@
   height: 100px;
   z-index: 100;
   left: -79%;
-  top:245%
+  top: 245%;
 }
 
 #canvas {
@@ -910,15 +913,15 @@
     width: 200px;
     height: 200px;
   }
-  .monio-n3{
+  .monio-n3 {
     position: relative;
     left: -170%;
-   top:360%;
+    top: 360%;
   }
-  .sombrero-n3{
+  .sombrero-n3 {
     position: relative;
     left: -28%;
-    top:250%;
+    top: 250%;
   }
   #confirmar {
     position: absolute;
