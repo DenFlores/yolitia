@@ -56,8 +56,9 @@ li {
 
 .nav-link{
     font-size: var(--tamTexto);
-    color: white;
+    color: white(211, 36, 36);
     margin: 0 30px;
+    
 }
 
 .nav-inicio{
@@ -122,8 +123,7 @@ li {
     margin: 0 30px;
 }
 
-element.style {
-}
+
 a {
     color: #ff6961;
     text-decoration: none;

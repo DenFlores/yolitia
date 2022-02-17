@@ -29,7 +29,7 @@
   
   }
 
-/*Navbar*/
+/*--------------------------Navbar-----------------------*/
 .navbar-total{
     background-color: var(--colorMorado);
 }
@@ -38,6 +38,8 @@
     font-size: var(--tamTexto);
     color: white;
     margin: 0 30px;
+    width: 180px;
+    text-align: center;
 }
 
 .nav-inicio{
@@ -45,11 +47,9 @@
     font-size: var(--tamSubtitulo);
     /* -webkit-text-stroke: 2px var(--colorMorado); */
     letter-spacing: 4.5px;
+    width: 250px;
 }
-
-<<<<<<< HEAD
-=======
-/*----------------------------------- Carritp --------------------------------*/
+/*------------------------------------ Carrito --------------------------------*/
 
 .circulo-carrito{
   position: fixed;
@@ -67,21 +67,16 @@
   z-index: 5;
   text-decoration: none;
 }
->>>>>>> 87298577e5656b1692c2e3650404be953a73d978
-/*Banner sobre nosotros*/
+
+/*---------------------------Banner sobre nosotros------------------------------*/
 .nosotros {
     margin: 25px;
     display: flex;
     flex-direction: column;
     text-align: center;
-<<<<<<< HEAD
-    background-image: url(/assets/img/nosotros/mantel.png);
-    padding: 50px;
-=======
     background-image: url(../img/nosotros/Ventana.png);
     padding: 25px 50px;
     max-height: 290px;
->>>>>>> 87298577e5656b1692c2e3650404be953a73d978
     background-size:cover;
     background-repeat: no-repeat;  
 }
@@ -92,13 +87,13 @@
   }
 .nosotros .centrado p{
     font-family: var(--tamTexto);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     text-align: justify;
     padding: 0;
     margin: 0%;
 }
 
- /*Cards Mision y Vision*/ 
+ /*----------------Cards Mision y Vision--------------------*/ 
  .container{
    width: 90%;
   display: flex;
@@ -134,7 +129,7 @@
 }
 
 
- /*titulo equipo de trabajo*/
+ /*----------------------titulo equipo de trabajo------------------*/
  .tituloequipo{
     background-color: var(--colorVerde);
     border-radius: 10px;
@@ -148,7 +143,7 @@
 }
 
 
-/*Cards que giran*/
+/*----------------------------Cards que giran-------------------------*/
 .equipo{
     display: flex;
     flex-wrap: wrap;
@@ -228,18 +223,23 @@
  color: white;
  text-align: center;
 }
-/*footer*/
-.color{
+/*--------------footer---------------------------*/
+.color {
   height: 100px;
 }
 
+.c3 {
+  height: 130px;
+  background: var(--colorMorado);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+/*
 .c1{
   background: #84B6F4;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.c1::before{
-  content: "";
+.c1:before{
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
@@ -247,15 +247,9 @@
   position: absolute;
   top: 0;
   left: 0;
-}
+}*/
 
-.c3{
-  height: 130px;
-  background: #FF6961;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-/*Responsive*/
+/*------------------------------Responsive-----------------------------*/
 
 @media screen and (min-width: 768px) {
   .container{

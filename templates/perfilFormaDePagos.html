@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--CSS -->
+    <link rel="stylesheet" href="../assets/css/perfil.css">
+
+    <title>Perfil</title>
+  </head>
+  <body>
+     <!-- Navbar   -->
+     <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-total text-white">
+      <button
+        class="navbar-toggler mr-5"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
+          <a class="nav-link nav-inicio" href="../index.html">Unique</a>
+          <a class="nav-link" href="productos.html">Productos</a>
+          <a class="nav-link" href="login.html">Registrarse</a>
+          
+        </ul>
+      </div>
+    </nav>
+
+     <!--------------- Carrito  ---------->
+     <div class="carrito">
+      <a href="carrito.html">
+        <div class="circulo-carrito">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </a>
+    </div>
+    <!--------------- Cuerpo perfil & cambio de datos  ---------->
+
+    <div class="container-fluid contenedorGeneral">
+        <!-- Breadcrumb -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Perfil</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        
+    <div class="row">
+            <!-- Seccion izquierda Generales -->
+
+            <nav class="col-xs-12 col-sm-12 col-md-3 col-lg-3 fnavbar navbar-expand-lg navbar-light bg-blue ">
+             
+             
+              <button class="navbar-toggler" style="background-color: #ff6961; color: blueviolet;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <a class="navbar-brand  flex-column" style="margin: 10px;" href="#">Configuración</a>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+              
+
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link " href="perfil.html">Perfil</a>
+                  <a class="nav-link " href="perfilDirecion.html" >Dirección de envio</a>
+                  <a class="nav-link active" href="perfilFormaDePagos.html" >Formas de pago</a>
+                  <a class="nav-link" href="perfilPedidos.html" aria-selected="false">Historial de pedidos</a>
+                  <a class="nav-link" href="perfilNotificaciones.html">Notificaciones</a>
+                  <a class="nav-link" href="perfilSeguridad.html">Seguridad</a>
+                    
+                    
+                  
+               
+              </div>
+            </nav>
+
+           <!--  Seccion derecha-cambios especificos formas de pago -->
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8  seccionDatos">
+            <!-- AQUI INICIA LA SECCION DE MIS TARJETAS -->
+
+                   <div class="row">
+
+                       <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 text-center">
+                         <h3>Agregar tarjeta de crédito o débito</h3>
+                         <br>
+
+                         <form action="">
+                          <div class="form-row">
+                            
+                            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                              <input type="text" class="form-control" placeholder="Número de tarjeta" id="">
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                              <input type="number" class="form-control" placeholder="MM/YY" id="">
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                              <input type="password" class="form-control" placeholder="CVV" id="">
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <input type="text" class="form-control" placeholder="Nombre en la tarjeta" id="">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                              <input type="number" class="form-control" placeholder="Codigo postal" id="">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  text-right">
+                              <button type="button" class="btn btn-secondary">Agregar tarjeta</button>
+                            </div>
+
+                            
+
+                          </div>
+                         </form>
+                    
+                       </div>
+                       
+
+                       <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 align-self-center">
+                         
+                        <h4 class="text-center">Mis tarjetas</h4>
+                        <div class="card bg-danger bg-danger mb-3 " >
+                            <div class="card-header">Visa</div>
+                            <div class="card-body">
+                              <h5 class="card-title">Tarjeta de crédito </h5>
+                              <p class="card-text">Tarjeta de crédito con terminación •••• 3892</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                          <button type="button" class="btn btn-secondary ">Eliminar</button>
+                        </div>
+                        <br>
+                        <div class="card bg-danger bg-danger mb-3 " >
+                          <div class="card-header">Mastercard</div>
+                          <div class="card-body">
+                            <h5 class="card-title">Tarjeta de débito </h5>
+                            <p class="card-text">Tarjeta de crédito con terminación •••• 3679</p>
+                          </div>
+                      </div>
+                      <div class="text-right">
+                        <button type="button" class="btn btn-secondary ">Eliminar</button>
+                      </div>
+                        
+                        
+                    </div>
+
+                   </div>
+
+            </div>
+        </div>
+        
+                    
+    </div> <!-- AQUI TERMINA EL CONTENEDOR DE MODIFICACIONES -->
+            
+
+
+                         
+                    
+
+
+
+                     
+  
+    <!--------------- footer  ---------->
+ 
+    <footer class="mt-5 ">
+      <div class="color c1"></div>
+    
+      <div class="color c3"></div>
+  </footer>
+
+
+    <!--Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+     <!--JS-->
+     <script src="assets/js/perfil.js"></script>
+      <!--ICONOS-->
+    <script src="https://kit.fontawesome.com/5a36ceff30.js" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
