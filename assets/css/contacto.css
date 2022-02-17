@@ -60,6 +60,7 @@
     font-size: var(--tamSubtitulo);
     /* -webkit-text-stroke: 2px var(--colorMorado); */
     letter-spacing: 4.5px;
+     width: 250px;
 }
 
 
