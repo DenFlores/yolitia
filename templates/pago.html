@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/pago.css">
+    <title>Pago</title>
+</head>
+<body>
+    <div class="pago">
+        <div class="titulo"> <p>Pago con tarjeta</p> 
+        </div>
+        <div class="imagen-tarjetas">
+            <img class="" src="../assets/img/Pago/tarjetas.jpg" alt="modo de pago"/> 
+       </div> 
+        <form class="pago-digital">
+           
+            <div>
+                <label for="nombre">Nombre del titular</label>
+            </br>
+            <input type="text" placeholder="Escriba su nombre" id="nombre">
+        </div>
+    
+            
+        <div>
+            <label for="numero-tarjeta">Número de tarjeta</label>
+        </br>
+            <input type="number" placeholder="067 890 567 456" id="tarjeta">
+        </div>
+        <div>
+            <label for="expiracion">Fecha de expiración(MM/AAAA)</label>
+        </br>
+            <input type="month" name="dia-mes" id="dia-mes-exp">
+            
+        </div>
+        <div>
+            <label for="codigo-seguridad">Codigo de seguridad</label>
+        </br>
+            <input type="password" placeholder="3 digitos" name="codigo-seguridad" id="codigo">
+        </div>
+        <div>
+            <input type="button" onclick="alert('Pago exitoso! Tu pedido esta en proceso...')" value="Pagar">
+        </div>
+
+        
+        </form>
+    </div>
+    
+
+    
+</body>
+</html>

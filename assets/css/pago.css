@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+    --fuenteTitulos: 'Lobster', cursive;
+    --fuenteSubtitulos: 'Lobster', cursive;
+    --fuenteTexto: 'Comfortaa', cursive;
+    --fuenteAnimada: 'Butterfly Kids', cursive;
+    --fuenteNavbar: 'Pacifico', cursive;
+
+    --tamTitulo: 4rem;
+    --tamSubtitulo: 3rem;
+    --tamTexto: 1.5rem;
+    --tamAnimada: 2rem;
+
+    --colorRojo: #ff6961;
+    --colorVerde: #77dd77;
+    --colorAmarillo: #fdfd96;
+    --colorAzul: #84b6f4;
+    --colorRosa: #fdcae1;
+    --colorBlanco: #ffffff;
+    --colorMorado: #DC14B0;
+
+}
+body{
+    background-color: var(--colorRosa);
+}
+
+.pago{
+    
+    background-color: var(--colorBlanco);
+    width: 30%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+}
+.titulo{
+    text-align: center;
+   /*font-family: var(--fuenteTexto);*/
+    font-size: 40px;
+    background-color: var(--colorBlanco);
+    
+     
+}
+
+
+.imagen-tarjetas{
+    width: 50%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.imagen-tarjetas img{
+    width: 100%;
+}
+    
+
+    
+    
+   
+
+
+
