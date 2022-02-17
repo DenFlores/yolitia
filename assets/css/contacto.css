@@ -51,6 +51,8 @@
     font-size: var(--tamTexto);
     color: white;
     margin: 0 30px;
+    width: 180px;
+    text-align: center;
 }
 
 .nav-inicio{
@@ -58,6 +60,7 @@
     font-size: var(--tamSubtitulo);
     /* -webkit-text-stroke: 2px var(--colorMorado); */
     letter-spacing: 4.5px;
+     width: 250px;
 }
 
 
@@ -187,6 +190,15 @@ margin-top: 30px;
     padding: 20px;
     border-radius: 20px;
 }
+
+input:invalid{
+    border: 3px solid red;
+}
+
+input:valid{
+    border: 3px solid green;
+}
+
 
 .color{
     height: 100px;

@@ -13,8 +13,8 @@
     <title>Perfil</title>
   </head>
   <body>
-     <!--------------- Navbar  ---------->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-total text-white">
+     <!-- Navbar   -->
+     <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-total text-white">
       <button
         class="navbar-toggler mr-5"
         type="button"
@@ -38,16 +38,14 @@
         </ul>
       </div>
     </nav>
-
-    <!--------------- Carrito  ---------->
-    <div class="carrito">
+     <!--------------- Carrito  ---------->
+     <div class="carrito">
       <a href="carrito.html">
         <div class="circulo-carrito">
           <i class="fas fa-shopping-cart"></i>
         </div>
       </a>
     </div>
-    
     <!--------------- Cuerpo perfil & cambio de datos  ---------->
 
     <div class="container-fluid contenedorGeneral">
@@ -56,14 +54,14 @@
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Perfil</li>
                     </ol>
                 </nav>
             </div>
         </div>
         
-        <div class="row">
+    <div class="row">
             <!-- Seccion izquierda Generales -->
 
             <nav class="col-xs-12 col-sm-12 col-md-3 col-lg-3 fnavbar navbar-expand-lg navbar-light bg-blue ">
@@ -78,70 +76,73 @@
               <div class="collapse navbar-collapse" id="navbarNav">
               
 
-                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" href="perfil.html">Perfil</a>
-                    <a class="nav-link" href="perfilDirecion.html" >Dirección de envio</a>
-                    <a class="nav-link" href="perfilFormaDePagos.html" >Formas de pago</a>
-                    <a class="nav-link" href="perfilPedidos.html" aria-selected="false">Historial de pedidos</a>
-                    <a class="nav-link" href="perfilNotificaciones.html">Notificaciones</a>
-                    <a class="nav-link" href="perfilSeguridad.html">Seguridad</a>
-
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link " href="perfil.html">Perfil</a>
+                  <a class="nav-link " href="perfilDirecion.html" >Dirección de envio</a>
+                  <a class="nav-link " href="perfilFormaDePagos.html" >Formas de pago</a>
+                  <a class="nav-link" href="perfilPedidos.html" aria-selected="false">Historial de pedidos</a>
+                  <a class="nav-link " href="perfilNotificaciones.html">Notificaciones</a>
+                  <a class="nav-link active" href="perfilSeguridad.html">Seguridad</a>
                     
                   
                
               </div>
             </nav>
 
-           <!--  Seccion derecha-cambios especificos -->
+           <!--  Seccion derecha-cambios especificos Pedidoso -->
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8  seccionDatos">
-                <!-- Seccion Imagen de perfil -->
-                <div class="">
+            <!-- Seccion izquierda tarjetas -->
 
-                    <div class="row">
+              <div class="row">
 
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center">
-                            <img src="../assets/img/perfil/ImgDefaut.png" class="rounded-circle img-fluid max-width: 100%  height: auto imagenPerfil" alt="avatar">
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 align-self-end ">
-                            <button type="file" class="btn btn-secondary  botonModificar" onclick="cambiarImg();">Modificar Foto</button>
-                        </div>
+                       
                         
+          <!-- AQUI INICIA Cambio contraseña -->
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      
+                    <h3>Seguridad</h3>
+                    <br>
+                    <h5>Cambiar Contraseña</h5>
+                    <div>
+                      <label for="inputPassword5">Contraseña Actual:</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                        </small>
+                        <label for="inputPassword5">Nueva Contraseña:</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                        <small id="passwordHelpBlock" class="form-text text-muted">
+                        </small>
+                        <label for="inputPassword5">Vuelve a ingresar la nueva contraseña:</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                        <small id="passwordHelpBlock" class="form-text  text-white">
+                          Tu contraseña debe contener 8-20 caracteres, contener letras y números.
+                        </small>
+                        <br>
+                        <button type="button" class="btn btn-secondary ">Guardar Cambios</button>
+                      
+                      
+
                     </div>
-                    <div><br></div>
-                </div>
-                <!-- Seccion datos de perfil -->
-                <div class="">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                              <label for="inputNombre">Nombre</label>
-                              <input type="text" class="form-control" id="nombre">
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                              <label for="inputApellido">Apellido</label>
-                              <input type="text" class="form-control" id="apellido">
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <label for="inputNombreU">Nombre de usuario</label>
-                                <input type="text" class="form-control" id="usuario">
-                              </div>
-                              <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <label for="inputCorreo">Correo electrónico</label>
-                                <input type="mail" class="form-control" id="correo">
-                              </div>
-                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  text-right">
-                              <button type="button" class="btn btn-secondary" onclick="cambiarDatos()" >Guardar</button>
-                            </div>
-                        </div>
-                      </form>
-                </div>
+                   
+                  </div>
+              </div>
+
             </div>
-
         </div>
-      
-    </div>  
+        
+                    
+    </div> <!-- AQUI TERMINA EL CONTENEDOR DE MODIFICACIONES -->
+            
 
-    </div>
+
+
+              <!-- Seccion derecha agregar tarjetas -->                            
+                    
+
+
+
+                     
   
     <!--------------- footer  ---------->
  
@@ -156,8 +157,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
      <!--JS-->
-     <script src="../assets/js/perfil.js"></script>
-
+     <script src="assets/js/perfil.js"></script>
       <!--ICONOS-->
     <script src="https://kit.fontawesome.com/5a36ceff30.js" crossorigin="anonymous"></script>
 
