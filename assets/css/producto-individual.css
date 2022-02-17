@@ -53,6 +53,8 @@ body{
     font-size: var(--tamTexto);
     color: white;
     margin: 0 30px;
+    width: 180px;
+    text-align: center;
 }
 
 .nav-inicio{
@@ -60,8 +62,8 @@ body{
     font-size: var(--tamSubtitulo);
     /* -webkit-text-stroke: 2px var(--colorMorado); */
     letter-spacing: 4.5px;
+    width: 250px;
 }
-
 
 .contenido-principal{
     display: flex;
@@ -193,12 +195,12 @@ h4{
 }
 
 .más{
-    border-radius: 50px;
+    border-radius: 50%;
     font-weight:normal;
     font-size: 15px;
     border: 0px;
     width: 30px;
-    height: 25px;
+    height: 30px;
     background-color: #77DD77;
     margin-left: 10px;
     margin-top: 9.5px;
@@ -207,12 +209,12 @@ h4{
 }
 
 .menos{
-    border-radius: 50px;
+    border-radius: 100%;
     border: 0;
     font-weight: normal;
     font-size: 15px;
     width: 30px;
-    height: 25px;
+    height: 30px;
     background-color: #FF6961 ;
     margin-left: 10px;
     margin-top: 9.5px;
@@ -220,8 +222,9 @@ h4{
 }
 .form-control{
     border-radius: 5px;
-    width: 40px;
+    width: 50px;
     height: 35px;
+    text-align: center;
     margin-left: 10px;
     margin-top: 5px;
     background-color: #C4C4C4;
