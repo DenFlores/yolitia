@@ -51,6 +51,8 @@
     font-size: var(--tamTexto);
     color: white;
     margin: 0 30px;
+    width: 180px;
+    text-align: center;
 }
 
 .nav-inicio{
