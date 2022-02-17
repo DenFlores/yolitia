@@ -26,6 +26,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  overflow-x: hidden;
+}
 .row {
   margin: 0;
 }
@@ -841,6 +844,7 @@
   }
   body {
     background-color: #000000;
+    overflow-x: hidden;
   }
   .text-instruction-2 {
     font-size: 24px;
