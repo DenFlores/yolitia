@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+    --fuenteTitulos: 'Lobster', cursive;
+    --fuenteSubtitulos: 'Lobster', cursive;
+    --fuenteTexto: 'Comfortaa', cursive;
+    --fuenteAnimada: 'Butterfly Kids', cursive;
+    --fuenteNavbar: 'Pacifico', cursive;
+
+    --tamTitulo: 4rem;
+    --tamSubtitulo: 3rem;
+    --tamTexto: 1.5rem;
+    --tamAnimada: 2rem;
+
+    --colorRojo: #ff6961;
+    --colorVerde: #77dd77;
+    --colorAmarillo: #fdfd96;
+    --colorAzul: #84b6f4;
+    --colorRosa: #fdcae1;
+    --colorBlanco: #ffffff;
+    --colorMorado: #DC14B0;
+
+}
+body{
+    background-image: url(../img/Pago/images.jpeg);
+    background-size: contain;
+}
+
+.pago{
+    
+    background-color: var(--colorAzul);
+    width: 30%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+  
+}
+.titulo{
+    
+    padding-top: 10px;
+  
+}
+.titulo h1{
+    text-align:left;
+    font-family: var(--fuenteTitulos);
+    font-size: 30px;
+    margin:0;
+    color: black;
+}
+.titulo p{
+    font-size: 15px;
+    font-style: italic;
+    font-family: var(--fuenteTexto);
+    
+}
+.formulario{
+    margin-top: 150px;
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: var(--fuenteTexto);
+    color: var(--colorBlanco);
+    
+}
+.placeholder{
+    font-style: italic;
+    width: 350px;
+    height: 25px;
+}
+.password{
+    width: 50px;
+    height: 25px;
+}
+.fecha{
+    width: 50px;
+    height: 25px;
+   
+
+}
+
+
+.imagen-tarjetas{
+    width: 100%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin:10px;
+    
+}
+.imagen-tarjetas img{
+    width: 50%;
+    height: 60px;
+}
+
+
+.boton-p{
+    width: 150px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.boton-pagar{
+    width: 120px;
+    height: 35px;
+    background-color: var(--colorVerde);
+    color: var(--colorBlanco);
+    /*font-weight: bold;*/
+    font-family: var(--fuenteTexto);
+    font-size: 15px;
+    font-weight:900 ;
+    border-radius: 4px;
+    border: 0;
+}
+    
+
+    
+    
+   
+
+
+
