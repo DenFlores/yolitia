@@ -224,10 +224,16 @@
  text-align: center;
 }
 /*--------------footer---------------------------*/
-.color{
+.color {
   height: 100px;
 }
 
+.c3 {
+  height: 130px;
+  background: var(--colorMorado);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+/*
 .c1{
   background: #84B6F4;
   transform: matrix(1, 0, 0, -1, 0, 0);
@@ -241,13 +247,7 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.c3{
-  height: 130px;
-  background: #FF6961;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-}
+}*/
 
 /*------------------------------Responsive-----------------------------*/
 
