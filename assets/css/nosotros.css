@@ -207,7 +207,7 @@ body {
   text-align: center;
 }
 /*--------------footer---------------------------*/
-.color {
+/* .color {
   height: 100px;
 }
 
@@ -215,7 +215,7 @@ body {
   height: 130px;
   background: var(--colorMorado);
   transform: matrix(1, 0, 0, -1, 0, 0);
-}
+} */
 /*
 .c1{
   background: #84B6F4;
