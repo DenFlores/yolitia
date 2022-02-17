@@ -42,6 +42,7 @@ html {
   background-color: var(--colorMorado);
 }
 
+<<<<<<< HEAD
 .nav-link {
   font-size: var(--tamTexto);
   color: white;
@@ -53,6 +54,22 @@ html {
   font-size: var(--tamSubtitulo);
   /* -webkit-text-stroke: 2px var(--colorMorado); */
   letter-spacing: 4.5px;
+=======
+.nav-link{
+    font-size: var(--tamTexto);
+    color: white;
+    margin: 0 30px;
+    width: 180px;
+    text-align: center;
+}
+
+.nav-inicio{
+    font-family: var(--fuenteNavbar);
+    font-size: var(--tamSubtitulo);
+    /* -webkit-text-stroke: 2px var(--colorMorado); */
+    letter-spacing: 4.5px;
+    width: 250px;
+>>>>>>> 853d119cd6e4b7bfb03002386d44cf6bdcf6eaa5
 }
 
 /*----------------------------------- Carritp --------------------------------*/

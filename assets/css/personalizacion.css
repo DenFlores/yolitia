@@ -193,6 +193,8 @@
   font-size: var(--tamTexto);
   color: white;
   margin: 0 30px;
+  width: 140px;
+  text-align: center;
 }
 
 .nav-inicio {
@@ -200,6 +202,7 @@
   font-size: var(--tamSubtitulo);
   /* -webkit-text-stroke: 2px var(--colorMorado); */
   letter-spacing: 4.5px;
+  width: 250px;
 }
 /* footer */
 .color {
