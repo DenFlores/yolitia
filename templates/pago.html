@@ -26,14 +26,14 @@
         <div>
             <label for="nombre">Nombre del titular</label>
         </br>
-            <input class="placeholder" type="text" placeholder="Escriba su nombre" id="nombre">
+            <input class="placeholder" type="text" placeholder="Escriba su nombre..." id="nombre" required>
         </div>
         </br>
 
         <div>
             <label for="numero-tarjeta">Número de tarjeta</label>
         </br>
-            <input class="placeholder" type="number" placeholder="067 890 567 456" id="tarjeta">
+            <input class="placeholder" type="number" placeholder="067 890 567 456" id="tarjeta" required>
         </div>
         </br>
 
@@ -54,21 +54,21 @@
                <option value="11">Enero</option>
                <option value="12">Enero</option>
             </select>-->
-            <input type="number" min="1" max="12" step="1" value="01"/>
+            <input class="fecha" type="number" min="1" max="12" step="1" value="01" required/>
             <span>/</span>
-            <input type="number" min="1900" max="2099" step="1" value="30" />
+            <input class="fecha" type="number" min="1900" max="2099" step="1" value="30" required />
         </div>
         </br>
 
         <div>
             <label for="codigo-seguridad">Codigo de seguridad</label>
         </br>
-            <input class="placeholder" type="password" placeholder="CVV" name="codigo-seguridad" id="codigo">
+            <input class="password" type="password" placeholder="CVV" name="codigo-seguridad" id="codigo" required>
         </div>
         </br>
 
         <div class="boton-p">
-            <input class="boton-pagar" type="button" onclick="alert('Pago exitoso! Tu pedido esta en proceso...')" value="Pagar Ahora">
+            <input class="boton-pagar" type="button" onclick="alert('¡Pago exitoso! Tu pedido esta en proceso...')" value="Pagar Ahora">
         </div>
     
     </form>
