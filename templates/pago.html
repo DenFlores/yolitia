@@ -1,9 +1,114 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/css/pago.css">
+    <title>Pago</title>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-total text-white">
+        <button
+          class="navbar-toggler mr-5"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link nav-inicio" href="../index.html">Unique</a>
+            <a class="nav-link" href="productos.html">Productos</a>
+            <a class="nav-link" href="login.html">Registrarse</a>
+            
+          </ul>
+        </div>
+      </nav>
+  
+      <!--------------- Carrito  ---------->
+      <div class="carrito">
+        <a href="carrito.html">
+          <div class="circulo-carrito">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </a>
+      </div>
+    <div class="pago">
+
+        <div class="formulario">
+            <div class="titulo"> <h1>Pago Digital
+            </br>         
+        </h1> 
+        <p>Todos los campos son necesarios   </p>
+        </div>
+
+        <div class="imagen-tarjetas">
+            <img class="" src="../assets/img/Pago/tarjetas.png" alt="modo de pago"/> 
+       </div> 
+
+        <form class="pago-digital">
+
+        <div>
+            <label for="nombre">Nombre del titular</label>
+        </br>
+            <input class="placeholder" type="text" placeholder="Escriba su nombre..." id="nombre" required>
+        </div>
+        </br>
+
+        <div>
+            <label for="numero-tarjeta">Número de tarjeta</label>
+        </br>
+            <input class="placeholder" type="number" placeholder="067 890 567 456" id="tarjeta" required>
+        </div>
+        </br>
+
+        <div >
+            <label for="expiracion">Fecha de expiración(MM/AAAA)</label>
+        </br>
+    
+            <input class="fecha" type="number" min="1" max="12" step="1" value="01" required/>
+            <span>/</span>
+            <input class="fecha" type="number" min="1900" max="2099" step="1" value="30" required />
+        </div>
+        </br>
+
+        <div>
+            <label for="codigo-seguridad">Codigo de seguridad</label>
+        </br>
+            <input class="password" type="password" placeholder="cvv" name="codigo-seguridad" id="codigo" required>
+            <input class="dudas" type="text" placeholder="?" name="dudas" id="dudas">
+            <span><a href="https://www.ennaranja.com/economia-facil/que-es-el-cvv-de-las-tarjetas-de-credito-y-por-que-en-algunos-sitios-no-lo-piden/">¿Qué es esto?</a></span>
+            
+        </div>
+        </br>
+
+        <div class="boton-p">
+            <input class="boton-pagar" type="button" onclick="alert('¡Pago exitoso! Tu pedido esta en proceso...')" value="Pagar Ahora">
+        </div>
+    
+    </form>
+    </div>
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5a36ceff30.js" crossorigin="anonymous"></script>
+
+
+    
+  </body>
+</html>
+<!--
     <link rel="stylesheet" href="../assets/css/pago.css">
     <title>Pago</title>
 </head>
@@ -40,20 +145,7 @@
         <div >
             <label for="expiracion">Fecha de expiración(MM/AAAA)</label>
         </br>
-          <!--<select name="Meses" id="">
-               <option value="1">Enero</option>
-               <option value="2">Febrero</option>
-               <option value="3">Marzo</option>
-               <option value="4">Enero</option>
-               <option value="5">Enero</option>
-               <option value="6">Enero</option>
-               <option value="7">Enero</option>
-               <option value="8">Enero</option>
-               <option value="9">Enero</option>
-               <option value="10">Enero</option>
-               <option value="11">Enero</option>
-               <option value="12">Enero</option>
-            </select>-->
+    
             <input class="fecha" type="number" min="1" max="12" step="1" value="01" required/>
             <span>/</span>
             <input class="fecha" type="number" min="1900" max="2099" step="1" value="30" required />
@@ -64,6 +156,7 @@
             <label for="codigo-seguridad">Codigo de seguridad</label>
         </br>
             <input class="password" type="password" placeholder="CVV" name="codigo-seguridad" id="codigo" required>
+            
         </div>
         </br>
 
@@ -78,4 +171,4 @@
 
     
 </body>
-</html>
+</html>-->

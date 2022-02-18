@@ -22,9 +22,45 @@
 
 }
 body{
-    background-image: url(../img/Pago/images.jpeg);
+    background-color: var(--colorRosa);
     background-size: contain;
 }
+.circulo-carrito{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--colorMorado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.navbar-total{
+    background-color: var(--colorMorado);
+}
+
+.nav-link{
+    font-size: var(--tamTexto);
+    color: white;
+    margin: 0 30px;
+    width: 140px;
+    text-align: center;
+}
+
+.nav-inicio{
+    font-family: var(--fuenteNavbar);
+    font-size: var(--tamSubtitulo);
+    letter-spacing: 4.5px;
+    width: 250px;
+}
+
 
 .pago{
     
@@ -58,24 +94,53 @@ body{
 }
 .formulario{
     margin-top: 150px;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 20px;
     font-family: var(--fuenteTexto);
     color: var(--colorBlanco);
     
 }
+input{
+    border: 0;
+    border-radius: 10px;
+}
 .placeholder{
     font-style: italic;
+    font-size: 12px;
     width: 350px;
     height: 25px;
 }
 .password{
     width: 50px;
     height: 25px;
+    font-size: 14px;
+    font-style: italic;
+}
+.dudas{
+    border-radius: 50%;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+    background-color: var(--colorBlanco);
+
+}
+span{
+    font-size: 9px;
+    font-family: var(--fuenteTexto);
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+
+
 }
 .fecha{
     width: 50px;
     height: 25px;
+
    
 
 }
@@ -105,10 +170,9 @@ body{
 
 .boton-pagar{
     width: 120px;
-    height: 35px;
+    height: 33px;
     background-color: var(--colorVerde);
     color: var(--colorBlanco);
-    /*font-weight: bold;*/
     font-family: var(--fuenteTexto);
     font-size: 15px;
     font-weight:900 ;
