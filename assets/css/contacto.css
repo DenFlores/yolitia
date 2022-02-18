@@ -99,17 +99,28 @@ body {
   margin-top: 30px;
 }
 
-#inputAsunto {
+#asunto {
   background-color: #84b6f4;
+  border-radius: 20px;
 }
 
-#inputNombre {
+#Nombre {
   background-color: #84b6f4;
+   border-radius: 20px;
 }
 
-#inputEmail {
+#Email {
   background-color: #84b6f4;
+   border-radius: 20px;
 }
+
+#mensaje {
+    background-color: #84B6F4;
+    border-radius: 20px;
+}
+
+
+
 
 .form-control {
   background-color: #84b6f4;
