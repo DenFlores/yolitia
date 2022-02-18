@@ -179,6 +179,20 @@ input:valid {
   border: 3px solid green;
 }
 
+#submite {
+    background-color: var(--colorRojo);
+    border: 3px solid var(--colorAzul);
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    
+    
+}
+
+#submite:hover {
+     background-color: var(--colorAzul);
+}
+
 .color {
   height: 100px;
 }
