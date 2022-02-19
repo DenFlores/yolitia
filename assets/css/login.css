@@ -45,25 +45,25 @@ body {
 
 /* ___________________________________ NAVBAR _______________________________________*/
 
-.navbar {
-  height: 12vh;
-}
-
 .navbar-total {
   background-color: var(--colorMorado);
 }
+
 .nav-link {
   font-size: var(--tamTexto);
   color: white;
   margin: 0 30px;
+  width: 140px;
+  text-align: center;
 }
+
 .nav-inicio {
   font-family: var(--fuenteNavbar);
   font-size: var(--tamSubtitulo);
   /* -webkit-text-stroke: 2px var(--colorMorado); */
   letter-spacing: 4.5px;
+  width: 250px;
 }
-
 /*__________________________________  FORMULARIO  ______________________________________________*/
 
 .contenedor {
@@ -212,7 +212,7 @@ form {
   text-align: center;
 }
 
-button {
+/* button {
   align-self: center;
   background-color: #77dd77;
   padding: 8px 10px;
@@ -220,6 +220,22 @@ button {
   border-radius: 15px;
   margin: 8px 0;
   width: 80%;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+} */
+.lin-registro {
+  color: rgb(0, 0, 0);
+  align-self: center;
+  background-color: #77dd77;
+  padding: 8px 10px;
+  border-style: none;
+  border-radius: 15px;
+  margin: 8px 0;
+  width: 80%;
+
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .inicio-sesion {
@@ -238,8 +254,21 @@ button {
   align-items: center;
 }
 
-.sesionbtn {
+.form-sesion a {
+  width: 80%;
+}
+
+.btn-sesion {
   background-color: #fdfd96;
+  color: rgb(0, 0, 0);
+  align-self: center;
+  padding: 8px 10px;
+  border-style: none;
+  border-radius: 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 650px) {
