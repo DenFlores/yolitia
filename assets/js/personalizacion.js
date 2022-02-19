@@ -88,11 +88,13 @@ function mousedown(e) {
     }
     while (angulo < 0 && defaultState <= 94) {
       defaultState = defaultState + 0.05;
+      console.log(`estate plus ${defaultState}`);
       angulo++;
       brazo.style.right = defaultState + "%";
     }
     while (angulo > 0 && defaultState >= 0) {
       defaultState = defaultState - 0.05;
+      console.log(`estate less ${defaultState}`);
       angulo--;
       brazo.style.right = defaultState + "%";
     }
@@ -214,22 +216,7 @@ function bajarBrazo(e) {
     const audioBajarBrazo = new Audio("https://denflores.github.io/yolitia/assets/audio/bajar-brazo.mp3");
     audioBajarBrazo.play();
     brazo.style.height = "100%";
-    function getOffset(el) {
-      let _x = 0;
-      let _y = 0;
-      while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
-        _x += el.offsetLeft - el.scrollLeft;
-        _y += el.offsetTop - el.scrollTop;
-        el = el.offsetParent;
-      }
-      return { top: _y, left: _x };
-    }
-    var x = getOffset(brazo).left;
-    var y = getOffset(brazo).top;
-    console.log("x: " + x);
-    console.log("y: " + y);
-
-    if (x >= 1387 && y >= 490) {
+    if (defaultState>16&&defaultState<27) {
       console.log('oso azul');
       osoAzul.style.display = "none";
       changeStep("next");
@@ -245,7 +232,7 @@ function bajarBrazo(e) {
       sombreroN3.style.left = "32%";
       sombreroN3.style.top = "5%";
     }
-    else if (x >= 1077 && y >= 490) {
+    else if (defaultState<43&&defaultState>34) {
       console.log('perro');
       perro.style.display = "none";
       changeStep("next");
@@ -261,7 +248,7 @@ function bajarBrazo(e) {
       sombreroN3.style.left = "32%";
       sombreroN3.style.top = "60%";
     }
-    else if (x >= 743 && y >= 490) {
+    else if (defaultState<61&&defaultState>51) {
       console.log('oso cafe');
       osoCafe.style.display = "none";
       changeStep("next");
@@ -277,7 +264,7 @@ function bajarBrazo(e) {
       sombreroN3.style.left = "28%";
       sombreroN3.style.top = "5%";
     }
-    else if (x >= 429 && y >= 490) {
+    else if (defaultState>69&&defaultState<76) {
       console.log('conejo');
       conejo.style.display = "none";
       changeStep("next");
