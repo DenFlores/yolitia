@@ -904,10 +904,14 @@ body{
   }
   .monio-n3 {
     position: relative;
+    top: 0%;
+    left: 0%;
 
   }
   .sombrero-n3 {
     position: relative;
+    top: 0%;
+    left: 0%;
 
   }
   #confirmar {
