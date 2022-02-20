@@ -122,14 +122,7 @@ function modeloUno(e) {
     peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
     peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
     peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
-    gorro.style.left = "29%";
-    gorro.style.top = "-10%";
-    monio.style.left = "-6%";
-    monio.style.top = "109%";
-    monioN3.style.left = "-170%";
-    monioN3.style.top = "360%";
-    sombreroN3.style.left = "-24%";
-    sombreroN3.style.top = "252%";
+
   }
   else {
     e.preventDefault();
@@ -145,14 +138,7 @@ function modeloDos(e) {
     peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
     peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
     peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-    gorro.style.left = "27%";
-    gorro.style.top = "-49%";
-    monio.style.left = "-8%";
-    monio.style.top = "79%";
-    monioN3.style.left = "-180%";
-    monioN3.style.top = "337%";
-    sombreroN3.style.left = "-40%";
-    sombreroN3.style.top = "218%";
+
   }
   else {
     e.preventDefault();
@@ -168,14 +154,7 @@ function modeloTres(e) {
     peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
     peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
     peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-    gorro.style.left = "29%";
-    gorro.style.top = "-11%";
-    monio.style.left = "-8%";
-    monio.style.top = "97%";
-    monioN3.style.left = "-170%";
-    monioN3.style.top = "351%";
-    sombreroN3.style.left = "-28%";
-    sombreroN3.style.top = "241%";
+
   }
   else {
     e.preventDefault();
@@ -191,14 +170,7 @@ function modeloCuatro(e) {
     peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
     peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
     peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-    gorro.style.left = "30%";
-    gorro.style.top = "-42%";
-    monio.style.left = "-7%";
-    monio.style.top = "90%";
-    monioN3.style.left = "-170%";
-    monioN3.style.top = "335%";
-    sombreroN3.style.left = "-28%";
-    sombreroN3.style.top = "200%";
+
   }
   else {
     e.preventDefault();
@@ -656,6 +628,11 @@ monioN3.addEventListener("mousedown",mousedownMonio);
 monio.addEventListener("mousedown",mousedownMonio4);
 gorro.addEventListener("mousedown",mousedownGorro);
 
+sombreroN3.addEventListener("touchstart", touchStartSombrero);
+monioN3.addEventListener("touchstart",touchStartMonio3);
+monio.addEventListener("touchstart",touchStartMonio4);
+gorro.addEventListener("touchstart",touchStartGorro);
+
 function mousedownSombrero(e) {
   window.addEventListener("mousemove", mousemoveSombrero);
   window.addEventListener("mouseup", mouseupSombrero);
@@ -745,5 +722,97 @@ function mousedownGorro(e) {
   function mouseupGorro() {
     window.removeEventListener("mousemove", mousemoveGorro);
     window.removeEventListener("mouseup", mouseupGorro);
+  }
+}
+
+function touchStartSombrero(e) {
+  window.addEventListener("touchmove", touchMoveSombrero);
+  window.addEventListener("touchend", touchEndSombrero);
+
+  const coords = sombreroN3.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function touchMoveSombrero(e) {
+    let m = e.touches[0].pageY;
+    let n = e.touches[0].pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    sombreroN3.style.top = t + "%"; // agregando px a los numeros
+    sombreroN3.style.left = l + "%";
+  }
+
+  function touchEndSombrero() {
+    window.removeEventListener("touchmove", touchMoveSombrero);
+    window.removeEventListener("touchend", touchEndSombrero);
+  }
+}
+
+function touchStartMonio3(e) {
+  window.addEventListener("touchmove", touchMoveMonio);
+  window.addEventListener("touchend", touchEndMonio);
+
+  const coords = monioN3.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function touchMoveMonio(e) {
+    let m = e.touches[0].pageY;
+    let n = e.touches[0].pageX;
+  
+    let t = m - j;
+    let l = n - k;
+    monioN3.style.top = t + "%"; // agregando px a los numeros
+    monioN3.style.left = l + "%";
+  }
+
+  function touchEndMonio() {
+    window.removeEventListener("touchmove", touchMoveMonio);
+    window.removeEventListener("touchend", touchEndMonio);
+  }
+}
+
+function touchStartMonio4(e) {
+  window.addEventListener("touchmove", touchMoveMonio4);
+  window.addEventListener("touchend", touchEndMonio4);
+
+  const coords = monio.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function touchMoveMonio4(e) {
+    let m = e.touches[0].pageY;
+    let n = e.touches[0].pageX;
+  
+    let t = m - j;
+    let l = n - k;
+    monio.style.top = t + "%"; // agregando px a los numeros
+    monio.style.left = l + "%";
+  }
+
+  function touchEndMonio4() {
+    window.removeEventListener("touchmove", touchMoveMonio4);
+    window.removeEventListener("touchend", touchEndMonio4);
+  }
+}
+
+function touchStartGorro(e) {
+  window.addEventListener("touchmove", touchMoveGorro);
+  window.addEventListener("touchend", touchEndGorro);
+
+  const coords = gorro.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function touchMoveGorro(e) {
+    let m = e.touches[0].pageY;
+    let n = e.touches[0].pageX;
+  
+    let t = m - j;
+    let l = n - k;
+    gorro.style.top = t + "%"; // agregando px a los numeros
+    gorro.style.left = l + "%";
+  }
+
+  function touchEndGorro() {
+    window.removeEventListener("touchmove", touchMoveGorro);
+    window.removeEventListener("touchend", touchEndGorro);
   }
 }
