@@ -223,14 +223,7 @@ function bajarBrazo(e) {
       peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
       peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
       peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-      monio.style.left = "29%";
-      monio.style.top = "85%";
-      gorro.style.left = "53%";
-      gorro.style.top = "0%";
-      monioN3.style.left = "-79%";
-      monioN3.style.top = "220%";
-      sombreroN3.style.left = "32%";
-      sombreroN3.style.top = "5%";
+
     }
     else if (defaultState<43&&defaultState>34) {
       console.log('perro');
@@ -239,14 +232,7 @@ function bajarBrazo(e) {
       peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
       peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
       peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-      monio.style.left = "29%";
-      monio.style.top = "95%";
-      gorro.style.left = "53%";
-      gorro.style.top = "15%";
-      monioN3.style.left = "-79%";
-      monioN3.style.top = "245%";
-      sombreroN3.style.left = "32%";
-      sombreroN3.style.top = "60%";
+
     }
     else if (defaultState<61&&defaultState>51) {
       console.log('oso cafe');
@@ -255,14 +241,7 @@ function bajarBrazo(e) {
       peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
       peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
       peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-      monio.style.left = "27%";
-      monio.style.top = "80%";
-      gorro.style.left = "51%";
-      gorro.style.top = "0%";
-      monioN3.style.left = "-83%";
-      monioN3.style.top = "210%";
-      sombreroN3.style.left = "28%";
-      sombreroN3.style.top = "5%";
+
     }
     else if (defaultState>69&&defaultState<76) {
       console.log('conejo');
@@ -271,14 +250,7 @@ function bajarBrazo(e) {
       peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
       peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
       peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
-      monio.style.left = "30%";
-      monio.style.top = "100%";
-      gorro.style.left = "53%";
-      gorro.style.top = "30%";
-      monioN3.style.left = "-78%";
-      monioN3.style.top = "250%";
-      sombreroN3.style.left = "33%";
-      sombreroN3.style.top = "80%";
+
     }
   }
 
@@ -675,5 +647,103 @@ function confirmacionCompra(e) {
 
   } else {
     e.preventDefault();
+  }
+}
+
+/* mover accesorios a través de la pantalla*/
+sombreroN3.addEventListener("mousedown", mousedownSombrero);
+monioN3.addEventListener("mousedown",mousedownMonio);
+monio.addEventListener("mousedown",mousedownMonio4);
+gorro.addEventListener("mousedown",mousedownGorro);
+
+function mousedownSombrero(e) {
+  window.addEventListener("mousemove", mousemoveSombrero);
+  window.addEventListener("mouseup", mouseupSombrero);
+
+  const coords = sombreroN3.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function mousemoveSombrero(e) {
+    let m = e.pageY ;
+    let n = e.pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    sombreroN3.style.top = t + "%"; // agregando px a los numeros
+    sombreroN3.style.left = l + "%";
+  }
+
+  function mouseupSombrero() {
+    window.removeEventListener("mousemove", mousemoveSombrero);
+    window.removeEventListener("mouseup", mouseupSombrero);
+  }
+}
+
+function mousedownMonio(e) {
+  window.addEventListener("mousemove", mousemoveMonio);
+  window.addEventListener("mouseup", mouseupMonio);
+
+  const coords = monioN3.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function mousemoveMonio(e) {
+    let m = e.pageY ;
+    let n = e.pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    monioN3.style.top = t + "%"; // agregando px a los numeros
+    monioN3.style.left = l + "%";
+  }
+
+  function mouseupMonio() {
+    window.removeEventListener("mousemove", mousemoveMonio);
+    window.removeEventListener("mouseup", mouseupMonio);
+  }
+}
+
+function mousedownMonio4(e) {
+  window.addEventListener("mousemove", mousemoveMonio4);
+  window.addEventListener("mouseup", mouseupMonio4);
+
+  const coords = monio.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function mousemoveMonio4(e) {
+    let m = e.pageY ;
+    let n = e.pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    monio.style.top = t + "%"; // agregando px a los numeros
+    monio.style.left = l + "%";
+  }
+
+  function mouseupMonio4() {
+    window.removeEventListener("mousemove", mousemoveMonio4);
+    window.removeEventListener("mouseup", mouseupMonio4);
+  }
+}
+
+function mousedownGorro(e) {
+  window.addEventListener("mousemove", mousemoveGorro);
+  window.addEventListener("mouseup", mouseupGorro);
+
+  const coords = gorro.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function mousemoveGorro(e) {
+    let m = e.pageY ;
+    let n = e.pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    gorro.style.top = t + "%"; // agregando px a los numeros
+    gorro.style.left = l + "%";
+  }
+
+  function mouseupGorro() {
+    window.removeEventListener("mousemove", mousemoveGorro);
+    window.removeEventListener("mouseup", mouseupGorro);
   }
 }
