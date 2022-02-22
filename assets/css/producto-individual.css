@@ -207,6 +207,9 @@ h4 {
   border-radius: 10px;
   margin-top: 45px;
   margin-left: 113px;
+  font-family: var(--fuenteTexto);
+  font-size: 15px;
+  font-weight: bold;
 }
 .form-control {
   border-radius: 5px;
@@ -224,6 +227,8 @@ h4 {
   width: 80px;
   height: 35px;
   border: 0;
+  font-family: var(--fuenteTexto);
+  font-size: 15px;
 }
 
 .color {
