@@ -26,6 +26,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  overflow-x: hidden;
+}
 .row {
   margin: 0;
 }
@@ -208,25 +211,10 @@
 .color {
   height: 100px;
 }
-.c1 {
-  background: #84b6f4;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-.c1::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, #ff362c 0%, rgba(196, 196, 196, 0) 100%);
-  transform: rotate(-180deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 .c3 {
   height: 130px;
-  background: #ff6961;
+  background: var(--colorMorado);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
@@ -515,18 +503,18 @@
 .gorro {
   position: relative;
   z-index: 100;
-  left: 53%;
+  left: 0%;
   width: 130px;
   height: 130px;
-  top: 10%;
+  top: 0%;
 }
 .monio {
   position: relative;
   z-index: 100;
-  left: 30%;
   width: 150px;
   height: 100px;
-  top: 100%;
+  top: 0%;
+  left: 0%;
 }
 
 .form-control {
@@ -602,8 +590,8 @@
   width: 100px;
   height: 100px;
   z-index: 100;
-  left: 32%;
-  top: 60%;
+  left: 0%;
+  top: 0%;
 }
 
 .monio-n3 {
@@ -611,8 +599,8 @@
   width: 100px;
   height: 100px;
   z-index: 100;
-  left: -79%;
-  top: 245%;
+  left: 0%;
+  top: 0%;
 }
 
 #canvas {
@@ -661,6 +649,9 @@
 }
 
 @media only screen and (max-width: 576px) {
+  body,html{
+    overflow-x: hidden;
+  }
   #conejo {
     margin-left: 10%;
   }
@@ -856,6 +847,7 @@
   }
   body {
     background-color: #000000;
+    overflow-x: hidden;
   }
   .text-instruction-2 {
     font-size: 24px;
@@ -915,13 +907,15 @@
   }
   .monio-n3 {
     position: relative;
-    left: -170%;
-    top: 360%;
+    top: 0%;
+    left: 0%;
+
   }
   .sombrero-n3 {
     position: relative;
-    left: -28%;
-    top: 250%;
+    top: 0%;
+    left: 0%;
+
   }
   #confirmar {
     position: absolute;
@@ -1002,18 +996,18 @@
   .gorro {
     position: relative;
     z-index: 100;
-    left: 27%;
     width: 100px;
     height: 100px;
-    top: -10%;
+    top: 0%;
+    left: 0%;
   }
   .monio {
     position: relative;
     z-index: 100;
-    left: -5%;
     width: 100px;
     height: 100px;
-    top: 105%;
+    top: 0%;
+    left: 0%;
     z-index: 100;
   }
 }
