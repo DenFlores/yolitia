@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TIPOGRAFIA -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -12,16 +14,20 @@
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
 
   <!-- ESTILOS PROPIOS -->
 
   <link rel="stylesheet" href="../assets/css/login.css">
+
   <title>Login</title>
+
 </head>
 
 <body>
+
 
   <!--------------- Navbar  ---------->
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-total text-white">
@@ -42,6 +48,7 @@
     </div>
   </nav>
 
+
   <!--------------- Carrito  ---------->
   <div class="carrito">
     <a href="carrito.html">
@@ -57,40 +64,63 @@
 
 
 
-  <div class="registro">
-
-    <form action="" class="form-registro">
-
+  <div class="contenedor">
+    <div class="cabecera">
       <h2>Registrarse</h2>
-      <label for="myname"></label>
-      <input type="text" placeholder="Nombre" id="myname">
-      <label for="email"></label>
-      <input type="email" placeholder="Correo Electronico" id="email">
-      <label for="password"></label>
-      <input type="password" placeholder="Contraseña" id="password">
-      <a class="submit-registrarse" href="perfil.html">
-        Registrarse
-      </a>
+    </div>
+    <form id="formulario" action="procesar.php" method="">
 
 
+
+
+
+      <div class="form-control1">
+        <label for="usuario"></label>
+        <input id="nombre" type="text" placeholder="Nombre">
+        <p></p>
+      </div>
+
+      <div class="form-control1">
+        <label for="email"></label>
+        <input id="email" type="email" placeholder="correo">
+        <p></p>
+      </div>
+
+      <div class="form-control1">
+        <label for="pass"></label>
+        <input id="pass" type="password" placeholder="contraseña">
+        <p></p>
+      </div>
+
+
+      <a href="perfil.html"><input type="submit" value="Registrarse" class="lin-registro"></a>
     </form>
+  </div>
 
-    <form action="" class="form-sesion">
 
-      <h2>Iniciar Sesión</h2>
-      <input type="text" placeholder="Correo electronico">
-      <input type="password" placeholder="Contraseña">
-      <a class="submit-iniciar" href="perfil.html">
-        Iniciar
-      </a>
+
+  <div class="inicio-sesion">
+    <form action="" class="form-sesion" id="form2">
+      <div class="cabecera">
+        <h2>Iniciar Sesión</h2>
+      </div>
+
+      <div class="form-control1">
+        <input type="email" placeholder="Correo electronico" id="usuario">
+        <p></p>
+      </div>
+
+      <div class="form-control1">
+        <input type="password" placeholder="Contraseña" id="passSesion">
+        <p></p>
+      </div>
+
+
+      <a href="perfil.html"><input type="submit" value="Iniciar Sesión" class="btn-sesion"></a>
 
 
     </form>
   </div>
-
-  <!--ICONOS-->
-  <script src="https://kit.fontawesome.com/5a36ceff30.js" crossorigin="anonymous"></script>
-
 
 
   <!-- --------------- FOOTER --------------------->
@@ -99,6 +129,10 @@
 
     <div class="color c3"></div>
   </footer>
+  <script src="../assets/js/login.js"></script>
+  <!--ICONOS-->
+  <script src="https://kit.fontawesome.com/5a36ceff30.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

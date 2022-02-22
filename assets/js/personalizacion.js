@@ -88,11 +88,13 @@ function mousedown(e) {
     }
     while (angulo < 0 && defaultState <= 94) {
       defaultState = defaultState + 0.05;
+      console.log(`estate plus ${defaultState}`);
       angulo++;
       brazo.style.right = defaultState + "%";
     }
     while (angulo > 0 && defaultState >= 0) {
       defaultState = defaultState - 0.05;
+      console.log(`estate less ${defaultState}`);
       angulo--;
       brazo.style.right = defaultState + "%";
     }
@@ -120,14 +122,7 @@ function modeloUno(e) {
     peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
     peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
     peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
-    gorro.style.left = "29%";
-    gorro.style.top = "-10%";
-    monio.style.left = "-6%";
-    monio.style.top = "109%";
-    monioN3.style.left = "-170%";
-    monioN3.style.top = "360%";
-    sombreroN3.style.left = "-24%";
-    sombreroN3.style.top = "252%";
+
   }
   else {
     e.preventDefault();
@@ -143,14 +138,7 @@ function modeloDos(e) {
     peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
     peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
     peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-    gorro.style.left = "27%";
-    gorro.style.top = "-49%";
-    monio.style.left = "-8%";
-    monio.style.top = "79%";
-    monioN3.style.left = "-180%";
-    monioN3.style.top = "337%";
-    sombreroN3.style.left = "-40%";
-    sombreroN3.style.top = "218%";
+
   }
   else {
     e.preventDefault();
@@ -166,14 +154,7 @@ function modeloTres(e) {
     peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
     peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
     peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-    gorro.style.left = "29%";
-    gorro.style.top = "-11%";
-    monio.style.left = "-8%";
-    monio.style.top = "97%";
-    monioN3.style.left = "-170%";
-    monioN3.style.top = "351%";
-    sombreroN3.style.left = "-28%";
-    sombreroN3.style.top = "241%";
+
   }
   else {
     e.preventDefault();
@@ -189,14 +170,7 @@ function modeloCuatro(e) {
     peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
     peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
     peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-    gorro.style.left = "30%";
-    gorro.style.top = "-42%";
-    monio.style.left = "-7%";
-    monio.style.top = "90%";
-    monioN3.style.left = "-170%";
-    monioN3.style.top = "335%";
-    sombreroN3.style.left = "-28%";
-    sombreroN3.style.top = "200%";
+
   }
   else {
     e.preventDefault();
@@ -214,84 +188,41 @@ function bajarBrazo(e) {
     const audioBajarBrazo = new Audio("https://denflores.github.io/yolitia/assets/audio/bajar-brazo.mp3");
     audioBajarBrazo.play();
     brazo.style.height = "100%";
-    function getOffset(el) {
-      let _x = 0;
-      let _y = 0;
-      while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
-        _x += el.offsetLeft - el.scrollLeft;
-        _y += el.offsetTop - el.scrollTop;
-        el = el.offsetParent;
-      }
-      return { top: _y, left: _x };
-    }
-    var x = getOffset(brazo).left;
-    var y = getOffset(brazo).top;
-    console.log("x: " + x);
-    console.log("y: " + y);
-
-    if (x >= 1387 && y >= 490) {
+    if (defaultState>16&&defaultState<27) {
       console.log('oso azul');
       osoAzul.style.display = "none";
       changeStep("next");
       peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
       peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
       peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-      monio.style.left = "29%";
-      monio.style.top = "85%";
-      gorro.style.left = "53%";
-      gorro.style.top = "0%";
-      monioN3.style.left = "-79%";
-      monioN3.style.top = "220%";
-      sombreroN3.style.left = "32%";
-      sombreroN3.style.top = "5%";
+
     }
-    else if (x >= 1077 && y >= 490) {
+    else if (defaultState<43&&defaultState>34) {
       console.log('perro');
       perro.style.display = "none";
       changeStep("next");
       peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
       peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
       peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-      monio.style.left = "29%";
-      monio.style.top = "95%";
-      gorro.style.left = "53%";
-      gorro.style.top = "15%";
-      monioN3.style.left = "-79%";
-      monioN3.style.top = "245%";
-      sombreroN3.style.left = "32%";
-      sombreroN3.style.top = "60%";
+
     }
-    else if (x >= 743 && y >= 490) {
+    else if (defaultState<61&&defaultState>51) {
       console.log('oso cafe');
       osoCafe.style.display = "none";
       changeStep("next");
       peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
       peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
       peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-      monio.style.left = "27%";
-      monio.style.top = "80%";
-      gorro.style.left = "51%";
-      gorro.style.top = "0%";
-      monioN3.style.left = "-83%";
-      monioN3.style.top = "210%";
-      sombreroN3.style.left = "28%";
-      sombreroN3.style.top = "5%";
+
     }
-    else if (x >= 429 && y >= 490) {
+    else if (defaultState>69&&defaultState<76) {
       console.log('conejo');
       conejo.style.display = "none";
       changeStep("next");
       peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
       peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
       peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
-      monio.style.left = "30%";
-      monio.style.top = "100%";
-      gorro.style.left = "53%";
-      gorro.style.top = "30%";
-      monioN3.style.left = "-78%";
-      monioN3.style.top = "250%";
-      sombreroN3.style.left = "33%";
-      sombreroN3.style.top = "80%";
+
     }
   }
 
@@ -688,5 +619,200 @@ function confirmacionCompra(e) {
 
   } else {
     e.preventDefault();
+  }
+}
+
+/* mover accesorios a través de la pantalla*/
+sombreroN3.addEventListener("mousedown", mousedownSombrero);
+monioN3.addEventListener("mousedown",mousedownMonio);
+monio.addEventListener("mousedown",mousedownMonio4);
+gorro.addEventListener("mousedown",mousedownGorro);
+
+sombreroN3.addEventListener("touchstart", touchStartSombrero);
+monioN3.addEventListener("touchstart",touchStartMonio3);
+monio.addEventListener("touchstart",touchStartMonio4);
+gorro.addEventListener("touchstart",touchStartGorro);
+
+function mousedownSombrero(e) {
+  window.addEventListener("mousemove", mousemoveSombrero);
+  window.addEventListener("mouseup", mouseupSombrero);
+
+  const coords = sombreroN3.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function mousemoveSombrero(e) {
+    let m = e.pageY ;
+    let n = e.pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    sombreroN3.style.top = t + "%"; // agregando px a los numeros
+    sombreroN3.style.left = l + "%";
+  }
+
+  function mouseupSombrero() {
+    window.removeEventListener("mousemove", mousemoveSombrero);
+    window.removeEventListener("mouseup", mouseupSombrero);
+  }
+}
+
+function mousedownMonio(e) {
+  window.addEventListener("mousemove", mousemoveMonio);
+  window.addEventListener("mouseup", mouseupMonio);
+
+  const coords = monioN3.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function mousemoveMonio(e) {
+    let m = e.pageY ;
+    let n = e.pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    monioN3.style.top = t + "%"; // agregando px a los numeros
+    monioN3.style.left = l + "%";
+  }
+
+  function mouseupMonio() {
+    window.removeEventListener("mousemove", mousemoveMonio);
+    window.removeEventListener("mouseup", mouseupMonio);
+  }
+}
+
+function mousedownMonio4(e) {
+  window.addEventListener("mousemove", mousemoveMonio4);
+  window.addEventListener("mouseup", mouseupMonio4);
+
+  const coords = monio.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function mousemoveMonio4(e) {
+    let m = e.pageY ;
+    let n = e.pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    monio.style.top = t + "%"; // agregando px a los numeros
+    monio.style.left = l + "%";
+  }
+
+  function mouseupMonio4() {
+    window.removeEventListener("mousemove", mousemoveMonio4);
+    window.removeEventListener("mouseup", mouseupMonio4);
+  }
+}
+
+function mousedownGorro(e) {
+  window.addEventListener("mousemove", mousemoveGorro);
+  window.addEventListener("mouseup", mouseupGorro);
+
+  const coords = gorro.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function mousemoveGorro(e) {
+    let m = e.pageY ;
+    let n = e.pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    gorro.style.top = t + "%"; // agregando px a los numeros
+    gorro.style.left = l + "%";
+  }
+
+  function mouseupGorro() {
+    window.removeEventListener("mousemove", mousemoveGorro);
+    window.removeEventListener("mouseup", mouseupGorro);
+  }
+}
+
+function touchStartSombrero(e) {
+  window.addEventListener("touchmove", touchMoveSombrero);
+  window.addEventListener("touchend", touchEndSombrero);
+
+  const coords = sombreroN3.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function touchMoveSombrero(e) {
+    let m = e.touches[0].pageY;
+    let n = e.touches[0].pageX ;
+  
+    let t = m - j;
+    let l = n - k;
+    sombreroN3.style.top = t + "%"; // agregando px a los numeros
+    sombreroN3.style.left = l + "%";
+  }
+
+  function touchEndSombrero() {
+    window.removeEventListener("touchmove", touchMoveSombrero);
+    window.removeEventListener("touchend", touchEndSombrero);
+  }
+}
+
+function touchStartMonio3(e) {
+  window.addEventListener("touchmove", touchMoveMonio);
+  window.addEventListener("touchend", touchEndMonio);
+
+  const coords = monioN3.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function touchMoveMonio(e) {
+    let m = e.touches[0].pageY;
+    let n = e.touches[0].pageX;
+  
+    let t = m - j;
+    let l = n - k;
+    monioN3.style.top = t + "%"; // agregando px a los numeros
+    monioN3.style.left = l + "%";
+  }
+
+  function touchEndMonio() {
+    window.removeEventListener("touchmove", touchMoveMonio);
+    window.removeEventListener("touchend", touchEndMonio);
+  }
+}
+
+function touchStartMonio4(e) {
+  window.addEventListener("touchmove", touchMoveMonio4);
+  window.addEventListener("touchend", touchEndMonio4);
+
+  const coords = monio.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function touchMoveMonio4(e) {
+    let m = e.touches[0].pageY;
+    let n = e.touches[0].pageX;
+  
+    let t = m - j;
+    let l = n - k;
+    monio.style.top = t + "%"; // agregando px a los numeros
+    monio.style.left = l + "%";
+  }
+
+  function touchEndMonio4() {
+    window.removeEventListener("touchmove", touchMoveMonio4);
+    window.removeEventListener("touchend", touchEndMonio4);
+  }
+}
+
+function touchStartGorro(e) {
+  window.addEventListener("touchmove", touchMoveGorro);
+  window.addEventListener("touchend", touchEndGorro);
+
+  const coords = gorro.getBoundingClientRect();
+  const j = coords.top; // estamos obteniendo la posicion top en numero
+  const k = coords.left;
+  function touchMoveGorro(e) {
+    let m = e.touches[0].pageY;
+    let n = e.touches[0].pageX;
+  
+    let t = m - j;
+    let l = n - k;
+    gorro.style.top = t + "%"; // agregando px a los numeros
+    gorro.style.left = l + "%";
+  }
+
+  function touchEndGorro() {
+    window.removeEventListener("touchmove", touchMoveGorro);
+    window.removeEventListener("touchend", touchEndGorro);
   }
 }

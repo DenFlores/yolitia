@@ -503,18 +503,18 @@ body{
 .gorro {
   position: relative;
   z-index: 100;
-  left: 53%;
+  left: 0%;
   width: 130px;
   height: 130px;
-  top: 10%;
+  top: 0%;
 }
 .monio {
   position: relative;
   z-index: 100;
-  left: 30%;
   width: 150px;
   height: 100px;
-  top: 100%;
+  top: 0%;
+  left: 0%;
 }
 
 .form-control {
@@ -590,8 +590,8 @@ body{
   width: 100px;
   height: 100px;
   z-index: 100;
-  left: 32%;
-  top: 60%;
+  left: 0%;
+  top: 0%;
 }
 
 .monio-n3 {
@@ -599,8 +599,8 @@ body{
   width: 100px;
   height: 100px;
   z-index: 100;
-  left: -79%;
-  top: 245%;
+  left: 0%;
+  top: 0%;
 }
 
 #canvas {
@@ -649,6 +649,9 @@ body{
 }
 
 @media only screen and (max-width: 576px) {
+  body,html{
+    overflow-x: hidden;
+  }
   #conejo {
     margin-left: 10%;
   }
@@ -904,13 +907,15 @@ body{
   }
   .monio-n3 {
     position: relative;
-    left: -170%;
-    top: 360%;
+    top: 0%;
+    left: 0%;
+
   }
   .sombrero-n3 {
     position: relative;
-    left: -28%;
-    top: 250%;
+    top: 0%;
+    left: 0%;
+
   }
   #confirmar {
     position: absolute;
@@ -991,18 +996,18 @@ body{
   .gorro {
     position: relative;
     z-index: 100;
-    left: 27%;
     width: 100px;
     height: 100px;
-    top: -10%;
+    top: 0%;
+    left: 0%;
   }
   .monio {
     position: relative;
     z-index: 100;
-    left: -5%;
     width: 100px;
     height: 100px;
-    top: 105%;
+    top: 0%;
+    left: 0%;
     z-index: 100;
   }
 }
