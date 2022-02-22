@@ -96,7 +96,7 @@ body {
 }
 .imagen1 {
   background-position: center;
-  background-image: url(../img/gorrito1.jpg.png);
+  background-image: url(../img/producto-individual/gorrito1.jpg.png);
   background-repeat: no-repeat;
   background-color: #fdcae1;
   background-size: contain;
@@ -115,7 +115,7 @@ body {
 .img1 {
   background-repeat: no-repeat;
   background-color: rgb(253, 253, 253);
-  background-image: url(../img/gorro.png);
+  background-image: url(../img/producto-individual/gorro.png);
   background-size: contain;
   background-position: center;
   width: 33%;
@@ -125,7 +125,7 @@ body {
 .img2 {
   background-repeat: no-repeat;
   background-color: rgb(255, 255, 255);
-  background-image: url(../img/gorrito1.jpg.png);
+  background-image: url(../img/producto-individual/gorrito.jpg.png);
   background-size: contain;
   background-position: center;
   width: 33%;
@@ -135,7 +135,7 @@ body {
 .img3 {
   background-repeat: no-repeat;
   background-color: rgb(255, 255, 255);
-  background-image: url(../img/gorrito3.png);
+  background-image: url(../img/producto-individual/gorrito3.png);
   background-size: contain;
   background-position: center;
   width: 33%;
