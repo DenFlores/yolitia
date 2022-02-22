@@ -32,12 +32,12 @@ body {
   background-color: var(--colorMorado);
 }
 
-.nav-link {
-  font-size: var(--tamTexto);
-  color: white;
-  margin: 0 30px;
-  width: 180px;
-  text-align: center;
+.nav-link{
+    font-size: var(--tamTexto);
+    color: white;
+    margin: 0 30px;
+    width: 140px;
+    text-align: center;
 }
 
 .nav-inicio {
