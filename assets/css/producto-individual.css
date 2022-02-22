@@ -220,9 +220,10 @@ h4 {
   font-weight: bold;
 }
 .pago{
-  margin-left: 105px;
+  margin-left: 100px;
   width: 80px;
   height: 35px;
+  border: 0;
 }
 
 .color {
@@ -238,6 +239,7 @@ h4 {
 @media screen and (min-width: 768px) {
   .contenido-principal {
     height: 140vh;
+    
   }
   .contenido-imagenes {
     height: 60%;
@@ -263,8 +265,16 @@ h4 {
   .menos {
     margin-top: 9px;
   }
+  .pago{
+    margin-left: 100px;
+    width: 100px;
+    border: 0;
+    
+  }
+  
   .boton-confirmar {
-    margin-left: 398px;
+    margin-left: 394px;
+    margin-top: 30px;
   }
 
   @media screen and (min-width: 1280px) {
