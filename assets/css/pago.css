@@ -74,6 +74,15 @@ body{
     border-radius: 20px;
   
 }
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  }
+  input:invalid {
+    border: .5px dashed red;
+  }
+  input:valid {
+    border: 2px solid black;
+  }
 .titulo{
     
     padding-top: 10px;
