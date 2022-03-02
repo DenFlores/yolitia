@@ -46,61 +46,58 @@
     <div class="pago">
 
         <div class="formulario">
-            <div class="titulo"> <h1>Pago Digital
-            </br>         
-        </h1> 
-        <p>Todos los campos son necesarios   </p>
-        </div>
+            <div class="titulo"> 
+                <h1>Pago Digital</br></h1> 
+                <p>Todos los campos son necesarios   </p>
+            </div>
 
-        <div class="imagen-tarjetas">
-            <img class="" src="../assets/img/Pago/tarjetas.png" alt="modo de pago"/> 
-       </div> 
+            <div class="imagen-tarjetas">
+                <img class="" src="../assets/img/Pago/tarjetas.png" alt="modo de pago"/> 
+            </div> 
 
-        <form id="form">
+            <form class="" style="margin-bottom: 15px;">
 
-        <div>
-            <label for="nombre">Nombre del titular</label>
-        </br>
-            <input class="placeholder" type="text" placeholder="Escriba su nombre..." id="nombre" name="name" required>
-        </div>
-        </br>
+                <div>
+                    <label for="nombre">Nombre del titular</label>
+                    </br>
+                    <input class="placeholder" type="text" placeholder="Escriba su nombre..." id="nombre" required>
+                </div>
+                </br>
 
-        <div>
-            <label for="numero-tarjeta">Número de tarjeta</label>
-        </br>
-            <input class="placeholder" type="number" placeholder="067 890 567 456" id="tarjeta" name="number" required>
-        </div>
-        </br>
+                <div>
+                    <label for="numero-tarjeta">Número de tarjeta</label>
+                    </br>
+                    <input class="placeholder" type="number" placeholder="0067 1890 7567 1456" id="tarjeta" required>
+                </div>
+                </br>
 
-        <div >
-            <label for="expiracion">Fecha de expiración(MM/AAAA)</label>
-        </br>
+                <div >
+                    <label for="expiracion">Fecha de expiración(MM/AAAA)</label>
+                    </br>
+          
+                    <input class="fecha" type="number" min="1" max="12" step="1" value="01" required/>
+                    <span>/</span>
+                    <input class="fecha" type="number" min="1900" max="2099" step="1" value="30" required />
+                </div>
+                </br>
+
+                <div>
+                    <label for="codigo-seguridad">Codigo de seguridad</label>
+                    </br>
+                    <input class="password" type="password" placeholder="cvv" name="codigo-seguridad" id="codigo" required>
+                    <input class="dudas" type="text" placeholder="?" name="dudas" id="dudas">
+                    <span><a href="https://www.ennaranja.com/economia-facil/que-es-el-cvv-de-las-tarjetas-de-credito-y-por-que-en-algunos-sitios-no-lo-piden/">¿Qué es esto?</a></span>
+                    
+                </div>
+                </br>
+
+                
+                <!--<div class="boton-p">
+                    <input class="boton-pagar" type="button" onclick="alert('¡Pago exitoso! Tu pedido esta en proceso...')" value="Pagar Ahora">
+                </div>-->
     
-            <input class="fecha" type="number" min="1" max="12" id="mes" step="1" value="00" name="mes" required/>
-            <span>/</span>
-            <input class="fecha" type="number" min="1900" max="2099" id="anio" step="1" value="00" name="anio" required />
+            </form>
         </div>
-        </br>
-
-        <div>
-            <label for="codigo-seguridad">Codigo de seguridad</label>
-        </br>
-        <!-- agregar a todos name-->
-            <input class="password" type="password" placeholder="cvv" name="codigo-seguridad" id="codigo" required>
-            
-            <span><a href="https://www.ennaranja.com/economia-facil/que-es-el-cvv-de-las-tarjetas-de-credito-y-por-que-en-algunos-sitios-no-lo-piden/">¿Qué es esto?</a></span>
-            
-        </div>
-        </br>
-        <button type="submit" class="boton-pagar">Pagar Ahora</button>
-
-       <!-- <div class="boton-p">
-            
-            <input class="boton-pagar" type="button" onclick="alert('¡Pago exitoso! Tu pedido esta en proceso...')" value="Pagar Ahora">
-        </div>-->
-    
-    </form>
-    </div>
     </div>
  
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

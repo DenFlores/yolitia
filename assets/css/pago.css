@@ -63,23 +63,66 @@ body{
 
 
 .pago{
+    margin: 0 auto;
+    margin-top: 20px;
     
     background-color: var(--colorAzul);
-    width: 30%;
+    width: 80%;
     height: 80vh;
-    margin-left: auto;
-    margin-right: auto;
+    
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
-  
+    
 }
-  input:invalid {
+input:invalid {
     border: .5px solid var(--colorRojo);
   }
   input:valid {
     border: 2px solid black;
   }
+@media (max-width: 360px) {
+    .pago {
+        height: 85vh;
+    }
+}
+@media (min-width: 768px) {
+    .pago {
+        height: 60vh;     
+    }
+}
+
+@media (min-width: 992px) {
+    .pago {
+      width: 35%;
+      height: 80vh;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .pago {
+        margin-top: 50px;
+        width: 30%;
+        height: 60vh;  
+    }
+}
+
+@media (min-width: 1300px) {
+    .pago {
+        margin-top: 50px;
+        width: 30%;
+        height: 80vh;  
+    }
+}
+@media (min-width: 3000px) {
+    .pago {
+        margin-top: 50px;
+        width: 20%;
+        height: 30vh;  
+    }
+}
+
 .titulo{
     
     padding-top: 10px;
@@ -99,8 +142,7 @@ body{
     
 }
 .formulario{
-    font-size: 15px;
-    margin-top: 20px;
+    font-size: 15px;    
     font-family: var(--fuenteTexto);
     color: var(--colorBlanco);
     
@@ -112,8 +154,16 @@ input{
 .placeholder{
     font-style: italic;
     font-size: 12px;
-    width: 350px;
+    width: 100%;
     height: 25px;
+}
+/* Oculta los botones del input number */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 .password{
     width: 50px;
@@ -165,6 +215,12 @@ span{
 }
 
 
+.boton-p{
+    /*width: 150px;
+    height: 50px;*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
 
 .boton-pagar{
@@ -180,6 +236,8 @@ span{
     border-radius: 4px;
     border: 0;
 }
+
+
     
 
     
