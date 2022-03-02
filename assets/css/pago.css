@@ -74,11 +74,8 @@ body{
     border-radius: 20px;
   
 }
-input:invalid:required {
-    background-image: linear-gradient(to right, pink, lightgreen);
-  }
   input:invalid {
-    border: .5px dashed red;
+    border: .5px solid var(--colorRojo);
   }
   input:valid {
     border: 2px solid black;
@@ -168,17 +165,13 @@ span{
 }
 
 
-.boton-p{
-    width: 150px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
 
-}
 
 .boton-pagar{
     width: 120px;
     height: 33px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
     background-color: var(--colorVerde);
     color: var(--colorBlanco);
     font-family: var(--fuenteTexto);

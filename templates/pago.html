@@ -56,19 +56,19 @@
             <img class="" src="../assets/img/Pago/tarjetas.png" alt="modo de pago"/> 
        </div> 
 
-        <form>
+        <form id="form">
 
         <div>
             <label for="nombre">Nombre del titular</label>
         </br>
-            <input class="placeholder" type="text" placeholder="Escriba su nombre..." id="nombre" required>
+            <input class="placeholder" type="text" placeholder="Escriba su nombre..." id="nombre" name="name" required>
         </div>
         </br>
 
         <div>
             <label for="numero-tarjeta">Número de tarjeta</label>
         </br>
-            <input class="placeholder" type="number" placeholder="067 890 567 456" id="tarjeta" required>
+            <input class="placeholder" type="number" placeholder="067 890 567 456" id="tarjeta" name="number" required>
         </div>
         </br>
 
@@ -76,25 +76,28 @@
             <label for="expiracion">Fecha de expiración(MM/AAAA)</label>
         </br>
     
-            <input class="fecha" type="number" min="1" max="12" step="1" value="00" required/>
+            <input class="fecha" type="number" min="1" max="12" id="mes" step="1" value="00" name="mes" required/>
             <span>/</span>
-            <input class="fecha" type="number" min="1900" max="2099" step="1" value="00" required />
+            <input class="fecha" type="number" min="1900" max="2099" id="anio" step="1" value="00" name="anio" required />
         </div>
         </br>
 
         <div>
             <label for="codigo-seguridad">Codigo de seguridad</label>
         </br>
+        <!-- agregar a todos name-->
             <input class="password" type="password" placeholder="cvv" name="codigo-seguridad" id="codigo" required>
-            <input class="dudas" type="text" placeholder="?" name="dudas" id="dudas">
+            
             <span><a href="https://www.ennaranja.com/economia-facil/que-es-el-cvv-de-las-tarjetas-de-credito-y-por-que-en-algunos-sitios-no-lo-piden/">¿Qué es esto?</a></span>
             
         </div>
         </br>
+        <button type="submit" class="boton-pagar">Pagar Ahora</button>
 
-        <div class="boton-p">
+       <!-- <div class="boton-p">
+            
             <input class="boton-pagar" type="button" onclick="alert('¡Pago exitoso! Tu pedido esta en proceso...')" value="Pagar Ahora">
-        </div>
+        </div>-->
     
     </form>
     </div>
