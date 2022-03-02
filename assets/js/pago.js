@@ -3,21 +3,111 @@ const $nombre = document.querySelector('#nombre');
 const $ntarjeta = document.querySelector('#tarjeta');
 const $mes = document.querySelector('#mes');
 const $anio = document.querySelector('#anio');
-
-
-
-$formLogin.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const username = $username.value;
-    const password = $password.value;
-    const username = $username.value;
-    const username = $username.value;
+const $clave = document.querySelector('#codigo');
+var pagar = document.getElementById("pagar");
+let $spanError = document.querySelector('span1');
 
 
 
 
-    if(username != '' && password != '') {
+function nameValid(){
+    var value = $nombre.value
+    var isValid = /^[a-z ,.'-]+$/i.test(value);
+
+    if (isValid) {
+        console.log("Valido")
+        
+      } else {
+        console.log("Nombre no valido");
+    
+      }
+}
+
+
+function cardValid(){
+    var value = $ntarjeta.value
+    var isValid = /^[1-9][0-9]*$/.test(value);
+    if (isValid) {
+        console.log("Numero valido");
+        
+      } else {
+        console.log("Numero no valido");
+    
+      }
+}
+function mesValid(){
+    var value = $mes.value
+    var isValid = /^[1-9][0-9]*$/.test(value);
+    if (isValid) {
+        console.log("mes valido");
+        
+      } else {
+        console.log("mes no valido");
+    
+      }
+}
+function anioValid(){
+    var value = $anio.value
+    var isValid = /^[1-9][0-9]*$/.test(value);
+    if (isValid) {
+        console.log("anio valido");
+        
+      } else {
+        console.log("anio no valido");
+    
+      }
+}
+function claveValid(){
+    var value = $clave.value
+    var isValid = /^[1-9][0-9]*$/.test(value);
+    if (isValid) {
+        console.log("anio valido");
+        
+      } else {
+        console.log("anio no valido");
+    
+      }
+}
+
+
+
+
+
+pagar.onclick = function(){
+    console.log("pagando");
+    nameValid();
+    cardValid()
+    mesValid();
+    anioValid();
+    cardValid();
+}
+
+
+   /* let $spanError = document.querySelector('span1');
+
+
+// e hace referencia al evento, puede ser cualquier nombre pero por lo regular sera una e que hace referencia a (e)vento 
+$ntarjeta.addEventListener('keydown', (e) =>{
+    console.log(e.target.value);
+
+// si el texto que escribe el ususario es menor a tres mostrara error 
+    if(e.target.value.length < 16) {
+        $spanError.classList.remove('hide');
+        $spanError.classList.add('error');
+    }
+// si es mayor quitara la clase error y añadira hide 
+    else{
+        $spanError.classList.add('hide');
+        $spanError.classList.remove('error');
+
+    }
+});
+
+
+
+
+
+   /* if(username != '' && password != '') {
         fetch('http://localhost:8080/login', {
             method: 'POST',
             body: JSON.stringify( {
@@ -47,6 +137,4 @@ $formLogin.addEventListener('submit', (e) => {
                 //emailError.textContent = 'Usuario o contraseña incorrecta';
             }
         })
-    }
-
-})
+    }*/
