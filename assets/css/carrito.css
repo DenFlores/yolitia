@@ -146,13 +146,19 @@ input[type="number"] {
 }
 @media (min-width: 992px) {
   .total {
-    width: 30%;
+    width: 35%;
   }
   .titulo {
     font-size: 36px;
   }
   .seccion {
     height: 230px;
+  }
+}
+
+@media (min-width: 3000px) {
+  .total {      
+      width: 10%;       
   }
 }
 .linea {

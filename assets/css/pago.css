@@ -101,6 +101,14 @@ body{
         height: 60vh;  
     }
 }
+
+@media (min-width: 1300px) {
+    .pago {
+        margin-top: 50px;
+        width: 30%;
+        height: 80vh;  
+    }
+}
 @media (min-width: 3000px) {
     .pago {
         margin-top: 50px;
