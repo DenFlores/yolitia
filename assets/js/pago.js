@@ -26,7 +26,7 @@ function nameValid(){
 
 function cardValid(){
     var value = $ntarjeta.value
-    var isValid = /^[1-9][0-9]*$/.test(value);
+    var isValid = /^[0-9]{16}$/.test(value);
     if (isValid) {
         console.log("Numero valido");
         
@@ -37,7 +37,7 @@ function cardValid(){
 }
 function mesValid(){
     var value = $mes.value
-    var isValid = /^[1-9][0-9]*$/.test(value);
+    var isValid = /^1[0-2]|0[1-9]$/.test(value);
     if (isValid) {
         console.log("mes valido");
         
@@ -48,7 +48,7 @@ function mesValid(){
 }
 function anioValid(){
     var value = $anio.value
-    var isValid = /^[1-9][0-9]*$/.test(value);
+    var isValid = /^[20,29]{2}$/.test(value);
     if (isValid) {
         console.log("anio valido");
         
@@ -59,12 +59,12 @@ function anioValid(){
 }
 function claveValid(){
     var value = $clave.value
-    var isValid = /^[1-9][0-9]*$/.test(value);
+    var isValid = /^[0-9]{3}$/.test(value);
     if (isValid) {
-        console.log("anio valido");
+        console.log("clave valido");
         
       } else {
-        console.log("anio no valido");
+        console.log("clave no valida");
     
       }
 }
@@ -79,7 +79,7 @@ pagar.onclick = function(){
     cardValid()
     mesValid();
     anioValid();
-    cardValid();
+    claveValid();
 }
 
 
