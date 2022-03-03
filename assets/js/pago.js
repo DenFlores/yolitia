@@ -16,9 +16,11 @@ function nameValid(){
 
     if (isValid) {
         console.log("Valido")
+        return true;
         
       } else {
         console.log("Nombre no valido");
+        return false;
     
       }
 }
@@ -29,9 +31,11 @@ function cardValid(){
     var isValid = /^[0-9]{16}$/.test(value);
     if (isValid) {
         console.log("Numero valido");
+        return true;
         
       } else {
         console.log("Numero no valido");
+        return false;
     
       }
 }
@@ -40,9 +44,11 @@ function mesValid(){
     var isValid = /^1[0-2]|0[1-9]$/.test(value);
     if (isValid) {
         console.log("mes valido");
+        return true;
         
       } else {
         console.log("mes no valido");
+        return false;
     
       }
 }
@@ -51,9 +57,11 @@ function anioValid(){
     var isValid = /^[20,29]{2}$/.test(value);
     if (isValid) {
         console.log("anio valido");
+        return true;
         
       } else {
         console.log("anio no valido");
+        return false;
     
       }
 }
@@ -62,79 +70,33 @@ function claveValid(){
     var isValid = /^[0-9]{3}$/.test(value);
     if (isValid) {
         console.log("clave valido");
+        return true;
         
       } else {
         console.log("clave no valida");
+        return false;
     
       }
 }
 
-
-
-
-
 pagar.onclick = function(){
     console.log("pagando");
-    nameValid();
-    cardValid()
-    mesValid();
-    anioValid();
-    claveValid();
+    let name1 = nameValid();
+    let tarjeta1 =cardValid()
+    let mes = mesValid();
+    let anio = anioValid();
+    let clave = claveValid();
+
+    if(name1 == true && tarjeta1==true && mes==true && anio==true && clave==true ){
+        console.log("Pago valido");
+        alert("¡Pago exitoso!");
+        
+    }
+    else{
+        console.log("Pago no valido");
+    }
 }
 
 
-   /* let $spanError = document.querySelector('span1');
 
-
-// e hace referencia al evento, puede ser cualquier nombre pero por lo regular sera una e que hace referencia a (e)vento 
-$ntarjeta.addEventListener('keydown', (e) =>{
-    console.log(e.target.value);
-
-// si el texto que escribe el ususario es menor a tres mostrara error 
-    if(e.target.value.length < 16) {
-        $spanError.classList.remove('hide');
-        $spanError.classList.add('error');
-    }
-// si es mayor quitara la clase error y añadira hide 
-    else{
-        $spanError.classList.add('hide');
-        $spanError.classList.remove('error');
-
-    }
-});
-
-
-
-
-
-   /* if(username != '' && password != '') {
-        fetch('http://localhost:8080/login', {
-            method: 'POST',
-            body: JSON.stringify( {
-                username,
-                password
-            }),
-            headers: {
-                'Content-type': 'application/json'
-            }
-        }).then(resp => {
-            const token = resp.headers.get('Authorization');
-            
-            if(token && token.includes('Bearer') && resp.ok) {
-                localStorage.setItem('token', token);
-                console.log(token);
-                url = window.location;
-                const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
-                location.href = path +  'administrador.html';
-            } else {
-                localStorage.removeItem('token');
-                Swal.fire({
-                    title: 'Correo electronico o contraseña incorrecta',
-                    text: 'Reintentar',
-                    icon: 'error',
-                    confirmButtonText: 'ok'
-                });
-                //emailError.textContent = 'Usuario o contraseña incorrecta';
-            }
-        })
-    }*/
+  
