@@ -29,6 +29,41 @@ const gadget6 = document.querySelector('#gadget-6');
 const sombreroN3 = document.querySelector(".sombrero-n3");
 const monioN3 = document.querySelector(".monio-n3");
 const selectionAudio = new Audio("https://denflores.github.io/yolitia/assets/audio/selection.mp3");
+let opcion1;
+let opcion2;
+let opcion3;
+let opcion4;
+
+window.addEventListener("load",getPeluches);
+
+function getPeluches(){
+  const URLAPI = "http://localhost:8080/api/productos/all";
+  fetch(URLAPI).then(res=>res.json()).then(peluche=>
+    {
+    let resul=[];
+    resul=peluche.filter(elemento=>elemento.id>=11);
+    console.log(resul);
+    resul.forEach(el=>{
+      if(el.id==11){
+        osoAzul.src=el.imagen;
+        opcion1=el.imagen;
+      }
+      if(el.id==12){
+        perro.src=el.imagen;
+        opcion2=el.imagen;
+      }
+      if(el.id==13){
+        osoCafe.src=el.imagen;
+        opcion3=el.imagen;
+      }
+      if(el.id==14){
+        conejo.src=el.imagen;
+        opcion4=el.imagen;
+      }
+    })
+  }
+  );
+}
 
 gadget1.addEventListener("click", seccionOne);
 function seccionOne() {
@@ -119,9 +154,9 @@ function modeloUno(e) {
   if (screen.width <= 576) {
     selectionAudio.play();
     changeStep("next");
-    peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
-    peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
-    peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
+    peluche.src = opcion4;
+    peluche2.src = opcion4;
+    peluche3.src = opcion4;
 
   }
   else {
@@ -135,9 +170,9 @@ function modeloDos(e) {
   if (screen.width <= 576) {
     selectionAudio.play();
     changeStep("next");
-    peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-    peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-    peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
+    peluche.src = opcion3;
+    peluche2.src = opcion3;
+    peluche3.src = opcion3;
 
   }
   else {
@@ -151,9 +186,9 @@ function modeloTres(e) {
   if (screen.width <= 576) {
     selectionAudio.play();
     changeStep("next");
-    peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-    peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-    peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
+    peluche.src = opcion2;
+    peluche2.src = opcion2;
+    peluche3.src = opcion2;
 
   }
   else {
@@ -167,9 +202,9 @@ function modeloCuatro(e) {
   if (screen.width <= 576) {
     selectionAudio.play();
     changeStep("next");
-    peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-    peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-    peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
+    peluche.src = opcion1;
+    peluche2.src = opcion1;
+    peluche3.src = opcion1;
 
   }
   else {
@@ -192,36 +227,36 @@ function bajarBrazo(e) {
       console.log('oso azul');
       osoAzul.style.display = "none";
       changeStep("next");
-      peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-      peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-      peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
+      peluche.src = opcion1;
+      peluche2.src = opcion1;
+      peluche3.src = opcion1;
 
     }
     else if (defaultState<43&&defaultState>34) {
       console.log('perro');
       perro.style.display = "none";
       changeStep("next");
-      peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-      peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-      peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
+      peluche.src = opcion2;
+      peluche2.src = opcion2;
+      peluche3.src = opcion2;
 
     }
     else if (defaultState<61&&defaultState>51) {
       console.log('oso cafe');
       osoCafe.style.display = "none";
       changeStep("next");
-      peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-      peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-      peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
+      peluche.src = opcion3;
+      peluche2.src = opcion3;
+      peluche3.src = opcion3;
 
     }
     else if (defaultState>69&&defaultState<76) {
       console.log('conejo');
       conejo.style.display = "none";
       changeStep("next");
-      peluche.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
-      peluche2.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
-      peluche3.src = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
+      peluche.src = opcion4;
+      peluche2.src = opcion4;
+      peluche3.src = opcion4;
 
     }
   }
@@ -247,16 +282,8 @@ function subirBrazo(e) {
 
 /* Nivel 2 cambio de colores */
 //Opciones de modelos de peluches a elegir
-/* const opcion1 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-const opcion2 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-const opcion3 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-const opcion4 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png"; */
 
 /* Solo usar para pruebas locales */
-const opcion1 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoAzul.png";
-const opcion2 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/perro.png";
-const opcion3 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/osoCafe.png";
-const opcion4 = "https://denflores.github.io/yolitia/assets/img/personalizacion/models/conejo.png";
 
 const ninosFestejando = new Audio("https://denflores.github.io/yolitia/assets/audio/ninos.mp3");
 const ruletaSonido = new Audio("https://denflores.github.io/yolitia/assets/audio/sonido_ruleta.mp3");
@@ -564,6 +591,17 @@ function verificarNombre(e) {
 function confirmacionCompra(e) {
   console.log(nombre.value);
   if (nombre.value) {
+    fetch('http://localhost:8080/api/personalizacion', {
+    method: 'POST',
+    headers: {
+        "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ modelo:peluche.src, color: peluche.style.filter,sombrero:sombreroN3.src,monio:monio.src })
+})
+.then(res => res.json())
+.then(res=> {
+      console.log(res);
+});
     aplausos.play();
     function randomize(collection) {
       var randomNumber = Math.floor(Math.random() * collection.length);
