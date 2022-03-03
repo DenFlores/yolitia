@@ -75,6 +75,20 @@ body{
     border-radius: 20px;
     
 }
+.hide{
+    display: none;
+}
+
+.error{
+    font-size: 20px;
+    color: rgb(247, 12, 12);
+}
+input:invalid {
+    border: .5px solid var(--colorRojo);
+  }
+  input:valid {
+    border: 2px solid black;
+  }
 @media (max-width: 360px) {
     .pago {
         height: 85vh;
@@ -209,18 +223,19 @@ span{
 }
 
 
+
 .boton-p{
-    /*width: 150px;
-    height: 50px;*/
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 
 }
-
 .boton-pagar{
     width: 120px;
     height: 33px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--colorVerde);
     color: var(--colorBlanco);
     font-family: var(--fuenteTexto);
