@@ -295,7 +295,7 @@ html {
   width: 25rem;
   border-radius: 25px;
   border: 15px solid var(--colorRosa);
-  background-image: url(/assets/img/inicio/Intersect.png);
+  background-image: url(../img/inicio/Intersect.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
