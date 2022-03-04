@@ -82,6 +82,8 @@ function calcular() {
 
   })
 
+  //console.log("localhost:8080/api/productos/" + productoS1[0])
+
 
 
 
