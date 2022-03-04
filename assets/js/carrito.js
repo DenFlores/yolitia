@@ -1,112 +1,86 @@
-let $cantidad = document.querySelector('#cantidad');
-let $mas = document.querySelector('#mas');
-let $menos = document.querySelector('#menos');
-let $precio = document.queryCommandValue('#precio');
-let $preciotot = document.querySelector('#preciotot');
-let $preciototal = document.querySelector('#preciototal');
-let preciob = 499.00;
+let codigo1;
+let codigo2;
+let total = document.querySelector('.total');
+let mensaje='No hay elementos';
+let contenedorProducto = document.querySelector('.contenedorProducto');
+window.addEventListener("load",getPersonalizaciones);
 
-let $cantidad1 = document.querySelector('#cantidad1');
-let $mas1 = document.querySelector('#mas1');
-let $menos1 = document.querySelector('#menos1');
-let $precio1 = document.queryCommandValue('#precio1');
-let $preciotot1 = document.querySelector('#preciotot1');
-let $preciototal1 = document.querySelector('#preciototal1');
-let preciob1 = 199.00;
 
-let $cantidad2 = document.querySelector('#cantidad2');
-let $mas2 = document.querySelector('#mas2');
-let $menos2 = document.querySelector('#menos2');
-let $precio2 = document.queryCommandValue('#precio2');
-let $preciotot2 = document.querySelector('#preciotot2');
-let $preciototal2 = document.querySelector('#preciototal2');
-let preciob2 = 255.00;
+function getPersonalizaciones(){
+fetch('http://localhost:8080/api/personalizacion/alldatos').
+then(res=>res.json()).
+then(productos=>{
+    console.log(productos)
+    let precios ;
+    for(let i=0;i<productos.length;i++){
+        precios=productos[i].precio;
+        codigo1=`<div class="row rounded seccion d-block d-lg-flex ">
+       <div class="col" > <!--imagen del producto-->
+           <div class="row fondoimg   rounded" >
+               <img src="${productos[i].modelo!=undefined?productos[i].modelo:mensaje}" class="col-4 col-xl-4" alt="" style="filter:${productos[i].color};">
+               <img src="${productos[i].monio!=undefined?productos[i].monio:mensaje}" class="col-4 col-xl-4" alt="">
+               <img src="${productos[i].sombrero!=undefined?productos[i].sombrero:mensaje}" class="col-4 col-xl-4" alt="">
+           </div>
+       </div>
+       <div class=" col-6 d-block d-lg-flex align-items-start flex-column mb-3"> <!--descripción y cantidad-->
+           <p class="titulo">${productos[i].nombre!=undefined?productos[i].nombre:mensaje}</p>
+           <p class="">Descripción:${productos[i].descripcion!=undefined?productos[i].descripcion:mensaje}</p>
+           <div class="d-flex mt-auto" >
+               <p>Cantidad:</p>
+               <input id="cantidad" type="number" class="incantidad" value="1" min="1" max="10">
+               <input id="menos" class="beliminar rounded-circle" type="button" value="-"> 
+               <input id="mas" class="bagregar rounded-circle" type="button" value="+">                        
+           </div>
+           
+       </div>
+       <div class="col d-flex  align-items-end justify-content-center justify-content-lg-end "><!--Precio-->
+           <p id="precio" class="precio rounded">${productos[i].precio!=undefined?productos[i].precio:mensaje}</p>
+           
+       </div>
+       </div> 
+       `;
+       const espacio = document.createElement('div');
+       espacio.innerHTML = codigo1;
+       contenedorProducto.appendChild(espacio);
+       
+       codigo2=` <p class="titulo">Total </p>
+       <!--<div class="linea"></div>-->
+       <p>Productos ${i!=undefined?i+1:0} <span id="preciototal" style="margin-left: 20px;"></span></p>
 
-$mas.addEventListener('click', () => {    
-    $cantidad.value++;       
-    $preciotot.value = `$${(cantidad.value * preciob).toFixed(2)} MXN`;     
-    $preciototal.textContent = $preciotot.value;
-});
+       <p>Envío</p>
+       <p>Total</p>
 
-$menos.addEventListener('click', () => {
-    if($cantidad.value <= 1){
-        $cantidad.value = null;
-    } else {
-        $cantidad.value--;             
-    }
-    $preciotot.value = `$${(cantidad.value * preciob).toFixed(2)} MXN`;
-    $preciototal.textContent = $preciotot.value;
-    
-});
+       <div class="row d-flex mt-auto w-100 justify-content-center">
+           <div class="col-12 col-xl-12">
+               <img class="w-100" src="../assets/img/carrito/carrito.png" alt="">
+           </div>
+           <div class="col-12 col-xl-12">
+               <button type="submit" class="w-100 h-100 bpagar rounded boton">
+               Confirmar pedido
+               </button>
+           </div>
+                                         
+       </div>`
 
-$cantidad.oninput = function(){
-    if($cantidad.value < 0){
-        $cantidad.value = null;
-    } else {
-        $preciotot.value = `$${(cantidad.value * preciob).toFixed(2)} MXN`; 
-        $$preciototal.textContent = $preciotot.value;       
-    }    
+       let mas = Array.from(document.querySelectorAll('#mas'));
+       let cantidad = document.querySelectorAll('#cantidad');
+       let precioCalculado=document.querySelectorAll('#precio');
+        
+       for(let j=0;j<productos.length;j++){
+           mas[j].addEventListener("click",()=>{
+               cantidad[j].value++;
+               console.log(cantidad[j].value)
+               //precioCalculado[j].textContent=parseInt(cantidad[j].value)*parseInt(precioCalculado[j].textContent).toFixed(2)
+           })
+       }
+
+if(i==productos.length-1){
+    const espacio2=document.createElement('div')
+    espacio2.innerHTML=codigo2;
+    total.appendChild(espacio2);
+}
+       }
+})
+
 }
 
-$mas1.addEventListener('click', () => {
-    $cantidad1.value++;       
-    $preciotot1.value = `$${($cantidad1.value * preciob1).toFixed(2)} MXN`; 
-    $preciototal1.textContent = $preciotot1.value;
-});
-
-$menos1.addEventListener('click', () => {
-    if($cantidad1.value <= 1){
-        $cantidad1.value = null;
-    } else {
-        $cantidad1.value--;             
-    }
-    $preciotot1.value = `$${(cantidad1.value * preciob1).toFixed(2)} MXN`;
-    $preciototal1.textContent = $preciotot1.value;
-});
-
-$cantidad1.oninput = function(){
-    if($cantidad1.value < 0){
-        $cantidad1.value = null;
-    } else {
-        $preciotot1.value = `$${(cantidad1.value * preciob1).toFixed(2)} MXN`; 
-        $preciototal1.textContent = $preciotot1.value;        
-    }   
-}
-
-$mas2.addEventListener('click', () => {
-    $cantidad2.value++;       
-    $preciotot2.value = `$${(cantidad2.value * preciob2).toFixed(2)} MXN`; 
-    $preciototal2.textContent = $preciotot2.value;
-});
-
-$menos2.addEventListener('click', () => {
-    if($cantidad2.value <= 1){
-        $cantidad2.value = null;
-    } else {
-        $cantidad2.value--;             
-    }
-    $preciotot2.value = `$${(cantidad2.value * preciob2).toFixed(2)} MXN`;
-    $preciototal2.textContent = $preciotot2.value;
-});
-
-$cantidad2.oninput = function(){
-    if($cantidad2.value < 0){
-        $cantidad2.value = null;
-    } else {
-        $preciotot2.value = `$${(cantidad2.value * preciob2).toFixed(2)} MXN`; 
-        $preciototal2.textContent = $preciotot2.value;        
-    }   
-}
-
-class Producto {
-    constructor (id, img, nombre, descripcion, cantidad, precio) {
-        this.id = id;
-        this.img = img;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.cantidad = cantidad;
-        this.precio = precio;
-    }
-}
-
-const Producto1 = new Producto(1, 'Producto 1', 'Descripción', 0, 200);
