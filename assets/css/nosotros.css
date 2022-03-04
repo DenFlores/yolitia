@@ -30,24 +30,21 @@
   }
 
 /*--------------------------Navbar-----------------------*/
-.navbar-total{
-    background-color: var(--colorMorado);
+.navbar-total {
+  background-color: var(--colorMorado);
 }
 
-.nav-link{
+.nav-link {
   font-size: var(--tamTexto);
   color: white;
   margin: 0 30px;
-  width: 180px;
-  text-align: center;
 }
 
-.nav-inicio{
+.nav-inicio {
   font-family: var(--fuenteNavbar);
   font-size: var(--tamSubtitulo);
   /* -webkit-text-stroke: 2px var(--colorMorado); */
   letter-spacing: 4.5px;
-  width: 250px;
 }
 
 
