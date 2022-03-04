@@ -596,7 +596,7 @@ function confirmacionCompra(e) {
     headers: {
         "Content-Type": "application/json",
     },
-    body: JSON.stringify({ modelo:peluche.src, color: peluche.style.filter,sombrero:sombreroN3.src,monio:monio.src })
+    body: JSON.stringify({ modelo:peluche.src, color: peluche.style.filter,sombrero:sombreroN3.src,monio:monio.src})
 })
 .then(res => res.json())
 .then(res=> {
