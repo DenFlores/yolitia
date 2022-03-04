@@ -13,8 +13,10 @@ then(res=>res.json()).
 then(productos=>{
     console.log(productos)
     let precios ;
+    const preciosT = []
     for(let i=0;i<productos.length;i++){
         precios=productos[i].precio;
+        preciosT.push(precios)
         codigo1=`<div class="row rounded seccion d-block d-lg-flex ">
        <div class="col" > <!--imagen del producto-->
            <div class="row fondoimg   rounded" >
@@ -46,40 +48,46 @@ then(productos=>{
        
        codigo2=` <p class="titulo">Total </p>
        <!--<div class="linea"></div>-->
-       <p>Productos ${i!=undefined?i+1:0} <span id="preciototal" style="margin-left: 20px;"></span></p>
+       <p>Productos: ${i!=undefined?i+1:0} <span id="preciototal" style="margin-left: 20px;"></span></p>
 
-       <p>Envío</p>
-       <p>Total</p>
+       <p>Envío: $100</p>
+       <p id="totalPago">Total ${0}</p>
 
        <div class="row d-flex mt-auto w-100 justify-content-center">
            <div class="col-12 col-xl-12">
-               <img class="w-100" src="../assets/img/carrito/carrito.png" alt="">
+               <img class="img-fluid mb-4" src="../assets/img/carrito/carrito.png" alt="">
            </div>
            <div class="col-12 col-xl-12">
-               <button type="submit" class="w-100 h-100 bpagar rounded boton">
+            
+               <a class="btn w-100 h-100 bpagar rounded boton" href="pago.html">
                Confirmar pedido
-               </button>
+               </a>
            </div>
                                          
        </div>`
 
-       let mas = Array.from(document.querySelectorAll('#mas'));
+        if(i==productos.length-1){
+            const espacio2=document.createElement('div')
+            espacio2.innerHTML=codigo2;
+            total.appendChild(espacio2);
+            const totatlD = preciosT.reduce((acc, val) => acc += val, 100)
+            const totalPago = document.querySelector("#totalPago")
+            totalPago.innerHTML = "Total: " + totatlD
+        }
+
+       }
+
+
+          let mas = document.querySelectorAll('#mas');
        let cantidad = document.querySelectorAll('#cantidad');
        let precioCalculado=document.querySelectorAll('#precio');
         
-       for(let j=0;j<productos.length;j++){
+       for(let j=0;j<10;j++){
            mas[j].addEventListener("click",()=>{
                cantidad[j].value++;
-               console.log(cantidad[j].value)
-               //precioCalculado[j].textContent=parseInt(cantidad[j].value)*parseInt(precioCalculado[j].textContent).toFixed(2)
+               precioCalculado[j].textContent=parseInt(cantidad[j].value)*parseInt(precioCalculado[j].textContent).toFixed(2)
            })
        }
-
-if(i==productos.length-1){
-    const espacio2=document.createElement('div')
-    espacio2.innerHTML=codigo2;
-    total.appendChild(espacio2);
+})
 
 }
-       }
-})

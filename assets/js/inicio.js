@@ -18,7 +18,7 @@ window.addEventListener("load",()=>{
                       <div class="card h-100 color-cards m-4">
                         <img
                           src=${imagen}
-                          class="image-card"
+                          class="image-card h-100"
                           alt="..."
                         />
                         <div class="card-body mr-auto ml-auto mb-3 color-card-info">
@@ -85,10 +85,17 @@ window.addEventListener("load",()=>{
           let texto = datos[i].texto;
           let imagen = datos[i].imagen;
           let nombre = datos[i].nombre;
-        
+          const colores = ["","azul-comentario","verde-comentario"]
+          let vala;
+          if(i%2 == 0){
+            vala = colores[1]
+          }
+          else{
+            vala = colores[2]
+          }
         
           let plantilla = `<div class="carousel__elemento">
-                              <div class="cuadro-comentario">
+                              <div class="cuadro-comentario ${vala}">
                                 <div class="alinear-cuadro-comentario">
                                   <p>${texto}</p>
                                   <div class="circulo">

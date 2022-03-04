@@ -854,3 +854,9 @@ function touchStartGorro(e) {
     window.removeEventListener("touchend", touchEndGorro);
   }
 }
+
+function mandarCarrito(){
+  url = window.location;
+  const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+  location.href = path +  'carrito.html';
+}
