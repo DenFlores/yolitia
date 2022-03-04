@@ -40,6 +40,12 @@ function calcular() {
 
   calcular();
 
+
+
+
+
+
+
   const img1 = document.querySelector(".img1")
   const img2 = document.querySelector(".img2")
   const img3 = document.querySelector(".img3")
@@ -65,6 +71,8 @@ function calcular() {
     imagen.style.backgroundImage = "url(../assets/img/producto-individual/gorrito3.png)";
 
   })
+  
+
 
 
 
