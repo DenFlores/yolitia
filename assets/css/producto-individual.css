@@ -1,375 +1,329 @@
-@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-:root{
-    --fuenteTitulos: 'Lobster', cursive;
-    --fuenteSubtitulos: 'Lobster', cursive;
-    --fuenteTexto: 'Comfortaa', cursive;
-    --fuenteAnimada: 'Butterfly Kids', cursive;
-    --fuenteNavbar: 'Pacifico', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Comfortaa:wght@300&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+:root {
+  --fuenteTitulos: "Lobster", cursive;
+  --fuenteSubtitulos: "Lobster", cursive;
+  --fuenteTexto: "Comfortaa", cursive;
+  --fuenteAnimada: "Butterfly Kids", cursive;
+  --fuenteNavbar: "Pacifico", cursive;
 
-    --tamTitulo: 4rem;
-    --tamSubtitulo: 3rem;
-    --tamTexto: 1.5rem;
-    --tamAnimada: 2rem;
+  --tamTitulo: 4rem;
+  --tamSubtitulo: 3rem;
+  --tamTexto: 1.5rem;
+  --tamAnimada: 2rem;
 
-    --colorRojo: #ff6961;
-    --colorVerde: #77dd77;
-    --colorAmarillo: #fdfd96;
-    --colorAzul: #84b6f4;
-    --colorRosa: #fdcae1;
-    --colorBlanco: #ffffff;
-    --colorMorado: #DC14B0;
-
+  --colorRojo: #ff6961;
+  --colorVerde: #77dd77;
+  --colorAmarillo: #fdfd96;
+  --colorAzul: #84b6f4;
+  --colorRosa: #fdcae1;
+  --colorBlanco: #ffffff;
+  --colorMorado: #dc14b0;
 }
-body{
-    background-color: rgb(255, 255, 255);
+body {
+  background-color: rgb(255, 255, 255);
 }
-
 
 /*----------------------------------- Carritp --------------------------------*/
 
-.circulo-carrito{
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    background-color: var(--colorMorado);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2.5rem;
-    z-index: 5;
-    text-decoration: none;
+.circulo-carrito {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--colorMorado);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  z-index: 5;
+  text-decoration: none;
 }
 
-.navbar-total{
-    background-color: var(--colorMorado);
+.navbar-total {
+  background-color: var(--colorMorado);
 }
 
-.nav-link{
-    font-size: var(--tamTexto);
-    color: white;
-    margin: 0 30px;
-    width: 180px;
-    text-align: center;
+.nav-link {
+  font-size: var(--tamTexto);
+  color: white;
+  margin: 0 30px;
+  width: 140px;
+  text-align: center;
 }
+
 
 .nav-inicio{
     font-family: var(--fuenteNavbar);
     font-size: var(--tamSubtitulo);
-    /* -webkit-text-stroke: 2px var(--colorMorado); */
     letter-spacing: 4.5px;
     width: 250px;
 }
-
-.contenido-principal{
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 150vh;
-    background: #FDCAE1;
-    border: 1.5px dashed #FF6961;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.contenido-imagenes{
-    background-color:#FDCAE1;
-    display: flex;
-    flex-direction: column;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 95%;
-    height: 50%;
-    padding: 1px;
-    margin: 8px;
-    
-    
-    
-
-}
-.imagen1{
-    background-position: center;
-    background-image: url(../img/gorrito1.jpg.png);
-    background-repeat: no-repeat;
-    background-color: #FDCAE1;
-    background-size: contain;
-    width: 100%;
-    height: 75%;
-   
-    
-    
-}
-
-.imagenes2{
-    background-color: #FDCAE1;
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: 20%;
-
-}
-.img1{
-    background-repeat: no-repeat;
-    background-color: rgb(253, 253, 253);
-    background-image: url(../img/gorro.png);
-    background-size: contain;
-    background-position: center;
-    width: 33%;
-    height: 100%;
-    margin: 8px;
-
-}
-.img2{
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
-    background-image: url(../img/gorrito1.jpg.png);
-    background-size: contain;
-    background-position: center;
-    width: 33%;
-    height: 100%;
-    margin: 8px;
-}
-.img3{
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
-    background-image: url(../img/gorrito3.png);
-    background-size: contain;
-    background-position: center;
-    width: 33%;
-    height: 100%;
-    margin: 8px;
-}
-
-
-.contenido-texto{
-    background-color: rgb(255, 255, 255);
-    width: 95%;
-    height: 50%;
-    border-radius: 20px;
-    padding: 15px;
-    margin: 8px;
-    
-    
-    
-
-}
-.contenido-texto p{
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 5px;
+.nav-inicio {
+  font-family: var(--fuenteNavbar);
+  font-size: var(--tamSubtitulo);
+  letter-spacing: 4.5px;
+  width: 250px;
 
 }
 
-
-h4{
-    font-family: 'Butterfly Kids', cursive;
-    font-size: 55px;
-    align-self: flex-start;
-    
-    
-
+.contenido-principal {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 150vh;
+  background: #fdcae1;
+  border: 1.5px dashed #ff6961;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-
-.cantidades{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-left: 10px;
-    justify-content: center;
-    width: 90%;
-    
-    
+.contenido-imagenes {
+  background-color: #fdcae1;
+  display: flex;
+  flex-direction: column;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 95%;
+  height: 50%;
+  padding: 1px;
+  margin: 8px;
 }
-.cantidades p{
-    margin-top: 6px;
-    
-}
-
-.más{
-    border-radius: 50%;
-    font-weight:normal;
-    font-size: 15px;
-    border: 0px;
-    width: 30px;
-    height: 30px;
-    background-color: #77DD77;
-    margin-left: 10px;
-    margin-top: 9.5px;
-
-    
+.imagen1 {
+  background-position: center;
+  background-image: url(../img/producto-individual/gorrito1.jpg.png);
+  background-repeat: no-repeat;
+  background-color: #fdcae1;
+  background-size: contain;
+  width: 100%;
+  height: 75%;
 }
 
-.menos{
-    border-radius: 100%;
-    border: 0;
-    font-weight: normal;
-    font-size: 15px;
-    width: 30px;
-    height: 30px;
-    background-color: #FF6961 ;
-    margin-left: 10px;
-    margin-top: 9.5px;
-
+.imagenes2 {
+  background-color: #fdcae1;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 20%;
 }
-.form-control{
-    border-radius: 5px;
-    width: 50px;
-    height: 35px;
-    text-align: center;
-    margin-left: 10px;
-    margin-top: 5px;
-    background-color: #C4C4C4;
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
+.img1 {
+  background-repeat: no-repeat;
+  background-color: rgb(253, 253, 253);
+  background-image: url(../img/producto-individual/gorro.png);
+  background-size: contain;
+  background-position: center;
+  width: 33%;
+  height: 100%;
+  margin: 8px;
+}
+.img2 {
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../img/producto-individual/gorrito.jpg.png);
+  background-size: contain;
+  background-position: center;
+  width: 33%;
+  height: 100%;
+  margin: 8px;
+}
+.img3 {
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../img/producto-individual/gorrito3.png);
+  background-size: contain;
+  background-position: center;
+  width: 33%;
+  height: 100%;
+  margin: 8px;
+}
+
+.contenido-texto {
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  height: 50%;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 8px;
+}
+.contenido-texto p {
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+h4 {
+  font-family: "Butterfly Kids", cursive;
+  font-size: 55px;
+  align-self: flex-start;
+}
+
+.cantidades {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 10px;
+  justify-content: center;
+  width: 90%;
+}
+.cantidades p {
+  margin-top: 6px;
+}
+
+.más {
+  border-radius: 50%;
+  font-weight: normal;
+  font-size: 15px;
+  border: 0px;
+  width: 30px;
+  height: 30px;
+  background-color: #77dd77;
+  margin-left: 10px;
+  margin-top: 9.5px;
+}
+
+.menos {
+  border-radius: 100%;
+  border: 0;
+  font-weight: normal;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #ff6961;
+  margin-left: 10px;
+  margin-top: 9.5px;
+}
+.boton-confirmar {
+  width: 150px;
+  height: 55px;
+  background: #77dd77;
+  border: none;
+  border-radius: 10px;
+  margin-top: 45px;
+  margin-left: 113px;
+  font-family: var(--fuenteTexto);
+  font-size: 15px;
+  font-weight: bold;
+}
+.form-control {
+  border-radius: 5px;
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 5px;
+  background-color: #c4c4c4;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
 }
 .pago{
-    margin-left: 100px;
+  margin-left: 100px;
+  width: 80px;
+  height: 35px;
+  border: 0;
+  font-family: var(--fuenteTexto);
+  font-size: 15px;
+}
+
+.color {
+  height: 100px;
+}
+
+.c3 {
+  height: 130px;
+  background: var(--colorMorado);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .contenido-principal {
+    height: 140vh;
+    
+  }
+  .contenido-imagenes {
+    height: 60%;
+    margin-left: 20px;
+  }
+  .imagen1 {
+    height: 60%;
+  }
+
+  .imegenes2 {
+    height: 70%;
+  }
+  .contenido-texto {
+    height: 30%;
+    margin-left: 20px;
+  }
+  .form-control {
     margin-top: 3px;
-    height: 38px;
-    border: 0px;
-    background-color: rgb(233, 229, 229);
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
+  }
+  .más {
+    margin-top: 9px;
+  }
+  .menos {
+    margin-top: 9px;
+  }
+  .pago{
+    margin-left: 100px;
+    width: 100px;
+    border: 0;
     
-}
+  }
+  
+  .boton-confirmar {
+    margin-left: 394px;
+    margin-top: 30px;
+  }
 
-
-.boton-confirmar{
-    
-    width: 150px;
-    height: 55px;
-    background: #77DD77;
-    border: none;
-    border-radius: 10px;
-    margin-top: 45px;
-    margin-left: 113px;
-}
-.boton-confirmar, label{
-    font-family: 'Comfortaa',cursive;
-    font-weight: bold;
-    font-size: .8rem;
-}
-
-.color{
-    height: 100px;
-}
-
-.c1{
-    background: #84B6F4;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-.c1::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
-    transform: rotate(-180deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.c3{
-    height: 130px;
-    background: #FF6961;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-@media screen and (min-width: 768px){
-    .contenido-principal{
-        height: 140vh;  
-    }
-    .contenido-imagenes{
-        height: 60%;
-        margin-left: 20px;
-        
-    }
-    .imagen1{
-        height: 60%;
-    }
-    
-    .imegenes2{
-        height: 70%;
-
-    }
-    .contenido-texto{
-        height: 30%;
-        margin-left: 20px;
-    }
-    .form-control{
-        margin-top: 3px;
-    }
-    .más{
-        margin-top: 9px;
-    }
-    .menos{
-        margin-top: 9px;
-    }
-    .boton-confirmar{
-        margin-left: 398px;
+  @media screen and (min-width: 1280px) {
+    .contenido-principal {
+      flex-direction: row;
+      align-items: center;
+      width: 95%;
+      height: 90vh;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    @media screen and (min-width: 1280px) {
-        .contenido-principal{
-            flex-direction: row;
-            align-items: center;
-            width: 95%;
-            height: 90vh;
-            margin-left: auto;
-            margin-right: auto;
-           
-        }
-
-        .contenido-imagenes{
-            width: 50%;
-            height: 100%;
-        }
-        .contenido-texto{
-            width: 50%;
-            height: 80%;
-            
-        }
-        h4{
-            font-size: 50px;
-        }
-        .contenido-texto p{
-            font-size: 1.2rem;
-        }
-
-        .cantidades p{
-            margin-top: auto;
-        }
-        .form-control{
-            margin-top: 3px;
-        }
-        .más{
-            margin-top: 7px;
-        }
-        .menos{
-            margin-top: 7px;
-        }
-
-        .boton-confirmar{
-            margin-left: 362px;
-            margin-top: 35px;
-            height: 55px;
-        }
-
-       
-
-
-        
+    .contenido-imagenes {
+      width: 50%;
+      height: 100%;
     }
-    
-    
+    .contenido-texto {
+      width: 50%;
+      height: 80%;
+    }
+    h4 {
+      font-size: 50px;
+    }
+    .contenido-texto p {
+      font-size: 1.2rem;
+    }
+
+    .cantidades p {
+      margin-top: auto;
+    }
+    .form-control {
+      margin-top: 3px;
+    }
+    .más {
+      margin-top: 7px;
+    }
+    .menos {
+      margin-top: 7px;
+    }
+
+    .boton-confirmar {
+      margin-left: 362px;
+      margin-top: 35px;
+      height: 55px;
+    }
+  }
 }

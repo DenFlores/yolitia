@@ -30,25 +30,24 @@
   }
 
 /*--------------------------Navbar-----------------------*/
-.navbar-total{
-    background-color: var(--colorMorado);
+.navbar-total {
+  background-color: var(--colorMorado);
 }
 
-.nav-link{
-    font-size: var(--tamTexto);
-    color: white;
-    margin: 0 30px;
-    width: 180px;
-    text-align: center;
+.nav-link {
+  font-size: var(--tamTexto);
+  color: white;
+  margin: 0 30px;
 }
 
-.nav-inicio{
-    font-family: var(--fuenteNavbar);
-    font-size: var(--tamSubtitulo);
-    /* -webkit-text-stroke: 2px var(--colorMorado); */
-    letter-spacing: 4.5px;
-    width: 250px;
+.nav-inicio {
+  font-family: var(--fuenteNavbar);
+  font-size: var(--tamSubtitulo);
+  /* -webkit-text-stroke: 2px var(--colorMorado); */
+  letter-spacing: 4.5px;
 }
+
+
 /*------------------------------------ Carrito --------------------------------*/
 
 .circulo-carrito{
@@ -224,31 +223,42 @@
  text-align: center;
 }
 /*--------------footer---------------------------*/
+
+.color {
+  height: 100px;
+}
+
+.c3 {
+  height: 140px;
+  background: var(--colorMorado);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+/*
 .color{
   height: 100px;
 }
 
 .c1{
-  background: #84B6F4;
+  background:var(--colorRojo);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.c1:before{
+.c1::before{
+  content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #FF362C 0%, rgba(196, 196, 196, 0) 100%);
+  background: linear-gradient(0deg, var(--colorMorado), var(--colorRojo) 100%);
   transform: rotate(-180deg);
   position: absolute;
   top: 0;
   left: 0;
 }
-
-.c3{
+.c3 {
   height: 130px;
-  background: #FF6961;
+  background: var(--colorMorado);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
-
+*/
 /*------------------------------Responsive-----------------------------*/
 
 @media screen and (min-width: 768px) {

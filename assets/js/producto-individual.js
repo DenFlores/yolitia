@@ -46,27 +46,43 @@ function calcular() {
   const imagen = document.querySelector(".imagen1")
   
   img1.addEventListener("mouseover", function(){
-    img1.style.backgroundImage = "url(../assets/img/gorro.png)";
+    img1.style.backgroundImage = "url(../assets/img/producto-individual/gorro.png";
     console.log(img1.style.backgroundImage);
-    imagen.style.backgroundImage = "url(../assets/img/gorro.png)";
+    imagen.style.backgroundImage = "url(../assets/img/producto-individual/gorro.png)";
 
   });
 
   img2.addEventListener("mouseover", function(){
-    img2.style.backgroundImage = "url(../assets/img/gorrito1.jpg.png)";
+    img2.style.backgroundImage = "url(../assets/img/producto-individual/gorrito1.jpg.png)";
     console.log(img1.style.backgroundImage);
-    imagen.style.backgroundImage = "url(../assets/img/gorrito.jpg.png)";
+    imagen.style.backgroundImage = "url(../assets/img/producto-individual/gorrito.jpg.png)";
 
   })
 
   img3.addEventListener("mouseover", function(){
-    img3.style.backgroundImage = "url(../assets/img/gorrito3.png)";
+    img3.style.backgroundImage = "url(../assets/img/producto-individual/gorrito3.png)";
     console.log(img1.style.backgroundImage);
-    imagen.style.backgroundImage = "url(../assets/img/gorrito3.png)";
+    imagen.style.backgroundImage = "url(../assets/img/producto-individual/gorrito3.png)";
 
   })
 
+  const productoS1 = JSON.parse(localStorage.getItem('productoS'));
+  console.log(productoS1)
 
+
+  const btncarrito = document.querySelector(".boton-confirmar")
+
+  btncarrito.addEventListener("click",()=>{
+    if (localStorage.getItem('carrito') !== null){
+      carrito = JSON.parse(localStorage.getItem('carrito'))
+    }
+    carrito.push(productoS1[0])
+    console.log(carrito)
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+  })
+
+  //console.log("localhost:8080/api/productos/" + productoS1[0])
 
 
 

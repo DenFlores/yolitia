@@ -62,7 +62,7 @@
                     
                 </div>
                 <div class="col d-flex  align-items-end justify-content-center justify-content-lg-end "><!--Precio-->
-                    <input id="preciotot" type="text" class="precio rounded" value="$499.00 MXN">
+                    <input id="preciotot" type="text" class="precio rounded" value="$499.00">
                     
                 </div>
             </div>   
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="col d-flex align-items-end justify-content-center justify-content-lg-end "><!--Precio-->
-                    <input id="preciotot1" type="text" class="precio rounded" value="$99.00 MXN">
+                    <input id="preciotot1" type="text" class="precio rounded" value="$99.00">
                 </div>
             </div>   
 
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="col d-flex align-items-end justify-content-center justify-content-lg-end "><!--Precio-->
-                    <input id="preciotot2" type="text" class="precio rounded" value="$255.00 MXN">
+                    <input id="preciotot2" type="text" class="precio rounded" value="$255.00">
                 </div>
             </div>   
                  
@@ -117,12 +117,44 @@
         <div class="bg-white total rounded d-flex align-items-start flex-column mb-3"> 
             <p class="titulo">Total </p>
             <!--<div class="linea"></div>-->
-            <p>Producto 1 <span id="preciototal" style="margin-left: 20px;"></span></p>
-            <p>Producto 2 <span id="preciototal1" style="margin-left: 20px;"></span></p>
-            <p>Producto 3 <span id="preciototal2" style="margin-left: 20px;"></span></p>
-
-            <p>Envío</p>
-            <p>Total</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>Producto 1 </p>
+                    </div>
+                    <div class="col" style="text-align: end;">
+                        <span id="preciototal"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Producto 2 </p>
+                    </div>
+                    <div class="col" style="text-align: end;">
+                        <span id="preciototal1"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Producto 3 </p>
+                    </div>
+                    <div class="col" style="text-align: end;">
+                        <span id="preciototal2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col"><p>Envío</p></div>
+                    <div class="col"><span id="envio"></span></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>Total</p></div>
+                    <div class="col" style="text-align: end;"><span id="totPagar"></span></div>
+                </div>
+            </div>
+            
+            
 
             <div class="d-flex mt-auto w-100 justify-content-center">
                 <div class="">
@@ -130,7 +162,7 @@
                 </div>
                 <div class="" >
                     <a href="pago.html">
-                        <input class="w-100 h-100 bpagar rounded" type="button" onclick="alert('Gracias por tu compra!')" value="Confirmar pedido"> 
+                        <input class="w-100 h-100 bpagar rounded" type="button"  value="Confirmar pedido"> 
                     </a>
                                         
                 </div>

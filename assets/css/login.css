@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --fuenteTitulos: "Lobster", cursive;
   --fuenteSubtitulos: "Lobster", cursive;
@@ -23,65 +23,60 @@
 *::after {
   box-sizing: border-box;
 }
+
 html {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
+  height: 100vh;
   padding: 0;
   font-size: 62.5%;
   width: 100vw;
-  height: 95vh;
   background-color: #fdcae1;
   background-image: url("../img/login/osito2.5.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  /* background-position-x: calc(90vw - 30vw); */
+
+  background-size: 55% 120%;
+  /* background-position-y: bottom; */
+  background-position-x: calc(81vw - 30vw);
 }
 
 /* ___________________________________ NAVBAR _______________________________________*/
 
-.navbar {
-  height: 10vh;
-}
-
 .navbar-total {
   background-color: var(--colorMorado);
 }
+
 .nav-link {
   font-size: var(--tamTexto);
   color: white;
   margin: 0 30px;
 }
+
 .nav-inicio {
   font-family: var(--fuenteNavbar);
   font-size: var(--tamSubtitulo);
   /* -webkit-text-stroke: 2px var(--colorMorado); */
   letter-spacing: 4.5px;
 }
+/*__________________________________  FORMULARIO  ______________________________________________*/
 
-/* .circulo-carrito {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 6rem;
-  height: 4rem;
-  border-radius: 50%;
-  background-color: var(--colorRojo);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 2.5rem;
-  z-index: 5;
-  text-decoration: none;
-} */
+.contenedor {
+  width: 80%;
+  background-color: #ff6961a6;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 /*----------------------------------- Carritp --------------------------------*/
 
-.circulo-carrito{
+.circulo-carrito {
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -107,146 +102,197 @@ body {
 .form-registro {
   display: flex;
   flex-direction: column;
-  width: 65%;
-  height: 50%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 5px;
-  background-color: #ff6961;
+  justify-content: center;
   align-items: center;
   border-radius: 15px;
+  padding: 5px;
   margin-top: 20px;
-  justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 
-.registro h2 {
+.contenedor.falla {
+  width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor.ok {
+  width: 90%;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cabecera {
   font-family: "Lobster", cursive;
   color: white;
-  font-size: 1.5rem;
-  font-weight: lighter;
+  font-weight: 300;
+  font-size: 1.3rem;
 }
 
-.form-registro input {
+.form-control1 {
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.form-control1 input {
+  border-radius: 15px;
+  padding: 8px 10px;
+  border-style: none;
+  text-align: center;
   width: 80%;
-  margin-bottom: 15px;
+}
+
+.form-control1.ok input {
+  margin: 0;
   border-style: none;
   border-radius: 15px;
-  padding: 10px 5px;
   text-align: center;
-  font-size: 0.8rem;
 }
 
-.submit-registrarse {
-  background-color: rgb(137, 230, 137);
+.form-control1.falla input {
+  margin: 0;
+}
+
+.form-control1 p {
+  visibility: hidden;
+  /* position: absolute; */
+  font-size: small;
+  font-weight: 500;
+  text-align: right;
+  margin: 0;
+}
+
+.form-control1.ok p {
+  margin: 0;
+  padding: 0;
+}
+
+.form-control1.falla p {
+  visibility: visible;
+  color: #000000;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+/* button {
+  align-self: center;
+  background-color: #77dd77;
+  padding: 8px 10px;
+  border-style: none;
+  border-radius: 15px;
+  margin: 8px 0;
+  width: 80%;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+} */
+.lin-registro {
+  color: rgb(0, 0, 0);
+  align-self: center;
+  background-color: #77dd77;
+  padding: 8px 10px;
+  border-style: none;
+  border-radius: 15px;
+  margin: 8px 0;
+  width: 80%;
+
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inicio-sesion {
+  background-color: #84b6f49f;
+  margin-top: 20px;
+  width: 80%;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-sesion {
   display: flex;
   flex-direction: column;
-  width: 65%;
-  height: 50%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 5px;
-  background-color: #8fc8f6;
+  justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  margin-top: 20px;
-  justify-content: space-evenly;
 }
 
-.form-sesion input {
+.form-sesion a {
   width: 80%;
-  margin-top: 15px;
-  margin-bottom: 15px;
+}
+
+.btn-sesion {
+  background-color: #fdfd96;
+  color: rgb(0, 0, 0);
+  align-self: center;
+  padding: 8px 10px;
   border-style: none;
   border-radius: 15px;
-  padding: 10px 5px;
-  text-align: center;
-  font-size: 0.8rem;
-}
-
-.submit-iniciar {
-  background-color: rgb(243, 243, 150);
-  font-weight: bold;
-}
-
-/*------------ _____________________  Footer _______________-------------------*/
-
-/* .mt-5 {
-  height: 8vh;
-}
-
-.color {
-  height: 100%;
-}
-.c1 {
-  background: #84b6f4;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-}
-.c1::before {
-  content: "";
-  width: 100%;
-  height: 40%;
-  background: linear-gradient(0deg, #ff362c 0%, rgba(196, 196, 196, 0) 100%);
-  transform: rotate(-180deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.c3 {
-  height: 60%;
-  background: #ff6961;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-} */
-
-@media screen and (min-width: 470px) {
-  body {
-    /* display: flex; */
-    background-position-x: 22vw;
-    background-position-y: bottom;
-    background-size: 85% 100%;
-  }
-
-  .registro {
-    width: 70%;
-    margin: 20px 20px 0;
-  }
-
-  .form-registro,
-  .form-sesion {
-    margin: 20px;
-  }
+  margin: 8px 0;
+  width: 80%;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 650px) {
   body {
-    background-position-y: center;
-    background-position-x: 40vw;
-    background-size: 60% 118%;
+    background-position-x: calc(80vw - 30vw);
+
+    background-size: 60% 100%;
+    /* background-position-y: center; */
   }
 
-  .registro h2 {
-    font-size: 1.8rem;
+  .contenedor {
+    width: 50%;
+    margin-left: 30px;
+    margin-bottom: 50px;
   }
 
-  .registro {
-    width: 60%;
-    margin: 20px 30px 0;
+  .inicio-sesion {
+    width: 50%;
+    margin-left: 30px;
   }
+}
 
-  .form-registro .submit-registrarse {
+@media screen and (min-width: 1000px) {
+  body {
+    background-position-x: calc(70vw - 30vw);
+    /* background-position-y: bottom; */
+    background-size: 60% 100%;
+  }
+  .contenedor {
     width: 40%;
-    align-self: flex-end;
-    margin-right: 40px;
-    font-size: 1rem;
-    font-weight: bolder;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    padding: 8px 0;
+    border-radius: 15px;
+    text-align: center;
   }
 
-  .form-sesion .submit-iniciar {
+  .inicio-sesion {
     width: 40%;
-    align-self: flex-end;
-    margin-right: 40px;
-    font-size: 1rem;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 10px 0;
   }
 }
