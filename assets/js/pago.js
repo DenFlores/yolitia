@@ -79,24 +79,51 @@ function claveValid(){
       }
 }
 
-pagar.onclick = function(){
-    console.log("pagando");
-    let name1 = nameValid();
-    let tarjeta1 =cardValid()
-    let mes = mesValid();
-    let anio = anioValid();
-    let clave = claveValid();
 
-    if(name1 == true && tarjeta1==true && mes==true && anio==true && clave==true ){
-        console.log("Pago valido");
-        alert("¡Pago exitoso!");
-        
+document.querySelector('#form').addEventListener('submit',(e)=>{
+    e.preventDefault();
+    if(!($nombre && $ntarjeta && $mes && $anio && $clave)){
+        alert('Rellena los campos');
     }
     else{
-        console.log("Pago no valido");
-    }
-}
+        let nombre1;
+        let tarjeta1;
+        let mes1;
+        let anio1;
+        let clave1;
+        let fechaUnq;
+        nameValid() ? (nombre1 = $nombre.value) : alert("Nombre invalido");
+        cardValid() ? (tarjeta1 = $ntarjeta.value) : alert("Numero de tarjea invalida");
+        mesValid() ? (mes1 = $mes.value) : alert("Mes invalido");
+        anioValid() ? (anio1 = $anio.value) : alert("Anio invalido");
+        claveValid() ? (clave1 = $clave.value) : alert("Clave invalido");
+        fechaUnq = mes1 + '-' + anio1;
+       
+         
+        console.log("nombre: "+nombre1)
+        console.log("tarjeta: "+tarjeta1)
+        console.log("fecha: "+fechaUnq)
+        console.log("clave: "+clave1)
+        fetch('http://localhost:8080/api/pago', {
+            method: 'POST',
+            body: JSON.stringify({
+                nombre_titular: nombre1,
+                numero_tarjeta: tarjeta1,
+                fecha_expiracion: fechaUnq,
+                codigo_seguridad: clave1,
+            }),
+            headers:{
+                'Content-Type': 'application/json'
+              }
 
+        }).then(res => res.json())
+        .then(response =>{
+
+            console.log('Success11:', response)
+            alert("¡Pago exitoso! Tu pedido esta en proceso...")
+         } );
+    }
+})
 
 
   
