@@ -66,7 +66,21 @@ function calcular() {
 
   })
 
+  const productoS1 = JSON.parse(localStorage.getItem('productoS'));
+  console.log(productoS1)
 
+
+  const btncarrito = document.querySelector(".boton-confirmar")
+
+  btncarrito.addEventListener("click",()=>{
+    if (localStorage.getItem('carrito') !== null){
+      carrito = JSON.parse(localStorage.getItem('carrito'))
+    }
+    carrito.push(productoS1[0])
+    console.log(carrito)
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+  })
 
 
 

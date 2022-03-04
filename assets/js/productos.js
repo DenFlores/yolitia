@@ -39,7 +39,11 @@ for (let index = 0; index < 45; index++) {
     
 } */
 
-const productos = [ ];
+
+
+//const productos = [ ];
+
+const productoS = []
 let contenedorDeProductos = $("#containerProductos");
 contenedorDeProductos.html("");
 let contenido ="";
@@ -52,43 +56,56 @@ window.addEventListener("load",()=>{
     }
   })
   .then(resp => resp.json()).then(datos => {
-    datos.forEach((dato)=>{
-        console.log(dato)
 
+    datos.forEach((dato)=>{
+        //console.log(dato)
         let item = `<div class="col-12 col-md-4 my-3">
                         <div class="card h-100 color-cards m-4">
                             <img
                             src=${dato.imagen}
                             class="image-card img-fluid"
-                            alt="..."
+                            
                             />
                             <div class="card-body mr-auto ml-auto mb-3 color-card-info">
                             <h5 class="card-title text-center">${dato.nombre}</h5>
                             <p class="card-text text-center">$${dato.precio}.00 MXN</p>
                             <div class="btn-info-card">
-                                <a class="btn-comprar-info" href="producto-individual.html">Comprar</a>
+                                <a class="btn-comprar-info" alt="${dato.id}" href="producto-individual.html">Comprar</a>
                             </div>
                             </div>
                         </div>
                         </div>  
                         `
             contenido += item;
-      
-    
         contenedorDeProductos.html(contenido);
-
-
     })
+
+    botones = document.querySelectorAll(".btn-comprar-info");
+    botones.forEach((btn)=>{
+        btn.addEventListener("click",guardarDato)
+        //btn.setAttribute
+    })
+
+    function guardarDato(evento){
+        console.log(evento.target.getAttribute("alt"))
+        productoS.push(evento.target.getAttribute("alt"))
+        localStorage.setItem('productoS', JSON.stringify(productoS));
+    }
+
+
     
+
   })
 })
 
 
-function configurarPaginador (productos, registrosPorPagina) {
+
+
+
+/* function configurarPaginador (productos, registrosPorPagina) {
     let cantidadDePaginas = Math.ceil(productos.length / registrosPorPagina);
     let paginador = "";
-    /* paginador += primerBoton; */
-
+    
     for ( let i = 1; i < cantidadDePaginas + 1; i++) {
         let boton = `<li class="page-item" aria-current="page" data-pagina="${i}">
         <a href="#?page=${i}">
@@ -99,7 +116,7 @@ function configurarPaginador (productos, registrosPorPagina) {
     paginador += boton;
     }
 
-    /* paginador += ultimoBoton; */
+    
 
     $("#paginador").html(paginador);
 
@@ -154,8 +171,7 @@ function get_url_param(param){
 }
 
 window.addEventListener("popstate", function(event){
-    /* $("#") */
-    /* console.log(get_url_param("page")); */
+
     crearPagina(productos, registrosPorPagina, get_url_param("page"));
 })
 
@@ -166,4 +182,4 @@ if(get_url_param("page") == null) {
     crearPagina(productos, registrosPorPagina, get_url_param("page"));
 }
 
-configurarPaginador(productos, registrosPorPagina);
+configurarPaginador(productos, registrosPorPagina); */
