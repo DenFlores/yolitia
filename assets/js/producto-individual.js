@@ -73,6 +73,7 @@ function calcular() {
   const btncarrito = document.querySelector(".boton-confirmar")
 
   btncarrito.addEventListener("click",()=>{
+    //const carrito = []
     if (localStorage.getItem('carrito') !== null){
       carrito = JSON.parse(localStorage.getItem('carrito'))
     }

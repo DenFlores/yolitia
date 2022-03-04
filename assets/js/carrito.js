@@ -7,23 +7,6 @@ let $preciototal = document.querySelector('#preciototal');
 let preciob = 499.00;
 $preciototal.textContent = `$${(preciob).toFixed(2)}`;
 
-let $cantidad1 = document.querySelector('#cantidad1');
-let $mas1 = document.querySelector('#mas1');
-let $menos1 = document.querySelector('#menos1');
-let $precio1 = document.queryCommandValue('#precio1');
-let $preciotot1 = document.querySelector('#preciotot1');
-let $preciototal1 = document.querySelector('#preciototal1');
-let preciob1 = 199.00;
-$preciototal1.textContent = `$${(preciob1).toFixed(2)}`;
-
-let $cantidad2 = document.querySelector('#cantidad2');
-let $mas2 = document.querySelector('#mas2');
-let $menos2 = document.querySelector('#menos2');
-let $precio2 = document.queryCommandValue('#precio2');
-let $preciotot2 = document.querySelector('#preciotot2');
-let $preciototal2 = document.querySelector('#preciototal2');
-let preciob2 = 255.00;
-$preciototal2.textContent = `$${(preciob2).toFixed(2)}`;
 
 let $envio = document.querySelector('#envio');
 let $totPagar = document.querySelector('#totPagar');
@@ -57,61 +40,6 @@ $cantidad.oninput = function(){
     }    
 }
 
-$mas1.addEventListener('click', () => {
-    $cantidad1.value++;       
-    $preciotot1.value = `$${($cantidad1.value * preciob1).toFixed(2)}`; 
-    $preciototal1.textContent = $preciotot1.value;
-    $totPagar.textContent = `$${((cantidad.value * preciob) + (cantidad1.value * preciob1) + (cantidad2.value * preciob2)).toFixed(2)}`;
-});
-
-$menos1.addEventListener('click', () => {
-    if($cantidad1.value <= 1){
-        $cantidad1.value = null;
-    } else {
-        $cantidad1.value--;             
-    }
-    $preciotot1.value = `$${(cantidad1.value * preciob1).toFixed(2)}`;
-    $preciototal1.textContent = $preciotot1.value;
-    $totPagar.textContent = `$${((cantidad.value * preciob) + (cantidad1.value * preciob1) + (cantidad2.value * preciob2)).toFixed(2)}`;
-});
-
-$cantidad1.oninput = function(){
-    if($cantidad1.value < 0){
-        $cantidad1.value = null;
-    } else {
-        $preciotot1.value = `$${(cantidad1.value * preciob1).toFixed(2)}`; 
-        $preciototal1.textContent = $preciotot1.value;   
-        $totPagar.textContent = `$${((cantidad.value * preciob) + (cantidad1.value * preciob1) + (cantidad2.value * preciob2)).toFixed(2)}`;     
-    }   
-}
-
-$mas2.addEventListener('click', () => {
-    $cantidad2.value++;       
-    $preciotot2.value = `$${(cantidad2.value * preciob2).toFixed(2)}`; 
-    $preciototal2.textContent = $preciotot2.value;
-    $totPagar.textContent = `$${((cantidad.value * preciob) + (cantidad1.value * preciob1) + (cantidad2.value * preciob2)).toFixed(2)}`;
-});
-
-$menos2.addEventListener('click', () => {
-    if($cantidad2.value <= 1){
-        $cantidad2.value = null;
-    } else {
-        $cantidad2.value--;             
-    }
-    $preciotot2.value = `$${(cantidad2.value * preciob2).toFixed(2)}`;
-    $preciototal2.textContent = $preciotot2.value;
-    $totPagar.textContent = `$${((cantidad.value * preciob) + (cantidad1.value * preciob1) + (cantidad2.value * preciob2)).toFixed(2)}`;
-});
-
-$cantidad2.oninput = function(){
-    if($cantidad2.value < 0){
-        $cantidad2.value = null;
-    } else {
-        $preciotot2.value = `$${(cantidad2.value * preciob2).toFixed(2)}`; 
-        $preciototal2.textContent = $preciotot2.value;       
-        $totPagar.textContent = `$${((cantidad.value * preciob) + (cantidad1.value * preciob1) + (cantidad2.value * preciob2)).toFixed(2)}`; 
-    }   
-}
 
 const calcularTotPagar = () => {
     let suma = $preciotot.value + $preciotot1.value + $preciototal2.value;
@@ -120,18 +48,67 @@ const calcularTotPagar = () => {
 
 calcularTotPagar();
 
-class Producto {
-    constructor (id, img, nombre, descripcion, cantidad, precio) {
-        this.id = id;
-        this.img = img;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.cantidad = cantidad;
-        this.precio = precio;
-    }
-}
-
-const Producto1 = new Producto(1, "",'Producto 1', 'Descripción', 1, 200);
 
 const carrito = JSON.parse(localStorage.getItem('carrito'));
 console.log(carrito)
+
+//const productoS = []
+let contenedorDeProductos = $("#containerProductos");
+contenedorDeProductos.html("");
+let contenido ="";
+
+window.addEventListener("load",()=>{
+    /*fetch('http://localhost:8080/api/productos',{
+    method: 'GET',
+    headers: {
+      'Content-type': 'application/json'
+    }
+  })
+  .then(resp => resp.json()).then(datos => {*/
+
+    datos.forEach((carrito)=>{
+        //console.log(dato)
+        let item = `<div class="row rounded seccion d-block d-lg-flex ">
+        <div class="col" > <!--imagen del producto-->
+            <div class=" fondoimg   rounded" >
+                <img src=${dato.imagen} alt="">
+            </div>
+        </div>
+        <div class=" col-6 d-block d-lg-flex align-items-start flex-column mb-3"> <!--descripción y cantidad-->
+            <p class="titulo">${dato.nombre}</p>
+            <p class="">${dato.descripcion}</p>
+            <div class="d-flex mt-auto" >
+                <p>Cantidad:</p>
+                <input id="cantidad" type="number" class="incantidad" value="1" min="1" >
+                <input id="menos" class="beliminar rounded-circle" type="button" value="-"> 
+                <input id="mas" class="bagregar rounded-circle" type="button" value="+">                        
+            </div>
+            
+        </div>
+        <div class="col d-flex  align-items-end justify-content-center justify-content-lg-end "><!--Precio-->
+            <input id="preciotot" type="text" class="precio rounded" value="${dato.precio}">
+            
+        </div>
+    </div>    
+                        `
+            contenido += item;
+        contenedorDeProductos.html(contenido);
+    })
+
+    botones = document.querySelectorAll(".btn-comprar-info");
+    botones.forEach((btn)=>{
+        btn.addEventListener("click",guardarDato)
+        //btn.setAttribute
+    })
+
+    function guardarDato(evento){
+        console.log(evento.target.getAttribute("alt"))
+        productoS.push(evento.target.getAttribute("alt"))
+        localStorage.setItem('productoS', JSON.stringify(productoS));
+    }
+
+
+    
+
+  })
+})
