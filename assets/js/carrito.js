@@ -1,3 +1,4 @@
+
 let codigo1;
 let codigo2;
 let total = document.querySelector('.total');
@@ -78,9 +79,7 @@ if(i==productos.length-1){
     const espacio2=document.createElement('div')
     espacio2.innerHTML=codigo2;
     total.appendChild(espacio2);
+
 }
        }
 })
-
-}
-

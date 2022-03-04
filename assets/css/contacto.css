@@ -49,8 +49,6 @@
   font-size: var(--tamTexto);
   color: white;
   margin: 0 30px;
-  width: 140px;
-  text-align: center;
 }
 
 .nav-inicio {
@@ -58,7 +56,6 @@
   font-size: var(--tamSubtitulo);
   /* -webkit-text-stroke: 2px var(--colorMorado); */
   letter-spacing: 4.5px;
-  width: 250px;
 }
 
 body {
@@ -99,17 +96,28 @@ body {
   margin-top: 30px;
 }
 
-#inputAsunto {
+#asunto {
   background-color: #84b6f4;
+  border-radius: 20px;
 }
 
-#inputNombre {
+#Nombre {
   background-color: #84b6f4;
+   border-radius: 20px;
 }
 
-#inputEmail {
+#Email {
   background-color: #84b6f4;
+   border-radius: 20px;
 }
+
+#mensaje {
+    background-color: #84B6F4;
+    border-radius: 20px;
+}
+
+
+
 
 .form-control {
   background-color: #84b6f4;
@@ -177,6 +185,20 @@ input:invalid {
 
 input:valid {
   border: 3px solid green;
+}
+
+#submite {
+    background-color: var(--colorRojo);
+    border: 3px solid var(--colorAzul);
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    
+    
+}
+
+#submite:hover {
+     background-color: var(--colorAzul);
 }
 
 .color {
