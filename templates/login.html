@@ -61,45 +61,43 @@
 
   <!--______________________________________ FORMULARIO ______________________________________-->
 
-
-
-
-  <div class="contenedor">
+  <div class="contenedor mt-5">
     <div class="cabecera">
       <h2>Registrarse</h2>
     </div>
-    <form id="formulario" action="procesar.php" method="">
+    <form method="POST" id="formulario" action="procesar.php" method="">
 
+        <div class="form-control1">
+          <label for="usuario"></label>
+          <input id="nombre" type="text" placeholder="Nombre">
+          <p></p>
+        </div>
 
+        <div class="form-control1">
+          <label for="email"></label>
+          <input id="email" type="email" placeholder="correo">
+          <p></p>
+        </div>
 
+        <div class="form-control1">
+          <label for="pass"></label>
+          <input id="pass" type="password" placeholder="contraseña">
+          <p></p>
+        </div>
+        
+       
+      
+          <button type="submit" class="lin-registro">Registrarse</button>
+        
 
-
-      <div class="form-control1">
-        <label for="usuario"></label>
-        <input id="nombre" type="text" placeholder="Nombre">
-        <p></p>
-      </div>
-
-      <div class="form-control1">
-        <label for="email"></label>
-        <input id="email" type="email" placeholder="correo">
-        <p></p>
-      </div>
-
-      <div class="form-control1">
-        <label for="pass"></label>
-        <input id="pass" type="password" placeholder="contraseña">
-        <p></p>
-      </div>
-
-
-      <a href="perfil.html"><input type="submit" value="Registrarse" class="lin-registro"></a>
+      
     </form>
   </div>
 
 
 
   <div class="inicio-sesion">
+
     <form action="" class="form-sesion" id="form2">
       <div class="cabecera">
         <h2>Iniciar Sesión</h2>
@@ -114,11 +112,7 @@
         <input type="password" placeholder="Contraseña" id="passSesion">
         <p></p>
       </div>
-
-
-      <a href="perfil.html"><input type="submit" value="Iniciar Sesión" class="btn-sesion"></a>
-
-
+      <button type="submit" class="btn-sesion">Iniciar Sesión</button>
     </form>
   </div>
 

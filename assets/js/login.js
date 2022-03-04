@@ -1,21 +1,102 @@
 window.addEventListener("load", () => {
   const form = document.querySelector("#formulario");
   const form2 = document.querySelector("#form2");
+
   const nombre = document.getElementById("nombre");
   const email = document.getElementById("email");
   const pass = document.getElementById("pass");
+
   const usuario = document.getElementById("usuario");
   const passSesion = document.getElementById("passSesion");
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    validaCampos();
+
+    const n1 = nombre.value;
+    const e1 = email.value;
+    const p1 = pass.value;
+    
+    //validaCampos();
+    fetch('http://localhost:8080/api/usuarios', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify( {
+        nombre: n1,
+        correo: e1,
+        contrasenia: p1
+      })
+      })
+      .then(res => res.json())
+      .then(res=> {
+            console.log(res);
+            url = window.location;
+            const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+            location.href = path +  'perfil.html';
+      });
+ 
   });
 
   form2.addEventListener("submit", (e) => {
     e.preventDefault();
-    validaCampos();
+    console.log("iniciar")
+
+    const e2 = usuario.value;
+    const p2 = passSesion.value;
+
+      fetch('http://localhost:8080/login', {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify( {
+          correo: e2,
+          contrasenia: p2
+        })
+        })
+        .then(resp =>{
+              console.log(resp);
+              const token = resp.headers.get('Authorization');
+              if(token && token.includes('Bearer') && resp.ok) {
+                localStorage.setItem('token', token);
+                console.log(token);
+                url = window.location;
+                const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+                location.href = path +  'perfil.html';
+
+              }
+              else{
+                localStorage.removeItem('token');
+                /* Swal.fire({
+                    title: 'Correo electronico o contraseña incorrecta',
+                    text: 'Reintentar',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                }); */
+              }
+        });
+
   });
+
+  /*const token = resp.headers.get('Authorization');
+          
+          if(token && token.includes('Bearer') && resp.ok) {
+              localStorage.setItem('token', token);
+              console.log(token);
+              url = window.location;
+              const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+              location.href = path +  'administrador.html';
+          } else {
+              localStorage.removeItem('token');
+              Swal.fire({
+                  title: 'Correo electronico o contraseña incorrecta',
+                  text: 'Reintentar',
+                  icon: 'error',
+                  confirmButtonText: 'ok'
+              });
+              //emailError.textContent = 'Usuario o contraseña incorrecta';
+          } */
 
   // >>>>>>>>>>>>>>>>  CAPTURAR LOS VALORES INGRESADOS POR EL USUARIO >>>>>>>>>>>>>>>>>>
 

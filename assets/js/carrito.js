@@ -132,3 +132,6 @@ class Producto {
 }
 
 const Producto1 = new Producto(1, "",'Producto 1', 'Descripción', 1, 200);
+
+const carrito = JSON.parse(localStorage.getItem('carrito'));
+console.log(carrito)
